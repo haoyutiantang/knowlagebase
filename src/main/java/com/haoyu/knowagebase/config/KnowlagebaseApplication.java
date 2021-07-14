@@ -1,4 +1,4 @@
-package com.haoyu.knowagebase;
+package com.haoyu.knowagebase.config;
 /*
  * @author haoyu
  * @date 2021/7/14 7:23
@@ -8,8 +8,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.env.Environment;
+import org.springframework.stereotype.Component;
 
+@ComponentScan({"com.haoyu"})
 @SpringBootApplication
 public class KnowlagebaseApplication {
 
