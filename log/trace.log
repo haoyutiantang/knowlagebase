@@ -10,3 +10,129 @@
 2021-07-14 23:01:50.447 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
 2021-07-14 23:01:50.458 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8080 (http) with context path ''
 2021-07-14 23:01:50.465 INFO  com.haoyu.knowagebase.KnowlagebaseApplication     :61   [32m                  [0;39m Started KnowlagebaseApplication in 1.197 seconds (JVM running for 1.912)
+2021-07-14 23:17:01.479 INFO  com.haoyu.knowagebase.KnowlagebaseApplication     :55   [32m                  [0;39m Starting KnowlagebaseApplication using Java 1.8.0_261 on DESKTOP-CTIIJC1 with PID 14632 (E:\code\java\knowlagebase\target\classes started by MECHREVO in E:\code\java\knowlagebase)
+2021-07-14 23:17:01.481 INFO  com.haoyu.knowagebase.KnowlagebaseApplication     :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-07-14 23:17:01.940 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-07-14 23:17:01.945 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-07-14 23:17:01.945 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-07-14 23:17:01.946 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-07-14 23:17:01.990 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-07-14 23:17:01.991 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 481 ms
+2021-07-14 23:17:02.080 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-14 23:17:02.159 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-07-14 23:17:02.168 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-07-14 23:17:02.175 INFO  com.haoyu.knowagebase.KnowlagebaseApplication     :61   [32m                  [0;39m Started KnowlagebaseApplication in 0.966 seconds (JVM running for 1.489)
+2021-07-14 23:17:02.186 INFO  com.haoyu.knowagebase.KnowlagebaseApplication     :55   [32m                  [0;39m Starting KnowlagebaseApplication using Java 1.8.0_261 on DESKTOP-CTIIJC1 with PID 14632 (E:\code\java\knowlagebase\target\classes started by MECHREVO in E:\code\java\knowlagebase)
+2021-07-14 23:17:02.187 INFO  com.haoyu.knowagebase.KnowlagebaseApplication     :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-07-14 23:17:02.255 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-07-14 23:17:02.256 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-07-14 23:17:02.256 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-07-14 23:17:02.256 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-07-14 23:17:02.268 INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-07-14 23:17:02.268 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 80 ms
+2021-07-14 23:17:02.289 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-14 23:17:02.301 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:596  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springApplicationAdminRegistrar' defined in class path resource [org/springframework/boot/autoconfigure/admin/SpringApplicationAdminJmxAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.management.InstanceAlreadyExistsException: org.springframework.boot:type=Admin,name=SpringApplication
+2021-07-14 23:17:02.302 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-14 23:17:02.302 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2021-07-14 23:17:02.309 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-14 23:17:02.322 ERROR org.springframework.boot.SpringApplication        :856  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springApplicationAdminRegistrar' defined in class path resource [org/springframework/boot/autoconfigure/admin/SpringApplicationAdminJmxAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.management.InstanceAlreadyExistsException: org.springframework.boot:type=Admin,name=SpringApplication
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:609)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:925)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at com.haoyu.knowagebase.KnowlagebaseApplication.main(KnowlagebaseApplication.java:20)
+Caused by: javax.management.InstanceAlreadyExistsException: org.springframework.boot:type=Admin,name=SpringApplication
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:437)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar.afterPropertiesSet(SpringApplicationAdminMXBeanRegistrar.java:129)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1847)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784)
+	... 15 common frames omitted
+2021-07-14 23:19:31.067 INFO  com.haoyu.knowagebase.KnowlagebaseApplication     :55   [32m                  [0;39m Starting KnowlagebaseApplication using Java 1.8.0_261 on DESKTOP-CTIIJC1 with PID 16292 (E:\code\java\knowlagebase\target\classes started by MECHREVO in E:\code\java\knowlagebase)
+2021-07-14 23:19:31.069 INFO  com.haoyu.knowagebase.KnowlagebaseApplication     :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-07-14 23:19:31.571 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-07-14 23:19:31.576 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-07-14 23:19:31.577 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-07-14 23:19:31.577 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-07-14 23:19:31.624 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-07-14 23:19:31.624 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 527 ms
+2021-07-14 23:19:31.717 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-14 23:19:31.798 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-07-14 23:19:31.808 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-07-14 23:19:31.815 INFO  com.haoyu.knowagebase.KnowlagebaseApplication     :61   [32m                  [0;39m Started KnowlagebaseApplication in 1.007 seconds (JVM running for 1.537)
+2021-07-14 23:19:31.826 INFO  com.haoyu.knowagebase.KnowlagebaseApplication     :55   [32m                  [0;39m Starting KnowlagebaseApplication using Java 1.8.0_261 on DESKTOP-CTIIJC1 with PID 16292 (E:\code\java\knowlagebase\target\classes started by MECHREVO in E:\code\java\knowlagebase)
+2021-07-14 23:19:31.827 INFO  com.haoyu.knowagebase.KnowlagebaseApplication     :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-07-14 23:19:31.895 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-07-14 23:19:31.896 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-07-14 23:19:31.896 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-07-14 23:19:31.896 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-07-14 23:19:31.907 INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-07-14 23:19:31.907 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 79 ms
+2021-07-14 23:19:31.929 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-14 23:19:31.946 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:596  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springApplicationAdminRegistrar' defined in class path resource [org/springframework/boot/autoconfigure/admin/SpringApplicationAdminJmxAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.management.InstanceAlreadyExistsException: org.springframework.boot:type=Admin,name=SpringApplication
+2021-07-14 23:19:31.947 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-14 23:19:31.947 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2021-07-14 23:19:31.953 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-14 23:19:31.963 ERROR org.springframework.boot.SpringApplication        :856  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springApplicationAdminRegistrar' defined in class path resource [org/springframework/boot/autoconfigure/admin/SpringApplicationAdminJmxAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.management.InstanceAlreadyExistsException: org.springframework.boot:type=Admin,name=SpringApplication
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:609)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:925)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at com.haoyu.knowagebase.KnowlagebaseApplication.main(KnowlagebaseApplication.java:20)
+Caused by: javax.management.InstanceAlreadyExistsException: org.springframework.boot:type=Admin,name=SpringApplication
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:437)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar.afterPropertiesSet(SpringApplicationAdminMXBeanRegistrar.java:129)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1847)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784)
+	... 15 common frames omitted
+2021-07-14 23:19:49.933 INFO  com.haoyu.knowagebase.KnowlagebaseApplication     :55   [32m                  [0;39m Starting KnowlagebaseApplication using Java 1.8.0_261 on DESKTOP-CTIIJC1 with PID 7568 (E:\code\java\knowlagebase\target\classes started by MECHREVO in E:\code\java\knowlagebase)
+2021-07-14 23:19:49.936 INFO  com.haoyu.knowagebase.KnowlagebaseApplication     :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-07-14 23:19:50.374 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-07-14 23:19:50.379 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-07-14 23:19:50.380 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-07-14 23:19:50.380 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-07-14 23:19:50.425 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-07-14 23:19:50.425 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 461 ms
+2021-07-14 23:19:50.518 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-14 23:19:50.599 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-07-14 23:19:50.610 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-07-14 23:19:50.616 INFO  com.haoyu.knowagebase.KnowlagebaseApplication     :61   [32m                  [0;39m Started KnowlagebaseApplication in 0.947 seconds (JVM running for 1.467)
+2021-07-14 23:19:50.618 INFO  com.haoyu.knowagebase.KnowlagebaseApplication     :21   [32m                  [0;39m 启动成功！
+2021-07-14 23:19:50.618 INFO  com.haoyu.knowagebase.KnowlagebaseApplication     :22   [32m                  [0;39m 地址：	http://127.0.0.1:8880
