@@ -5,6 +5,7 @@ import com.haoyu.knowlagebase.domain.EbookExample;
 import com.haoyu.knowlagebase.mapper.EbookMapper;
 import com.haoyu.knowlagebase.req.EbookReq;
 import com.haoyu.knowlagebase.resp.EbookResp;
+import com.haoyu.knowlagebase.util.CopyUtil;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -28,12 +29,16 @@ public class EbookService {
         //模糊匹配
         criteria.andNameLike("%"+req.getName()+"%");
         List<Ebook> ebookList = ebookMapper.selectByExample(ebookExample);
-        List<EbookResp> respList = new ArrayList<>();
-        for(Ebook ebook : ebookList){
-            EbookResp ebookResp = new EbookResp();
-            BeanUtils.copyProperties(ebook, ebookResp);
-            respList.add(ebookResp);
-        }
+//        List<EbookResp> respList = new ArrayList<>();
+//        for(Ebook ebook : ebookList){
+//            //EbookResp ebookResp = new EbookResp();
+//            //BeanUtils.copyProperties(ebook, ebookResp);
+              //对象复制
+//            EbookResp ebookResp = CopyUtil.copy(ebook, EbookResp.class);
+//            respList.add(ebookResp);
+//        }
+        //列表复制
+        List<EbookResp> respList = CopyUtil.copyList(ebookList, EbookResp.class);
         return respList;
     }
 }

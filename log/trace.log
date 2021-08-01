@@ -475,3 +475,25 @@ com.mysql.cj.exceptions.CJException: Access denied for user 'wiki'@'localhost' t
 2021-08-01 18:19:57.764 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
 2021-08-01 18:19:57.812 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
 2021-08-01 18:19:58.331 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2021-08-01 18:27:13.006 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :55   [32m                  [0;39m Starting KnowlagebaseApplication using Java 1.8.0_261 on DESKTOP-CTIIJC1 with PID 21684 (E:\code\java\knowlagebase\target\classes started by MECHREVO in E:\code\java\knowlagebase)
+2021-08-01 18:27:13.008 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-08-01 18:27:13.044 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-01 18:27:13.044 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-01 18:27:13.629 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8882 (http)
+2021-08-01 18:27:13.634 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8882"]
+2021-08-01 18:27:13.635 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-08-01 18:27:13.635 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-08-01 18:27:13.680 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-08-01 18:27:13.681 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 637 ms
+2021-08-01 18:27:13.918 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-01 18:27:14.053 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-08-01 18:27:14.063 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8882"]
+2021-08-01 18:27:14.073 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8882 (http) with context path ''
+2021-08-01 18:27:14.079 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :61   [32m                  [0;39m Started KnowlagebaseApplication in 1.413 seconds (JVM running for 2.24)
+2021-08-01 18:27:14.081 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :24   [32m                  [0;39m 启动成功！
+2021-08-01 18:27:14.081 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :25   [32m                  [0;39m 地址：	http://127.0.0.1:8882
+2021-08-01 18:27:19.883 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-01 18:27:19.884 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-08-01 18:27:19.885 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2021-08-01 18:27:19.931 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2021-08-01 18:27:20.454 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
