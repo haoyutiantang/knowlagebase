@@ -1,0 +1,4 @@
+GET http://127.0.0.1:8882/ebook/list
+
+###
+#Accept: application/json
