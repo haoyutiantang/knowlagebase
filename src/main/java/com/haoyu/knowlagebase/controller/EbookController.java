@@ -1,6 +1,7 @@
 package com.haoyu.knowlagebase.controller;
 
 import com.haoyu.knowlagebase.domain.Ebook;
+import com.haoyu.knowlagebase.resp.CommonResp;
 import com.haoyu.knowlagebase.service.EbookService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -21,7 +22,10 @@ public class EbookController {
     private EbookService ebookService;
 
     @GetMapping("/list")
-    public List<Ebook> list(){
-        return ebookService.list();
+    public CommonResp list(){
+        CommonResp<List<Ebook>> resp = new CommonResp<>();
+        List<Ebook> list = ebookService.list();
+        resp.setContent(list);
+        return resp;
     }
 }
