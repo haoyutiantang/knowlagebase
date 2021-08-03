@@ -9,6 +9,7 @@ import com.haoyu.knowlagebase.util.CopyUtil;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.ObjectUtils;
 
 import javax.annotation.Resource;
 import java.util.ArrayList;
@@ -26,8 +27,11 @@ public class EbookService {
     public List<EbookResp> list(EbookReq req){
         EbookExample ebookExample = new EbookExample();
         EbookExample.Criteria criteria = ebookExample.createCriteria();
+        if(!ObjectUtils.isEmpty(req.getName())){//动态sql写法
+            criteria.andNameLike("%"+req.getName()+"%");
+        }
         //模糊匹配
-        criteria.andNameLike("%"+req.getName()+"%");
+
         List<Ebook> ebookList = ebookMapper.selectByExample(ebookExample);
 //        List<EbookResp> respList = new ArrayList<>();
 //        for(Ebook ebook : ebookList){
