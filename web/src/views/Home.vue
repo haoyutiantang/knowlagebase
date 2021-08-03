@@ -48,21 +48,37 @@
     <a-layout-content
             :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '280px' }"
     >
-      Content
+      <pre>
+{{ebooks}}
+{{ebooks2}}
+      </pre>
+
     </a-layout-content>
   </a-layout>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent, onMounted, ref, reactive, toRef } from 'vue';
 import axios from 'axios';
 export default defineComponent({
   name: 'Home',
   setup(){
       console.log("setup");
-      axios.get("http://127.0.0.1:8882/ebook/list?name=Spring").then((response) => {
+      const ebooks = ref();//vue3中新增响应式数据类型 发生该表就会在页面响应变化
+      const ebooks1 = reactive({books : []}) //reactive也是vue3新加的 里面属性是对象类型 返回的是里面的books属性
+      onMounted(()=>{
+        console.log("onMounted");
+        axios.get("http://127.0.0.1:8882/ebook/list?name=Spring").then((response) => {
+          const data = response.data;
+          ebooks.value = data.content;
+          ebooks1.books = data.content;
           console.log(response);
-      })
+        });
+      });
+      return{
+        ebooks,
+        ebooks2 : toRef(ebooks1, "books")//把ebooks1中的books转成ref类型赋值给ebooks2
+      }
   }
 });
 </script>
