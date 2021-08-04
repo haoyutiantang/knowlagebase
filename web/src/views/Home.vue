@@ -94,8 +94,8 @@ export default defineComponent({
       const ebooks = ref();//vue3中新增响应式数据类型 发生该表就会在页面响应变化
       const ebooks1 = reactive({books : []}) //reactive也是vue3新加的 里面属性是对象类型 返回的是里面的books属性
       onMounted(()=>{
-        console.log("onMounted1111");
-        axios.get("process.env.VUE_APP_SERVER" + "/ebook/list").then((response) => {
+        console.log("onMounted222");
+        axios.get("/ebook/list").then((response) => {
           const data = response.data;
           ebooks.value = data.content;
           ebooks1.books = data.content;
