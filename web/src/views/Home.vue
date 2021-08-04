@@ -90,16 +90,13 @@ for (let i = 0; i < 23; i++) {
 export default defineComponent({
   name: 'Home',
   setup(){
-      console.log("setup");
       const ebooks = ref();//vue3中新增响应式数据类型 发生该表就会在页面响应变化
       const ebooks1 = reactive({books : []}) //reactive也是vue3新加的 里面属性是对象类型 返回的是里面的books属性
       onMounted(()=>{
-        console.log("onMounted222");
         axios.get("/ebook/list").then((response) => {
           const data = response.data;
           ebooks.value = data.content;
           ebooks1.books = data.content;
-          console.log(response);
         });
       });
       return{
