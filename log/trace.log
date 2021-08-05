@@ -1,67 +1,30 @@
-2021-08-04 23:11:34.434 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :55   [32m                  [0;39m Starting KnowlagebaseApplication using Java 1.8.0_261 on DESKTOP-CTIIJC1 with PID 12892 (E:\code\java\knowlagebase\target\classes started by MECHREVO in E:\code\java\knowlagebase)
-2021-08-04 23:11:34.437 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
-2021-08-04 23:11:34.471 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-08-04 23:11:34.471 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-08-04 23:11:35.118 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8882 (http)
-2021-08-04 23:11:35.122 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8882"]
-2021-08-04 23:11:35.123 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2021-08-04 23:11:35.123 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
-2021-08-04 23:11:35.166 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2021-08-04 23:11:35.166 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 694 ms
-2021-08-04 23:11:35.414 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
-2021-08-04 23:11:35.543 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2021-08-04 23:11:35.554 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8882"]
-2021-08-04 23:11:35.565 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8882 (http) with context path ''
-2021-08-04 23:11:35.572 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :61   [32m                  [0;39m Started KnowlagebaseApplication in 1.476 seconds (JVM running for 2.484)
-2021-08-04 23:11:35.574 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :24   [32m                  [0;39m 启动成功！
-2021-08-04 23:11:35.574 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :25   [32m                  [0;39m 地址：	http://127.0.0.1:8882
-2021-08-04 23:15:03.045 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
-2021-08-04 23:15:03.146 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :55   [32m                  [0;39m Starting KnowlagebaseApplication using Java 1.8.0_261 on DESKTOP-CTIIJC1 with PID 12892 (E:\code\java\knowlagebase\target\classes started by MECHREVO in E:\code\java\knowlagebase)
-2021-08-04 23:15:03.146 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
-2021-08-04 23:15:03.313 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2021-08-04 23:15:03.313 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2021-08-04 23:15:03.314 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2021-08-04 23:15:03.314 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
-2021-08-04 23:15:03.326 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2021-08-04 23:15:03.326 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 177 ms
-2021-08-04 23:15:03.390 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
-2021-08-04 23:15:03.424 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2021-08-04 23:15:03.430 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2021-08-04 23:15:03.432 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2021-08-04 23:15:03.435 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :61   [32m                  [0;39m Started KnowlagebaseApplication in 0.314 seconds (JVM running for 210.346)
-2021-08-04 23:15:03.436 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2021-08-04 23:15:03.436 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :24   [32m                  [0;39m 启动成功！
-2021-08-04 23:15:03.437 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :25   [32m                  [0;39m 地址：	http://127.0.0.1:8880
-2021-08-04 23:15:09.186 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-08-04 23:15:09.186 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2021-08-04 23:15:09.187 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
-2021-08-04 23:15:09.248 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
-2021-08-04 23:15:09.825 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
-2021-08-04 23:22:39.742 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
-2021-08-04 23:22:39.742 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
-2021-08-04 23:22:39.748 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
-2021-08-04 23:22:39.864 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :55   [32m                  [0;39m Starting KnowlagebaseApplication using Java 1.8.0_261 on DESKTOP-CTIIJC1 with PID 12892 (E:\code\java\knowlagebase\target\classes started by MECHREVO in E:\code\java\knowlagebase)
-2021-08-04 23:22:39.864 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
-2021-08-04 23:22:40.006 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2021-08-04 23:22:40.007 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2021-08-04 23:22:40.007 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2021-08-04 23:22:40.007 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
-2021-08-04 23:22:40.020 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2021-08-04 23:22:40.021 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 156 ms
-2021-08-04 23:22:40.072 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
-2021-08-04 23:22:40.102 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
-2021-08-04 23:22:40.107 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2021-08-04 23:22:40.109 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2021-08-04 23:22:40.112 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :61   [32m                  [0;39m Started KnowlagebaseApplication in 0.269 seconds (JVM running for 667.024)
-2021-08-04 23:22:40.113 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2021-08-04 23:22:40.114 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :24   [32m                  [0;39m 启动成功！
-2021-08-04 23:22:40.114 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :25   [32m                  [0;39m 地址：	http://127.0.0.1:8880
-2021-08-04 23:24:32.360 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-08-04 23:24:32.361 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2021-08-04 23:24:32.362 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
-2021-08-04 23:24:32.362 INFO  com.haoyu.knowlagebase.filter.LogFilter           :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
-2021-08-04 23:24:32.362 INFO  com.haoyu.knowlagebase.filter.LogFilter           :26   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
-2021-08-04 23:24:32.363 INFO  com.haoyu.knowlagebase.filter.LogFilter           :27   [32m                  [0;39m 远程地址: 127.0.0.1
-2021-08-04 23:24:32.366 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-2 - Starting...
-2021-08-04 23:24:32.382 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-2 - Start completed.
-2021-08-04 23:24:32.394 INFO  com.haoyu.knowlagebase.filter.LogFilter           :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：31 ms -------------
+2021-08-05 23:09:58.045 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :55   [32m                  [0;39m Starting KnowlagebaseApplication using Java 1.8.0_261 on DESKTOP-CTIIJC1 with PID 15036 (E:\code\java\knowlagebase\target\classes started by MECHREVO in E:\code\java\knowlagebase)
+2021-08-05 23:09:58.048 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-08-05 23:09:58.089 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-05 23:09:58.089 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-05 23:09:58.890 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-08-05 23:09:58.896 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-08-05 23:09:58.897 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-08-05 23:09:58.897 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-08-05 23:09:58.959 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-08-05 23:09:58.959 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 869 ms
+2021-08-05 23:09:59.279 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-05 23:09:59.426 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-08-05 23:09:59.436 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-08-05 23:09:59.446 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-08-05 23:09:59.453 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :61   [32m                  [0;39m Started KnowlagebaseApplication in 1.837 seconds (JVM running for 2.967)
+2021-08-05 23:09:59.455 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :24   [32m                  [0;39m 启动成功！
+2021-08-05 23:09:59.455 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :25   [32m                  [0;39m 地址：	http://127.0.0.1:8880
+2021-08-05 23:10:34.891 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-05 23:10:34.891 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-08-05 23:10:34.892 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2021-08-05 23:10:34.895 INFO  com.haoyu.knowlagebase.filter.LogFilter           :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2021-08-05 23:10:34.896 INFO  com.haoyu.knowlagebase.filter.LogFilter           :26   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2021-08-05 23:10:34.896 INFO  com.haoyu.knowlagebase.filter.LogFilter           :27   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-08-05 23:10:34.900 INFO  com.haoyu.knowlagebase.interceptor.LogInterceptor :23   [32m                  [0;39m ------------- LogInterceptor 开始 -------------
+2021-08-05 23:10:34.901 INFO  com.haoyu.knowlagebase.interceptor.LogInterceptor :24   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2021-08-05 23:10:34.901 INFO  com.haoyu.knowlagebase.interceptor.LogInterceptor :25   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-08-05 23:10:34.941 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2021-08-05 23:10:35.651 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2021-08-05 23:10:35.724 INFO  com.haoyu.knowlagebase.interceptor.LogInterceptor :35   [32m                  [0;39m ------------- LogInterceptor 结束 耗时：823 ms -------------
+2021-08-05 23:10:35.725 INFO  com.haoyu.knowlagebase.filter.LogFilter           :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：829 ms -------------
