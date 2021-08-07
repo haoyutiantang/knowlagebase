@@ -45,8 +45,8 @@
 
       const columns = [
         {
-          dataIndex: '封面',
-          key: 'cover',
+          title:'封面',
+          dataIndex: 'cover',
           slots: {customRender: 'cover' },
         },
         {
