@@ -1,4 +1,4 @@
-GET http://127.0.0.1:8880/ebook/list
+GET http://127.0.0.1:8880/ebook/list?page=1&size=4
 
 ###
 #Accept: application/json

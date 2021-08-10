@@ -7,6 +7,7 @@ import com.haoyu.knowlagebase.domain.EbookExample;
 import com.haoyu.knowlagebase.mapper.EbookMapper;
 import com.haoyu.knowlagebase.req.EbookReq;
 import com.haoyu.knowlagebase.resp.EbookResp;
+import com.haoyu.knowlagebase.resp.PageResp;
 import com.haoyu.knowlagebase.util.CopyUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -30,14 +31,14 @@ public class EbookService {
     @Resource
     private EbookMapper ebookMapper;
 
-    public List<EbookResp> list(EbookReq req){
+    public PageResp<EbookResp> list(EbookReq req){
         EbookExample ebookExample = new EbookExample();
         EbookExample.Criteria criteria = ebookExample.createCriteria();
         if(!ObjectUtils.isEmpty(req.getName())){//动态sql写法
             criteria.andNameLike("%"+req.getName()+"%");
         }
         //模糊匹配
-        PageHelper.startPage(1,3);//只对第一个遇到的sql起作用  1.页码 2.每页的条数
+        PageHelper.startPage(req.getPage(),req.getSize());//只对第一个遇到的sql起作用  1.页码 2.每页的条数
         List<Ebook> ebookList = ebookMapper.selectByExample(ebookExample);
         PageInfo<Ebook> pageInfo = new PageInfo<>(ebookList);
         LOG.info("总行数:{}",pageInfo.getTotal());
@@ -50,8 +51,13 @@ public class EbookService {
 //            EbookResp ebookResp = CopyUtil.copy(ebook, EbookResp.class);
 //            respList.add(ebookResp);
 //        }
+
+
         //列表复制
-        List<EbookResp> respList = CopyUtil.copyList(ebookList, EbookResp.class);
-        return respList;
+        List<EbookResp> list = CopyUtil.copyList(ebookList, EbookResp.class);
+        PageResp<EbookResp> pageResp = new PageResp<>();
+        pageResp.setTotal(pageInfo.getTotal());
+        pageResp.setList(list);
+        return pageResp;
     }
 }
