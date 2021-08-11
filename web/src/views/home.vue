@@ -75,34 +75,39 @@
 import { defineComponent, onMounted, ref, reactive, toRef } from 'vue';
 import axios from 'axios';
 
-const listData: any  = [];//listData是任意类型
-for (let i = 0; i < 23; i++) {
-  listData.push({
-    href: 'https://www.antdv.com/',
-    title: `ant design vue part ${i}`,
-    avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
-    description:
-            'Ant Design, a design language for background applications, is refined by Ant UED Team.',
-    content:
-            'We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure), to help people create their product prototypes beautifully and efficiently.',
-  });
-}
+// const listData: any  = [];//listData是任意类型
+// for (let i = 0; i < 23; i++) {
+//   listData.push({
+//     href: 'https://www.antdv.com/',
+//     title: `ant design vue part ${i}`,
+//     avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
+//     description:
+//             'Ant Design, a design language for background applications, is refined by Ant UED Team.',
+//     content:
+//             'We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure), to help people create their product prototypes beautifully and efficiently.',
+//   });
+// }
 export default defineComponent({
   name: 'Home',
   setup(){
       const ebooks = ref();//vue3中新增响应式数据类型 发生该表就会在页面响应变化
       const ebooks1 = reactive({books : []}) //reactive也是vue3新加的 里面属性是对象类型 返回的是里面的books属性
       onMounted(()=>{
-        axios.get("/ebook/list").then((response) => {
+        axios.get("/ebook/list",{
+          params :{
+            page : 1,
+            size : 1000
+          }
+        }).then((response) => {
           const data = response.data;
-          ebooks.value = data.content;
-          ebooks1.books = data.content;
+          ebooks.value = data.content.list;
+          //ebooks1.books = data.content;
         });
       });
       return{
         ebooks,
-        ebooks2 : toRef(ebooks1, "books"),//把ebooks1中的books转成ref类型赋值给ebooks2
-        listData,
+        //ebooks2 : toRef(ebooks1, "books"),//把ebooks1中的books转成ref类型赋值给ebooks2
+        //listData,
         pagination : {
           onChange: (page: any) => {
             console.log(page);
