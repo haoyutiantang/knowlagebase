@@ -16,7 +16,7 @@
         </template>
         <template v-slot:action="{text, record}">
           <a-space size = "small">
-            <a-button type = "primary" @click="edit">
+            <a-button type = "primary" @click="edit(record)">
               编辑
             </a-button>
             <a-button type = "danger">
@@ -33,7 +33,23 @@
           :confirm-loading="modalLoading"
           @ok="handleModalOk"
   >
-    <p>test</p>
+    <a-form :modal="ebook" :label-col="{span : 6}">
+      <a-form-item label="封面">
+        <a-input v-model:value="ebook.cover" />
+      </a-form-item>
+      <a-form-item label="名称">
+        <a-input v-model:value="ebook.name" />
+      </a-form-item>
+      <a-form-item label="分类一">
+        <a-input v-model:value="ebook.category1Id" />
+      </a-form-item>
+      <a-form-item label="分类二">
+        <a-input v-model:value="ebook.category2Id" />
+      </a-form-item>
+      <a-form-item label="描述">
+        <a-input v-model:value="ebook.desc" type="text"/>
+      </a-form-item>
+    </a-form>
   </a-modal>
 </template>
 
@@ -122,6 +138,7 @@
       };
 
       //---------表单------------
+      const ebook = ref({});
       const modalVisible = ref(false);
       const modalLoading = ref(false);
       const handleModalOk = () => {
@@ -135,8 +152,9 @@
       /*
       编辑
        */
-      const edit = () => {
+      const edit = (record : any) => {
         modalVisible.value = true;
+        ebook.value = record;
       };
 
       onMounted(() => {
@@ -153,6 +171,7 @@
         loading,
         handleTableChange,
         edit,
+        ebook,
         modalVisible,
         modalLoading,
         handleModalOk
