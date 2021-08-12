@@ -125,7 +125,7 @@
           ebooks.value = data.content.list;
 
           //重置分页按钮
-          pagination.value.current = params.pages;
+          pagination.value.current = params.page;
           pagination.value.total = data.content.total
         });
       };
