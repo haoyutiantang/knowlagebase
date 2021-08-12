@@ -122,7 +122,7 @@
           //重置分页按钮
           pagination.value.current = params.pages;
           pagination.value.total = data.content.total
-        })
+        });
       };
 
       /**
@@ -143,10 +143,20 @@
       const modalLoading = ref(false);
       const handleModalOk = () => {
           modalLoading.value = true;
-        setTimeout(() => {
-          modalVisible.value = false;
-          modalLoading.value = false;
-        }, 2000);
+
+        axios.post("/ebook/save",ebook.value).then((response)=>{
+          const data = response.data;//data = commonResp
+          if(data.success){
+            modalVisible.value = false;
+            modalLoading.value = false;
+          }
+
+          //从新加载列表
+          handleQuery({
+            page : pagination.value.current,
+            size : pagination.value.pageSize
+          });
+        });
       };
 
       /*

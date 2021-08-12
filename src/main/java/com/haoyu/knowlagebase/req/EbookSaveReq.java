@@ -1,6 +1,6 @@
-package com.haoyu.knowlagebase.resp;
+package com.haoyu.knowlagebase.req;
 
-public class EbookResp {
+public class EbookSaveReq {
     private Long id;
 
     private String name;
