@@ -17,16 +17,24 @@
               @change="handleTableChange"
       >
         <template #cover="{ text: cover }">
-          <img v-if="cover" :src="cover" alt="avatar" sizes="small" />
+          <img v-if="cover" :src="cover" alt="avatar" />
         </template>
         <template v-slot:action="{text, record}">
           <a-space size = "small">
             <a-button type = "primary" @click="edit(record)">
               编辑
             </a-button>
-            <a-button type = "danger">
+            <a-popconfirm
+                    title="删除后不可恢复，确认删除？"
+                    ok-text="是"
+                    cancel-text="否"
+                    @confirm="handleDelete(record.id)"
+            >
+              <a-button type = "danger">
               删除
-            </a-button>
+              </a-button>
+            </a-popconfirm>
+
           </a-space>
         </template>
       </a-table>
@@ -52,7 +60,7 @@
         <a-input v-model:value="ebook.category2Id" />
       </a-form-item>
       <a-form-item label="描述">
-        <a-input v-model:value="ebook.desc" type="text"/>
+        <a-input v-model:value="ebook.description" type="text"/>
       </a-form-item>
     </a-form>
   </a-modal>
@@ -154,13 +162,12 @@
           if(data.success){
             modalVisible.value = false;
             modalLoading.value = false;
+            //从新加载列表
+            handleQuery({
+              page : pagination.value.current,
+              size : pagination.value.pageSize
+            });
           }
-
-          //从新加载列表
-          handleQuery({
-            page : pagination.value.current,
-            size : pagination.value.pageSize
-          });
         });
       };
 
@@ -178,6 +185,20 @@
       const add = () => {
         modalVisible.value = true;
         ebook.value = {};
+      };
+
+      const handleDelete = (id: number) =>{
+        console.log(id);
+        axios.delete("/ebook/delete/" + id).then((response)=>{
+          const data = response.data;//data = commonResp
+          if(data.success){
+            //从新加载列表
+            handleQuery({
+              page : pagination.value.current,
+              size : pagination.value.pageSize,
+            });
+          }
+        });
       };
 
       onMounted(() => {
@@ -200,7 +221,9 @@
         ebook,
         modalVisible,
         modalLoading,
-        handleModalOk
+        handleModalOk,
+
+        handleDelete
       }
     }
   });

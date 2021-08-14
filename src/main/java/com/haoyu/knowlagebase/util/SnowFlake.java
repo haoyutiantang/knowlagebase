@@ -105,16 +105,16 @@ public class SnowFlake {
 //        System.out.println(System.currentTimeMillis());
 //        System.out.println(new Date().getTime());
 //        //
-//         String dateTime = "2021-01-01 08:00:00";
-//         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
-//         System.out.println(sdf.parse(dateTime).getTime());
+        String dateTime = "2021-08-13 08:00:00";
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+        System.out.println(sdf.parse(dateTime).getTime());
 
-        SnowFlake snowFlake = new SnowFlake(1, 1);
-
-        long start = System.currentTimeMillis();
-        for (int i = 0; i < 10; i++) {
-            System.out.println(snowFlake.nextId());
-            System.out.println(System.currentTimeMillis() - start);
-        }
+//        SnowFlake snowFlake = new SnowFlake(1, 1);
+//
+//        long start = System.currentTimeMillis();
+//        for (int i = 0; i < 10; i++) {
+//            System.out.println(snowFlake.nextId());
+//            System.out.println(System.currentTimeMillis() - start);
+//        }
     }
 }
