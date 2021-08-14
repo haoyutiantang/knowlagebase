@@ -9,6 +9,7 @@ import com.haoyu.knowlagebase.service.EbookService;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import javax.validation.Valid;
 
 /*
  * @author haoyu
@@ -21,7 +22,7 @@ public class EbookController {
     private EbookService ebookService;
 
     @GetMapping("/list")
-    public CommonResp list(EbookQueryReq req){
+    public CommonResp list(@Valid EbookQueryReq req){
         CommonResp<PageResp<EbookQuerResp>> resp = new CommonResp<>();
         PageResp<EbookQuerResp> list = ebookService.list(req);
         resp.setContent(list);
