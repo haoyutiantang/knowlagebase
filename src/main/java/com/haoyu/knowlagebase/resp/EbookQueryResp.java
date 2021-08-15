@@ -1,6 +1,6 @@
 package com.haoyu.knowlagebase.resp;
 
-public class EbookQuerResp {
+public class EbookQueryResp {
     private Long id;
 
     private String name;

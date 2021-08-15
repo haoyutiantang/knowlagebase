@@ -1,11 +1,11 @@
 package com.haoyu.knowlagebase.controller;
 
-import com.haoyu.knowlagebase.req.EbookQueryReq;
-import com.haoyu.knowlagebase.req.EbookSaveReq;
+import com.haoyu.knowlagebase.req.CategoryQueryReq;
+import com.haoyu.knowlagebase.req.CategorySaveReq;
 import com.haoyu.knowlagebase.resp.CommonResp;
-import com.haoyu.knowlagebase.resp.EbookQueryResp;
+import com.haoyu.knowlagebase.resp.CategoryQueryResp;
 import com.haoyu.knowlagebase.resp.PageResp;
-import com.haoyu.knowlagebase.service.EbookService;
+import com.haoyu.knowlagebase.service.CategoryService;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -16,30 +16,30 @@ import javax.validation.Valid;
  * @date 2021/7/14 23:39
  */
 @RestController
-@RequestMapping("/ebook")
-public class EbookController {
+@RequestMapping("/category")
+public class CategoryController {
     @Resource
-    private EbookService ebookService;
+    private CategoryService categoryService;
 
     @GetMapping("/list")
-    public CommonResp list(@Valid EbookQueryReq req){
-        CommonResp<PageResp<EbookQueryResp>> resp = new CommonResp<>();
-        PageResp<EbookQueryResp> list = ebookService.list(req);
+    public CommonResp list(@Valid CategoryQueryReq req){
+        CommonResp<PageResp<CategoryQueryResp>> resp = new CommonResp<>();
+        PageResp<CategoryQueryResp> list = categoryService.list(req);
         resp.setContent(list);
         return resp;
     }
 
     @PostMapping("/save")
-    public CommonResp save(@Valid @RequestBody EbookSaveReq req){
+    public CommonResp save(@Valid @RequestBody CategorySaveReq req){
         CommonResp resp = new CommonResp<>();
-         ebookService.save(req);
+         categoryService.save(req);
         return resp;
     }
 
     @DeleteMapping("/delete/{id}")
     public CommonResp delete(@PathVariable Long id) {
         CommonResp resp = new CommonResp<>();
-        ebookService.delete(id);
+        categoryService.delete(id);
         return resp;
     }
 

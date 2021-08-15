@@ -7,7 +7,7 @@ import com.haoyu.knowlagebase.domain.EbookExample;
 import com.haoyu.knowlagebase.mapper.EbookMapper;
 import com.haoyu.knowlagebase.req.EbookQueryReq;
 import com.haoyu.knowlagebase.req.EbookSaveReq;
-import com.haoyu.knowlagebase.resp.EbookQuerResp;
+import com.haoyu.knowlagebase.resp.EbookQueryResp;
 import com.haoyu.knowlagebase.resp.PageResp;
 import com.haoyu.knowlagebase.util.CopyUtil;
 import com.haoyu.knowlagebase.util.SnowFlake;
@@ -33,7 +33,7 @@ public class EbookService {
     @Resource
     private SnowFlake snowFlake;
 
-    public PageResp<EbookQuerResp> list(EbookQueryReq req){
+    public PageResp<EbookQueryResp> list(EbookQueryReq req){
         EbookExample ebookExample = new EbookExample();
         EbookExample.Criteria criteria = ebookExample.createCriteria();
         if(!ObjectUtils.isEmpty(req.getName())){//动态sql写法
@@ -56,8 +56,8 @@ public class EbookService {
 
 
         //列表复制
-        List<EbookQuerResp> list = CopyUtil.copyList(ebookList, EbookQuerResp.class);
-        PageResp<EbookQuerResp> pageResp = new PageResp<>();
+        List<EbookQueryResp> list = CopyUtil.copyList(ebookList, EbookQueryResp.class);
+        PageResp<EbookQueryResp> pageResp = new PageResp<>();
         pageResp.setTotal(pageInfo.getTotal());
         pageResp.setList(list);
         return pageResp;
