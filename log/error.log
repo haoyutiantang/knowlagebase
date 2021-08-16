@@ -1,5 +1,5 @@
-2021-08-15 21:15:28.436 ERROR org.springframework.boot.SpringApplication        :856  [32m                  [0;39m Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'categoryController' defined in file [E:\code\java\knowlagebase\target\classes\com\haoyu\knowlagebase\controller\CategoryController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.haoyu.knowlagebase.controller.CategoryController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@59c9cf85]
+2021-08-16 21:21:30.969 ERROR org.springframework.boot.SpringApplication        :856  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ebookController' defined in file [E:\code\java\knowlagebase\target\classes\com\haoyu\knowlagebase\controller\EbookController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.haoyu.knowlagebase.controller.EbookController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@2fd6581a]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:586)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
@@ -20,7 +20,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
-Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.haoyu.knowlagebase.controller.CategoryController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@59c9cf85]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.haoyu.knowlagebase.controller.EbookController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@2fd6581a]
 	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:737)
 	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:669)
 	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:366)
@@ -29,13 +29,13 @@ Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.haoy
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1100)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:583)
 	... 19 common frames omitted
-Caused by: java.lang.NoClassDefFoundError: Lcom/haoyu/knowlagebase/service/CategoryService;
+Caused by: java.lang.NoClassDefFoundError: Lcom/haoyu/knowlagebase/service/EbookService;
 	at java.lang.Class.getDeclaredFields0(Native Method)
 	at java.lang.Class.privateGetDeclaredFields(Class.java:2583)
 	at java.lang.Class.getDeclaredFields(Class.java:1916)
 	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:732)
 	... 25 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.haoyu.knowlagebase.service.CategoryService
+Caused by: java.lang.ClassNotFoundException: com.haoyu.knowlagebase.service.EbookService
 	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)

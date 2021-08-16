@@ -39,6 +39,9 @@ public class EbookService {
         if(!ObjectUtils.isEmpty(req.getName())){//动态sql写法
             criteria.andNameLike("%"+req.getName()+"%");
         }
+        if(!ObjectUtils.isEmpty(req.getCategoryId2())){//动态sql写法
+            criteria.andCategory2IdEqualTo(req.getCategoryId2());
+        }
         //模糊匹配
         PageHelper.startPage(req.getPage(),req.getSize());//只对第一个遇到的sql起作用  1.页码 2.每页的条数
         List<Ebook> ebookList = ebookMapper.selectByExample(ebookExample);
