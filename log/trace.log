@@ -2805,3 +2805,747 @@
 2021-08-19 06:41:12.773 DEBUG c.h.knowlagebase.mapper.DocMapper.selectByExample :137  [32m                  [0;39m <==      Total: 3
 2021-08-19 06:41:12.773 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :82   [32m                  [0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":83287679055302656,"name":"test","parent":2,"sort":1}],"success":true}
 2021-08-19 06:41:12.773 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :83   [32m                  [0;39m ------------- 结束 耗时：3 ms -------------
+2021-08-19 06:46:17.325 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :46   [32m                  [0;39m ------------- 开始 -------------
+2021-08-19 06:46:17.325 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :47   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2021-08-19 06:46:17.325 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :48   [32m                  [0;39m 类名方法: com.haoyu.knowlagebase.controller.CategoryController.all
+2021-08-19 06:46:17.325 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :49   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-08-19 06:46:17.325 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :70   [32m                  [0;39m 请求参数: []
+2021-08-19 06:46:17.326 DEBUG c.h.k.mapper.CategoryMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-08-19 06:46:17.326 DEBUG c.h.k.mapper.CategoryMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 
+2021-08-19 06:46:17.327 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-08-19 06:46:17.327 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 82110017238601728, 100, test2, 1
+2021-08-19 06:46:17.327 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-08-19 06:46:17.327 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-08-19 06:46:17.327 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-08-19 06:46:17.327 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-08-19 06:46:17.327 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-08-19 06:46:17.328 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2021-08-19 06:46:17.328 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-08-19 06:46:17.328 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-08-19 06:46:17.328 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-08-19 06:46:17.328 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-08-19 06:46:17.328 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-08-19 06:46:17.328 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2021-08-19 06:46:17.329 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-08-19 06:46:17.329 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2021-08-19 06:46:17.329 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2021-08-19 06:46:17.329 DEBUG c.h.k.mapper.CategoryMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 16
+2021-08-19 06:46:17.330 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :82   [32m                  [0;39m 返回结果: {"content":[{"id":82110017238601728,"name":"test2","parent":100,"sort":1},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2021-08-19 06:46:17.330 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :83   [32m                  [0;39m ------------- 结束 耗时：5 ms -------------
+2021-08-19 06:46:18.118 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :46   [32m                  [0;39m ------------- 开始 -------------
+2021-08-19 06:46:18.118 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :47   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2021-08-19 06:46:18.118 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :48   [32m                  [0;39m 类名方法: com.haoyu.knowlagebase.controller.CategoryController.all
+2021-08-19 06:46:18.118 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :49   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-08-19 06:46:18.118 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :70   [32m                  [0;39m 请求参数: []
+2021-08-19 06:46:18.119 DEBUG c.h.k.mapper.CategoryMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-08-19 06:46:18.119 DEBUG c.h.k.mapper.CategoryMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 
+2021-08-19 06:46:18.119 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-08-19 06:46:18.119 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 82110017238601728, 100, test2, 1
+2021-08-19 06:46:18.120 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-08-19 06:46:18.120 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-08-19 06:46:18.120 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-08-19 06:46:18.120 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-08-19 06:46:18.120 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-08-19 06:46:18.120 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2021-08-19 06:46:18.120 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-08-19 06:46:18.120 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-08-19 06:46:18.121 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-08-19 06:46:18.121 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-08-19 06:46:18.121 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-08-19 06:46:18.121 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2021-08-19 06:46:18.121 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-08-19 06:46:18.121 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2021-08-19 06:46:18.121 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2021-08-19 06:46:18.122 DEBUG c.h.k.mapper.CategoryMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 16
+2021-08-19 06:46:18.122 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :82   [32m                  [0;39m 返回结果: {"content":[{"id":82110017238601728,"name":"test2","parent":100,"sort":1},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2021-08-19 06:46:18.122 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :83   [32m                  [0;39m ------------- 结束 耗时：4 ms -------------
+2021-08-19 06:46:18.144 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :46   [32m                  [0;39m ------------- 开始 -------------
+2021-08-19 06:46:18.144 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :47   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2021-08-19 06:46:18.144 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :48   [32m                  [0;39m 类名方法: com.haoyu.knowlagebase.controller.EbookController.list
+2021-08-19 06:46:18.144 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :49   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-08-19 06:46:18.144 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :70   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-08-19 06:46:18.145 DEBUG c.h.k.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2021-08-19 06:46:18.145 DEBUG c.h.k.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m ==> Parameters: 
+2021-08-19 06:46:18.146 TRACE c.h.k.mapper.EbookMapper.selectByExample_COUNT    :143  [32m                  [0;39m <==    Columns: count(0)
+2021-08-19 06:46:18.146 TRACE c.h.k.mapper.EbookMapper.selectByExample_COUNT    :143  [32m                  [0;39m <==        Row: 6
+2021-08-19 06:46:18.146 DEBUG c.h.k.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m <==      Total: 1
+2021-08-19 06:46:18.146 DEBUG c.h.k.mapper.EbookMapper.selectByExample          :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2021-08-19 06:46:18.147 DEBUG c.h.k.mapper.EbookMapper.selectByExample          :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-08-19 06:46:18.147 TRACE c.h.k.mapper.EbookMapper.selectByExample          :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2021-08-19 06:46:18.147 TRACE c.h.k.mapper.EbookMapper.selectByExample          :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, 200, 201, 零基础入门 Java 开发，企业级应用开发最佳首选框架, /image/cover2.png, 0, 0, 0
+2021-08-19 06:46:18.147 TRACE c.h.k.mapper.EbookMapper.selectByExample          :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, 100, 101, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, /image/cover1.png, 0, 0, 0
+2021-08-19 06:46:18.148 TRACE c.h.k.mapper.EbookMapper.selectByExample          :143  [32m                  [0;39m <==        Row: 3, Python 入门教程, 300, 301, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2021-08-19 06:46:18.148 TRACE c.h.k.mapper.EbookMapper.selectByExample          :143  [32m                  [0;39m <==        Row: 4, Mysql 入门教程, 400, 401, 零基础入门 Mysql 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2021-08-19 06:46:18.148 TRACE c.h.k.mapper.EbookMapper.selectByExample          :143  [32m                  [0;39m <==        Row: 5, Oracle 入门教程, 400, 401, 零基础入门 Oracle 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2021-08-19 06:46:18.148 TRACE c.h.k.mapper.EbookMapper.selectByExample          :143  [32m                  [0;39m <==        Row: 83286321791111168, 1, 200, 202, 1, 1, null, null, null
+2021-08-19 06:46:18.148 DEBUG c.h.k.mapper.EbookMapper.selectByExample          :137  [32m                  [0;39m <==      Total: 6
+2021-08-19 06:46:18.148 INFO  com.haoyu.knowlagebase.service.EbookService       :49   [32m                  [0;39m 总行数:6
+2021-08-19 06:46:18.148 INFO  com.haoyu.knowlagebase.service.EbookService       :50   [32m                  [0;39m 总页数:1
+2021-08-19 06:46:18.149 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :82   [32m                  [0;39m 返回结果: {"content":{"list":[{"category1Id":200,"category2Id":201,"cover":"/image/cover2.png","description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","docCount":0,"id":1,"name":"Spring Boot 入门教程","viewCount":0,"voteCount":0},{"category1Id":100,"category2Id":101,"cover":"/image/cover1.png","description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","docCount":0,"id":2,"name":"Vue 入门教程","viewCount":0,"voteCount":0},{"category1Id":300,"category2Id":301,"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","docCount":0,"id":3,"name":"Python 入门教程","viewCount":0,"voteCount":0},{"category1Id":400,"category2Id":401,"description":"零基础入门 Mysql 开发，企业级应用开发最佳首选框架","docCount":0,"id":4,"name":"Mysql 入门教程","viewCount":0,"voteCount":0},{"category1Id":400,"category2Id":401,"description":"零基础入门 Oracle 开发，企业级应用开发最佳首选框架","docCount":0,"id":5,"name":"Oracle 入门教程","viewCount":0,"voteCount":0},{"category1Id":200,"category2Id":202,"cover":"1","description":"1","id":83286321791111168,"name":"1"}],"total":6},"success":true}
+2021-08-19 06:46:18.149 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :83   [32m                  [0;39m ------------- 结束 耗时：5 ms -------------
+2021-08-19 06:47:08.942 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :46   [32m                  [0;39m ------------- 开始 -------------
+2021-08-19 06:47:08.942 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :47   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/doc/all GET
+2021-08-19 06:47:08.943 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :48   [32m                  [0;39m 类名方法: com.haoyu.knowlagebase.controller.DocController.all
+2021-08-19 06:47:08.943 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :49   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-08-19 06:47:08.943 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :70   [32m                  [0;39m 请求参数: []
+2021-08-19 06:47:08.943 DEBUG c.h.knowlagebase.mapper.DocMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2021-08-19 06:47:08.944 DEBUG c.h.knowlagebase.mapper.DocMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2021-08-19 06:47:08.944 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2021-08-19 06:47:08.945 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2021-08-19 06:47:08.945 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2021-08-19 06:47:08.945 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 83287679055302656, 1, 2, test, 1, null, null
+2021-08-19 06:47:08.945 DEBUG c.h.knowlagebase.mapper.DocMapper.selectByExample :137  [32m                  [0;39m <==      Total: 3
+2021-08-19 06:47:08.945 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :82   [32m                  [0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":83287679055302656,"name":"test","parent":2,"sort":1}],"success":true}
+2021-08-19 06:47:08.946 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :83   [32m                  [0;39m ------------- 结束 耗时：4 ms -------------
+2021-08-19 06:47:22.554 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :46   [32m                  [0;39m ------------- 开始 -------------
+2021-08-19 06:47:22.554 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :47   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/doc/all GET
+2021-08-19 06:47:22.555 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :48   [32m                  [0;39m 类名方法: com.haoyu.knowlagebase.controller.DocController.all
+2021-08-19 06:47:22.555 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :49   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-08-19 06:47:22.555 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :70   [32m                  [0;39m 请求参数: []
+2021-08-19 06:47:22.556 DEBUG c.h.knowlagebase.mapper.DocMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2021-08-19 06:47:22.557 DEBUG c.h.knowlagebase.mapper.DocMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2021-08-19 06:47:22.558 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2021-08-19 06:47:22.558 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2021-08-19 06:47:22.558 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2021-08-19 06:47:22.558 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 83287679055302656, 1, 2, test, 1, null, null
+2021-08-19 06:47:22.559 DEBUG c.h.knowlagebase.mapper.DocMapper.selectByExample :137  [32m                  [0;39m <==      Total: 3
+2021-08-19 06:47:22.559 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :82   [32m                  [0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":83287679055302656,"name":"test","parent":2,"sort":1}],"success":true}
+2021-08-19 06:47:22.559 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :83   [32m                  [0;39m ------------- 结束 耗时：5 ms -------------
+2021-08-19 06:47:23.340 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :46   [32m                  [0;39m ------------- 开始 -------------
+2021-08-19 06:47:23.340 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :47   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/doc/all GET
+2021-08-19 06:47:23.340 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :48   [32m                  [0;39m 类名方法: com.haoyu.knowlagebase.controller.DocController.all
+2021-08-19 06:47:23.340 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :49   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-08-19 06:47:23.341 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :70   [32m                  [0;39m 请求参数: []
+2021-08-19 06:47:23.342 DEBUG c.h.knowlagebase.mapper.DocMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2021-08-19 06:47:23.342 DEBUG c.h.knowlagebase.mapper.DocMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2021-08-19 06:47:23.343 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2021-08-19 06:47:23.343 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2021-08-19 06:47:23.343 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2021-08-19 06:47:23.343 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 83287679055302656, 1, 2, test, 1, null, null
+2021-08-19 06:47:23.344 DEBUG c.h.knowlagebase.mapper.DocMapper.selectByExample :137  [32m                  [0;39m <==      Total: 3
+2021-08-19 06:47:23.344 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :82   [32m                  [0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":83287679055302656,"name":"test","parent":2,"sort":1}],"success":true}
+2021-08-19 06:47:23.344 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :83   [32m                  [0;39m ------------- 结束 耗时：4 ms -------------
+2021-08-19 06:47:24.052 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :46   [32m                  [0;39m ------------- 开始 -------------
+2021-08-19 06:47:24.052 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :47   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/doc/all GET
+2021-08-19 06:47:24.052 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :48   [32m                  [0;39m 类名方法: com.haoyu.knowlagebase.controller.DocController.all
+2021-08-19 06:47:24.053 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :49   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-08-19 06:47:24.053 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :70   [32m                  [0;39m 请求参数: []
+2021-08-19 06:47:24.053 DEBUG c.h.knowlagebase.mapper.DocMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2021-08-19 06:47:24.053 DEBUG c.h.knowlagebase.mapper.DocMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2021-08-19 06:47:24.054 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2021-08-19 06:47:24.054 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2021-08-19 06:47:24.055 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2021-08-19 06:47:24.055 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 83287679055302656, 1, 2, test, 1, null, null
+2021-08-19 06:47:24.055 DEBUG c.h.knowlagebase.mapper.DocMapper.selectByExample :137  [32m                  [0;39m <==      Total: 3
+2021-08-19 06:47:24.055 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :82   [32m                  [0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":83287679055302656,"name":"test","parent":2,"sort":1}],"success":true}
+2021-08-19 06:47:24.055 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :83   [32m                  [0;39m ------------- 结束 耗时：3 ms -------------
+2021-08-19 06:47:52.534 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :46   [32m                  [0;39m ------------- 开始 -------------
+2021-08-19 06:47:52.535 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :47   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/doc/save POST
+2021-08-19 06:47:52.535 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :48   [32m                  [0;39m 类名方法: com.haoyu.knowlagebase.controller.DocController.save
+2021-08-19 06:47:52.535 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :49   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-08-19 06:47:52.537 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :70   [32m                  [0;39m 请求参数: [{"ebookId":1,"id":83287679055302656,"name":"test","parent":2,"sort":2}]
+2021-08-19 06:47:52.540 DEBUG c.h.k.mapper.DocMapper.updateByPrimaryKey         :137  [32m                  [0;39m ==>  Preparing: update doc set ebook_id = ?, parent = ?, `name` = ?, sort = ?, view_count = ?, vote_count = ? where id = ?
+2021-08-19 06:47:52.540 DEBUG c.h.k.mapper.DocMapper.updateByPrimaryKey         :137  [32m                  [0;39m ==> Parameters: 1(Long), 2(Long), test(String), 2(Integer), null, null, 83287679055302656(Long)
+2021-08-19 06:47:52.548 DEBUG c.h.k.mapper.DocMapper.updateByPrimaryKey         :137  [32m                  [0;39m <==    Updates: 1
+2021-08-19 06:47:52.549 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :82   [32m                  [0;39m 返回结果: {"success":true}
+2021-08-19 06:47:52.549 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :83   [32m                  [0;39m ------------- 结束 耗时：15 ms -------------
+2021-08-19 06:47:52.561 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :46   [32m                  [0;39m ------------- 开始 -------------
+2021-08-19 06:47:52.561 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :47   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/doc/all GET
+2021-08-19 06:47:52.561 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :48   [32m                  [0;39m 类名方法: com.haoyu.knowlagebase.controller.DocController.all
+2021-08-19 06:47:52.561 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :49   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-08-19 06:47:52.561 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :70   [32m                  [0;39m 请求参数: []
+2021-08-19 06:47:52.562 DEBUG c.h.knowlagebase.mapper.DocMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2021-08-19 06:47:52.562 DEBUG c.h.knowlagebase.mapper.DocMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2021-08-19 06:47:52.563 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2021-08-19 06:47:52.563 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2021-08-19 06:47:52.563 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 0, 0
+2021-08-19 06:47:52.563 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 83287679055302656, 1, 2, test, 2, null, null
+2021-08-19 06:47:52.563 DEBUG c.h.knowlagebase.mapper.DocMapper.selectByExample :137  [32m                  [0;39m <==      Total: 3
+2021-08-19 06:47:52.563 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :82   [32m                  [0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":83287679055302656,"name":"test","parent":2,"sort":2}],"success":true}
+2021-08-19 06:47:52.563 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :83   [32m                  [0;39m ------------- 结束 耗时：2 ms -------------
+2021-08-19 06:48:11.902 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :46   [32m                  [0;39m ------------- 开始 -------------
+2021-08-19 06:48:11.902 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :47   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/doc/save POST
+2021-08-19 06:48:11.903 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :48   [32m                  [0;39m 类名方法: com.haoyu.knowlagebase.controller.DocController.save
+2021-08-19 06:48:11.903 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :49   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-08-19 06:48:11.903 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :70   [32m                  [0;39m 请求参数: [{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":2,"viewCount":0,"voteCount":0}]
+2021-08-19 06:48:11.903 DEBUG c.h.k.mapper.DocMapper.updateByPrimaryKey         :137  [32m                  [0;39m ==>  Preparing: update doc set ebook_id = ?, parent = ?, `name` = ?, sort = ?, view_count = ?, vote_count = ? where id = ?
+2021-08-19 06:48:11.904 DEBUG c.h.k.mapper.DocMapper.updateByPrimaryKey         :137  [32m                  [0;39m ==> Parameters: 1(Long), 1(Long), 文档1.1(String), 2(Integer), 0(Integer), 0(Integer), 2(Long)
+2021-08-19 06:48:11.948 DEBUG c.h.k.mapper.DocMapper.updateByPrimaryKey         :137  [32m                  [0;39m <==    Updates: 1
+2021-08-19 06:48:11.948 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :82   [32m                  [0;39m 返回结果: {"success":true}
+2021-08-19 06:48:11.948 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :83   [32m                  [0;39m ------------- 结束 耗时：46 ms -------------
+2021-08-19 06:48:11.961 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :46   [32m                  [0;39m ------------- 开始 -------------
+2021-08-19 06:48:11.961 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :47   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/doc/all GET
+2021-08-19 06:48:11.961 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :48   [32m                  [0;39m 类名方法: com.haoyu.knowlagebase.controller.DocController.all
+2021-08-19 06:48:11.961 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :49   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-08-19 06:48:11.962 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :70   [32m                  [0;39m 请求参数: []
+2021-08-19 06:48:11.962 DEBUG c.h.knowlagebase.mapper.DocMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2021-08-19 06:48:11.963 DEBUG c.h.knowlagebase.mapper.DocMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2021-08-19 06:48:11.963 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2021-08-19 06:48:11.963 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2021-08-19 06:48:11.964 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 2, 1, 1, 文档1.1, 2, 0, 0
+2021-08-19 06:48:11.964 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 83287679055302656, 1, 2, test, 2, null, null
+2021-08-19 06:48:11.964 DEBUG c.h.knowlagebase.mapper.DocMapper.selectByExample :137  [32m                  [0;39m <==      Total: 3
+2021-08-19 06:48:11.964 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :82   [32m                  [0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":83287679055302656,"name":"test","parent":2,"sort":2}],"success":true}
+2021-08-19 06:48:11.964 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :83   [32m                  [0;39m ------------- 结束 耗时：3 ms -------------
+2021-08-19 06:48:26.907 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :46   [32m                  [0;39m ------------- 开始 -------------
+2021-08-19 06:48:26.907 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :47   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/doc/all GET
+2021-08-19 06:48:26.907 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :48   [32m                  [0;39m 类名方法: com.haoyu.knowlagebase.controller.DocController.all
+2021-08-19 06:48:26.907 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :49   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-08-19 06:48:26.907 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :70   [32m                  [0;39m 请求参数: []
+2021-08-19 06:48:26.908 DEBUG c.h.knowlagebase.mapper.DocMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2021-08-19 06:48:26.909 DEBUG c.h.knowlagebase.mapper.DocMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2021-08-19 06:48:26.909 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2021-08-19 06:48:26.909 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2021-08-19 06:48:26.910 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 2, 1, 1, 文档1.1, 2, 0, 0
+2021-08-19 06:48:26.910 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 83287679055302656, 1, 2, test, 2, null, null
+2021-08-19 06:48:26.910 DEBUG c.h.knowlagebase.mapper.DocMapper.selectByExample :137  [32m                  [0;39m <==      Total: 3
+2021-08-19 06:48:26.910 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :82   [32m                  [0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":83287679055302656,"name":"test","parent":2,"sort":2}],"success":true}
+2021-08-19 06:48:26.910 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :83   [32m                  [0;39m ------------- 结束 耗时：3 ms -------------
+2021-08-19 06:48:59.869 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :46   [32m                  [0;39m ------------- 开始 -------------
+2021-08-19 06:48:59.870 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :47   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/doc/all GET
+2021-08-19 06:48:59.870 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :48   [32m                  [0;39m 类名方法: com.haoyu.knowlagebase.controller.DocController.all
+2021-08-19 06:48:59.870 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :49   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-08-19 06:48:59.870 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :70   [32m                  [0;39m 请求参数: []
+2021-08-19 06:48:59.870 DEBUG c.h.knowlagebase.mapper.DocMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2021-08-19 06:48:59.870 DEBUG c.h.knowlagebase.mapper.DocMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2021-08-19 06:48:59.871 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2021-08-19 06:48:59.871 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2021-08-19 06:48:59.872 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 2, 1, 1, 文档1.1, 2, 0, 0
+2021-08-19 06:48:59.872 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 83287679055302656, 1, 2, test, 2, null, null
+2021-08-19 06:48:59.872 DEBUG c.h.knowlagebase.mapper.DocMapper.selectByExample :137  [32m                  [0;39m <==      Total: 3
+2021-08-19 06:48:59.872 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :82   [32m                  [0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":83287679055302656,"name":"test","parent":2,"sort":2}],"success":true}
+2021-08-19 06:48:59.872 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :83   [32m                  [0;39m ------------- 结束 耗时：3 ms -------------
+2021-08-19 06:49:01.196 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :46   [32m                  [0;39m ------------- 开始 -------------
+2021-08-19 06:49:01.196 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :47   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/doc/all GET
+2021-08-19 06:49:01.196 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :48   [32m                  [0;39m 类名方法: com.haoyu.knowlagebase.controller.DocController.all
+2021-08-19 06:49:01.196 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :49   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-08-19 06:49:01.197 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :70   [32m                  [0;39m 请求参数: []
+2021-08-19 06:49:01.197 DEBUG c.h.knowlagebase.mapper.DocMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2021-08-19 06:49:01.197 DEBUG c.h.knowlagebase.mapper.DocMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2021-08-19 06:49:01.198 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2021-08-19 06:49:01.198 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2021-08-19 06:49:01.198 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 2, 1, 1, 文档1.1, 2, 0, 0
+2021-08-19 06:49:01.198 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 83287679055302656, 1, 2, test, 2, null, null
+2021-08-19 06:49:01.198 DEBUG c.h.knowlagebase.mapper.DocMapper.selectByExample :137  [32m                  [0;39m <==      Total: 3
+2021-08-19 06:49:01.199 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :82   [32m                  [0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":83287679055302656,"name":"test","parent":2,"sort":2}],"success":true}
+2021-08-19 06:49:01.199 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :83   [32m                  [0;39m ------------- 结束 耗时：3 ms -------------
+2021-08-19 06:49:05.846 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :46   [32m                  [0;39m ------------- 开始 -------------
+2021-08-19 06:49:05.846 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :47   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/doc/save POST
+2021-08-19 06:49:05.846 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :48   [32m                  [0;39m 类名方法: com.haoyu.knowlagebase.controller.DocController.save
+2021-08-19 06:49:05.846 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :49   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-08-19 06:49:05.846 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :70   [32m                  [0;39m 请求参数: [{"ebookId":1,"id":83287679055302656,"name":"test","parent":2,"sort":3}]
+2021-08-19 06:49:05.847 DEBUG c.h.k.mapper.DocMapper.updateByPrimaryKey         :137  [32m                  [0;39m ==>  Preparing: update doc set ebook_id = ?, parent = ?, `name` = ?, sort = ?, view_count = ?, vote_count = ? where id = ?
+2021-08-19 06:49:05.847 DEBUG c.h.k.mapper.DocMapper.updateByPrimaryKey         :137  [32m                  [0;39m ==> Parameters: 1(Long), 2(Long), test(String), 3(Integer), null, null, 83287679055302656(Long)
+2021-08-19 06:49:05.856 DEBUG c.h.k.mapper.DocMapper.updateByPrimaryKey         :137  [32m                  [0;39m <==    Updates: 1
+2021-08-19 06:49:05.856 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :82   [32m                  [0;39m 返回结果: {"success":true}
+2021-08-19 06:49:05.856 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :83   [32m                  [0;39m ------------- 结束 耗时：10 ms -------------
+2021-08-19 06:49:05.866 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :46   [32m                  [0;39m ------------- 开始 -------------
+2021-08-19 06:49:05.866 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :47   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/doc/all GET
+2021-08-19 06:49:05.867 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :48   [32m                  [0;39m 类名方法: com.haoyu.knowlagebase.controller.DocController.all
+2021-08-19 06:49:05.867 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :49   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-08-19 06:49:05.867 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :70   [32m                  [0;39m 请求参数: []
+2021-08-19 06:49:05.867 DEBUG c.h.knowlagebase.mapper.DocMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2021-08-19 06:49:05.867 DEBUG c.h.knowlagebase.mapper.DocMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2021-08-19 06:49:05.868 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2021-08-19 06:49:05.868 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2021-08-19 06:49:05.868 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 2, 1, 1, 文档1.1, 2, 0, 0
+2021-08-19 06:49:05.869 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 83287679055302656, 1, 2, test, 3, null, null
+2021-08-19 06:49:05.869 DEBUG c.h.knowlagebase.mapper.DocMapper.selectByExample :137  [32m                  [0;39m <==      Total: 3
+2021-08-19 06:49:05.869 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :82   [32m                  [0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":83287679055302656,"name":"test","parent":2,"sort":3}],"success":true}
+2021-08-19 06:49:05.869 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :83   [32m                  [0;39m ------------- 结束 耗时：3 ms -------------
+2021-08-19 06:52:01.053 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-19 06:52:01.054 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-5 - Shutdown initiated...
+2021-08-19 06:52:01.059 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-5 - Shutdown completed.
+2021-08-19 06:52:01.316 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :55   [32m                  [0;39m Starting KnowlagebaseApplication using Java 1.8.0_261 on DESKTOP-CTIIJC1 with PID 13764 (E:\code\java\knowlagebase\target\classes started by MECHREVO in E:\code\java\knowlagebase)
+2021-08-19 06:52:01.316 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-08-19 06:52:01.520 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-08-19 06:52:01.521 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-08-19 06:52:01.521 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-08-19 06:52:01.521 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-08-19 06:52:01.531 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-08-19 06:52:01.531 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 213 ms
+2021-08-19 06:52:01.589 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:596  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'docController': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.haoyu.knowlagebase.controller.DocController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@1d44045a]
+2021-08-19 06:52:01.589 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2021-08-19 06:52:01.593 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-08-19 06:52:01.614 ERROR org.springframework.boot.SpringApplication        :856  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'docController': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.haoyu.knowlagebase.controller.DocController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@1d44045a]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:289)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1286)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1203)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:925)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at com.haoyu.knowlagebase.config.KnowlagebaseApplication.main(KnowlagebaseApplication.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.haoyu.knowlagebase.controller.DocController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@1d44045a]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:267)
+	... 22 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/haoyu/knowlagebase/req/DocSaveReq
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 24 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.haoyu.knowlagebase.req.DocSaveReq
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 28 common frames omitted
+2021-08-19 06:52:14.277 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :55   [32m                  [0;39m Starting KnowlagebaseApplication using Java 1.8.0_261 on DESKTOP-CTIIJC1 with PID 13764 (E:\code\java\knowlagebase\target\classes started by MECHREVO in E:\code\java\knowlagebase)
+2021-08-19 06:52:14.277 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-08-19 06:52:14.461 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-08-19 06:52:14.461 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-08-19 06:52:14.461 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-08-19 06:52:14.461 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-08-19 06:52:14.472 INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-08-19 06:52:14.473 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 195 ms
+2021-08-19 06:52:14.606 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-19 06:52:14.723 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-08-19 06:52:14.729 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-08-19 06:52:14.731 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-08-19 06:52:14.733 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :61   [32m                  [0;39m Started KnowlagebaseApplication in 0.474 seconds (JVM running for 11990.385)
+2021-08-19 06:52:14.734 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-08-19 06:52:14.734 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :24   [32m                  [0;39m 启动成功！
+2021-08-19 06:52:14.734 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :25   [32m                  [0;39m 地址：	http://127.0.0.1:8880
+2021-08-19 06:53:27.311 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-19 06:53:27.429 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :55   [32m                  [0;39m Starting KnowlagebaseApplication using Java 1.8.0_261 on DESKTOP-CTIIJC1 with PID 13764 (E:\code\java\knowlagebase\target\classes started by MECHREVO in E:\code\java\knowlagebase)
+2021-08-19 06:53:27.430 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-08-19 06:53:27.593 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-08-19 06:53:27.594 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-08-19 06:53:27.594 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-08-19 06:53:27.594 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-08-19 06:53:27.604 INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-08-19 06:53:27.604 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 173 ms
+2021-08-19 06:53:27.726 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-19 06:53:27.829 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-08-19 06:53:27.833 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-08-19 06:53:27.835 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-08-19 06:53:27.837 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :61   [32m                  [0;39m Started KnowlagebaseApplication in 0.423 seconds (JVM running for 12063.489)
+2021-08-19 06:53:27.838 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-08-19 06:53:27.838 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :24   [32m                  [0;39m 启动成功！
+2021-08-19 06:53:27.838 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :25   [32m                  [0;39m 地址：	http://127.0.0.1:8880
+2021-08-19 06:55:23.577 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-19 06:55:23.681 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :55   [32m                  [0;39m Starting KnowlagebaseApplication using Java 1.8.0_261 on DESKTOP-CTIIJC1 with PID 13764 (E:\code\java\knowlagebase\target\classes started by MECHREVO in E:\code\java\knowlagebase)
+2021-08-19 06:55:23.682 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-08-19 06:55:23.841 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-08-19 06:55:23.841 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-08-19 06:55:23.841 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-08-19 06:55:23.842 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-08-19 06:55:23.853 INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-08-19 06:55:23.853 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 170 ms
+2021-08-19 06:55:23.977 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-19 06:55:24.083 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-08-19 06:55:24.089 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-08-19 06:55:24.090 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-08-19 06:55:24.093 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :61   [32m                  [0;39m Started KnowlagebaseApplication in 0.427 seconds (JVM running for 12179.744)
+2021-08-19 06:55:24.093 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-08-19 06:55:24.093 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :24   [32m                  [0;39m 启动成功！
+2021-08-19 06:55:24.094 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :25   [32m                  [0;39m 地址：	http://127.0.0.1:8880
+2021-08-19 06:56:57.038 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-19 06:56:57.132 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :55   [32m                  [0;39m Starting KnowlagebaseApplication using Java 1.8.0_261 on DESKTOP-CTIIJC1 with PID 13764 (E:\code\java\knowlagebase\target\classes started by MECHREVO in E:\code\java\knowlagebase)
+2021-08-19 06:56:57.132 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-08-19 06:56:57.299 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-08-19 06:56:57.299 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-08-19 06:56:57.299 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-08-19 06:56:57.299 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-08-19 06:56:57.309 INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-08-19 06:56:57.309 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 175 ms
+2021-08-19 06:56:57.431 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-19 06:56:57.537 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-08-19 06:56:57.544 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-08-19 06:56:57.546 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-08-19 06:56:57.548 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :61   [32m                  [0;39m Started KnowlagebaseApplication in 0.435 seconds (JVM running for 12273.2)
+2021-08-19 06:56:57.549 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-08-19 06:56:57.549 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :24   [32m                  [0;39m 启动成功！
+2021-08-19 06:56:57.549 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :25   [32m                  [0;39m 地址：	http://127.0.0.1:8880
+2021-08-19 06:57:15.703 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-19 06:57:15.846 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :55   [32m                  [0;39m Starting KnowlagebaseApplication using Java 1.8.0_261 on DESKTOP-CTIIJC1 with PID 13764 (E:\code\java\knowlagebase\target\classes started by MECHREVO in E:\code\java\knowlagebase)
+2021-08-19 06:57:15.846 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-08-19 06:57:15.995 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-08-19 06:57:15.996 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-08-19 06:57:15.996 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-08-19 06:57:15.996 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-08-19 06:57:16.006 INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-08-19 06:57:16.006 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 158 ms
+2021-08-19 06:57:16.132 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-19 06:57:16.238 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-08-19 06:57:16.243 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-08-19 06:57:16.250 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-08-19 06:57:16.252 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :61   [32m                  [0;39m Started KnowlagebaseApplication in 0.423 seconds (JVM running for 12291.904)
+2021-08-19 06:57:16.253 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-08-19 06:57:16.253 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :24   [32m                  [0;39m 启动成功！
+2021-08-19 06:57:16.253 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :25   [32m                  [0;39m 地址：	http://127.0.0.1:8880
+2021-08-19 06:58:35.876 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-19 06:58:35.975 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :55   [32m                  [0;39m Starting KnowlagebaseApplication using Java 1.8.0_261 on DESKTOP-CTIIJC1 with PID 13764 (E:\code\java\knowlagebase\target\classes started by MECHREVO in E:\code\java\knowlagebase)
+2021-08-19 06:58:35.975 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-08-19 06:58:36.140 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-08-19 06:58:36.140 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-08-19 06:58:36.140 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-08-19 06:58:36.141 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-08-19 06:58:36.150 INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-08-19 06:58:36.150 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 173 ms
+2021-08-19 06:58:36.282 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-19 06:58:36.387 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-08-19 06:58:36.392 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-08-19 06:58:36.394 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-08-19 06:58:36.397 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :61   [32m                  [0;39m Started KnowlagebaseApplication in 0.44 seconds (JVM running for 12372.049)
+2021-08-19 06:58:36.397 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-08-19 06:58:36.398 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :24   [32m                  [0;39m 启动成功！
+2021-08-19 06:58:36.398 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :25   [32m                  [0;39m 地址：	http://127.0.0.1:8880
+2021-08-19 07:00:24.119 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-19 07:00:24.214 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :55   [32m                  [0;39m Starting KnowlagebaseApplication using Java 1.8.0_261 on DESKTOP-CTIIJC1 with PID 13764 (E:\code\java\knowlagebase\target\classes started by MECHREVO in E:\code\java\knowlagebase)
+2021-08-19 07:00:24.214 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-08-19 07:00:24.385 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-08-19 07:00:24.385 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-08-19 07:00:24.385 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-08-19 07:00:24.385 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-08-19 07:00:24.395 INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-08-19 07:00:24.396 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 181 ms
+2021-08-19 07:00:24.529 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-19 07:00:24.635 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-08-19 07:00:24.640 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-08-19 07:00:24.643 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-08-19 07:00:24.646 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :61   [32m                  [0;39m Started KnowlagebaseApplication in 0.45 seconds (JVM running for 12480.298)
+2021-08-19 07:00:24.648 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-08-19 07:00:24.648 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :24   [32m                  [0;39m 启动成功！
+2021-08-19 07:00:24.648 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :25   [32m                  [0;39m 地址：	http://127.0.0.1:8880
+2021-08-19 07:00:49.953 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-19 07:00:50.061 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :55   [32m                  [0;39m Starting KnowlagebaseApplication using Java 1.8.0_261 on DESKTOP-CTIIJC1 with PID 13764 (E:\code\java\knowlagebase\target\classes started by MECHREVO in E:\code\java\knowlagebase)
+2021-08-19 07:00:50.061 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-08-19 07:00:50.209 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-08-19 07:00:50.209 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-08-19 07:00:50.209 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-08-19 07:00:50.210 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-08-19 07:00:50.219 INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-08-19 07:00:50.220 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 157 ms
+2021-08-19 07:00:50.277 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:596  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'docController' defined in file [E:\code\java\knowlagebase\target\classes\com\haoyu\knowlagebase\controller\DocController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.haoyu.knowlagebase.controller.DocController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@6bcdf047]
+2021-08-19 07:00:50.277 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2021-08-19 07:00:50.280 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-08-19 07:00:50.281 ERROR org.springframework.boot.SpringApplication        :856  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'docController' defined in file [E:\code\java\knowlagebase\target\classes\com\haoyu\knowlagebase\controller\DocController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.haoyu.knowlagebase.controller.DocController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@6bcdf047]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:586)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:925)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at com.haoyu.knowlagebase.config.KnowlagebaseApplication.main(KnowlagebaseApplication.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.haoyu.knowlagebase.controller.DocController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@6bcdf047]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:737)
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:669)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:366)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:347)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:295)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1100)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:583)
+	... 19 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lcom/haoyu/knowlagebase/service/DocService;
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583)
+	at java.lang.Class.getDeclaredFields(Class.java:1916)
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:732)
+	... 25 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.haoyu.knowlagebase.service.DocService
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 29 common frames omitted
+2021-08-19 07:03:07.200 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :55   [32m                  [0;39m Starting KnowlagebaseApplication using Java 1.8.0_261 on DESKTOP-CTIIJC1 with PID 13764 (E:\code\java\knowlagebase\target\classes started by MECHREVO in E:\code\java\knowlagebase)
+2021-08-19 07:03:07.200 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-08-19 07:03:07.475 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-08-19 07:03:07.476 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-08-19 07:03:07.476 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-08-19 07:03:07.476 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-08-19 07:03:07.491 INFO  o.a.c.c.ContainerBase.[Tomcat-2].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-08-19 07:03:07.492 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 290 ms
+2021-08-19 07:03:07.717 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-19 07:03:07.836 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-08-19 07:03:07.841 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-08-19 07:03:07.843 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-08-19 07:03:07.846 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :61   [32m                  [0;39m Started KnowlagebaseApplication in 0.662 seconds (JVM running for 12643.497)
+2021-08-19 07:03:07.847 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-08-19 07:03:07.847 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :24   [32m                  [0;39m 启动成功！
+2021-08-19 07:03:07.847 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :25   [32m                  [0;39m 地址：	http://127.0.0.1:8880
+2021-08-19 07:05:16.251 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-19 07:05:16.347 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :55   [32m                  [0;39m Starting KnowlagebaseApplication using Java 1.8.0_261 on DESKTOP-CTIIJC1 with PID 13764 (E:\code\java\knowlagebase\target\classes started by MECHREVO in E:\code\java\knowlagebase)
+2021-08-19 07:05:16.347 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-08-19 07:05:16.512 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-08-19 07:05:16.512 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-08-19 07:05:16.512 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-08-19 07:05:16.512 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-08-19 07:05:16.521 INFO  o.a.c.c.ContainerBase.[Tomcat-2].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-08-19 07:05:16.521 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 173 ms
+2021-08-19 07:05:16.641 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-19 07:05:16.738 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-08-19 07:05:16.743 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-08-19 07:05:16.744 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-08-19 07:05:16.747 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :61   [32m                  [0;39m Started KnowlagebaseApplication in 0.417 seconds (JVM running for 12772.398)
+2021-08-19 07:05:16.747 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-08-19 07:05:16.748 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :24   [32m                  [0;39m 启动成功！
+2021-08-19 07:05:16.748 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :25   [32m                  [0;39m 地址：	http://127.0.0.1:8880
+2021-08-19 07:05:51.153 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-19 07:05:51.219 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :55   [32m                  [0;39m Starting KnowlagebaseApplication using Java 1.8.0_261 on DESKTOP-CTIIJC1 with PID 13764 (E:\code\java\knowlagebase\target\classes started by MECHREVO in E:\code\java\knowlagebase)
+2021-08-19 07:05:51.219 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-08-19 07:05:51.378 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-08-19 07:05:51.378 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-08-19 07:05:51.379 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-08-19 07:05:51.379 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-08-19 07:05:51.388 INFO  o.a.c.c.ContainerBase.[Tomcat-2].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-08-19 07:05:51.388 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 168 ms
+2021-08-19 07:05:51.509 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-19 07:05:51.608 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-08-19 07:05:51.613 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-08-19 07:05:51.616 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-08-19 07:05:51.619 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :61   [32m                  [0;39m Started KnowlagebaseApplication in 0.415 seconds (JVM running for 12807.271)
+2021-08-19 07:05:51.619 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-08-19 07:05:51.620 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :24   [32m                  [0;39m 启动成功！
+2021-08-19 07:05:51.620 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :25   [32m                  [0;39m 地址：	http://127.0.0.1:8880
+2021-08-19 07:07:12.467 INFO  o.a.c.c.ContainerBase.[Tomcat-2].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-19 07:07:12.468 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-08-19 07:07:12.468 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
+2021-08-19 07:07:12.470 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :46   [32m                  [0;39m ------------- 开始 -------------
+2021-08-19 07:07:12.470 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :47   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2021-08-19 07:07:12.470 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :48   [32m                  [0;39m 类名方法: com.haoyu.knowlagebase.controller.CategoryController.all
+2021-08-19 07:07:12.470 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :49   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-08-19 07:07:12.471 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :70   [32m                  [0;39m 请求参数: []
+2021-08-19 07:07:12.473 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-6 - Starting...
+2021-08-19 07:07:12.488 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-6 - Start completed.
+2021-08-19 07:07:12.488 DEBUG c.h.k.mapper.CategoryMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-08-19 07:07:12.489 DEBUG c.h.k.mapper.CategoryMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 
+2021-08-19 07:07:12.489 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-08-19 07:07:12.490 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 82110017238601728, 100, test2, 1
+2021-08-19 07:07:12.490 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-08-19 07:07:12.490 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-08-19 07:07:12.490 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-08-19 07:07:12.490 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-08-19 07:07:12.490 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-08-19 07:07:12.491 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2021-08-19 07:07:12.491 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-08-19 07:07:12.491 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-08-19 07:07:12.491 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-08-19 07:07:12.491 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-08-19 07:07:12.491 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-08-19 07:07:12.492 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2021-08-19 07:07:12.492 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-08-19 07:07:12.492 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2021-08-19 07:07:12.492 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2021-08-19 07:07:12.493 DEBUG c.h.k.mapper.CategoryMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 16
+2021-08-19 07:07:12.498 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :82   [32m                  [0;39m 返回结果: {"content":[{"id":82110017238601728,"name":"test2","parent":100,"sort":1},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2021-08-19 07:07:12.498 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :83   [32m                  [0;39m ------------- 结束 耗时：29 ms -------------
+2021-08-19 07:07:13.997 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :46   [32m                  [0;39m ------------- 开始 -------------
+2021-08-19 07:07:13.997 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :47   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2021-08-19 07:07:13.997 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :48   [32m                  [0;39m 类名方法: com.haoyu.knowlagebase.controller.CategoryController.all
+2021-08-19 07:07:13.998 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :49   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-08-19 07:07:13.998 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :70   [32m                  [0;39m 请求参数: []
+2021-08-19 07:07:13.999 DEBUG c.h.k.mapper.CategoryMapper.selectByExample       :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-08-19 07:07:13.999 DEBUG c.h.k.mapper.CategoryMapper.selectByExample       :137  [32m                  [0;39m ==> Parameters: 
+2021-08-19 07:07:13.999 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-08-19 07:07:14.000 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 82110017238601728, 100, test2, 1
+2021-08-19 07:07:14.000 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-08-19 07:07:14.000 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-08-19 07:07:14.000 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-08-19 07:07:14.000 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-08-19 07:07:14.000 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-08-19 07:07:14.001 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2021-08-19 07:07:14.001 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-08-19 07:07:14.001 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-08-19 07:07:14.001 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-08-19 07:07:14.001 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-08-19 07:07:14.001 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-08-19 07:07:14.001 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2021-08-19 07:07:14.001 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-08-19 07:07:14.002 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2021-08-19 07:07:14.002 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2021-08-19 07:07:14.002 DEBUG c.h.k.mapper.CategoryMapper.selectByExample       :137  [32m                  [0;39m <==      Total: 16
+2021-08-19 07:07:14.002 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :82   [32m                  [0;39m 返回结果: {"content":[{"id":82110017238601728,"name":"test2","parent":100,"sort":1},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2021-08-19 07:07:14.002 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :83   [32m                  [0;39m ------------- 结束 耗时：5 ms -------------
+2021-08-19 07:07:14.032 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :46   [32m                  [0;39m ------------- 开始 -------------
+2021-08-19 07:07:14.032 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :47   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2021-08-19 07:07:14.033 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :48   [32m                  [0;39m 类名方法: com.haoyu.knowlagebase.controller.EbookController.list
+2021-08-19 07:07:14.033 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :49   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-08-19 07:07:14.033 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :70   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-08-19 07:07:14.037 DEBUG c.h.k.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2021-08-19 07:07:14.037 DEBUG c.h.k.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m ==> Parameters: 
+2021-08-19 07:07:14.038 TRACE c.h.k.mapper.EbookMapper.selectByExample_COUNT    :143  [32m                  [0;39m <==    Columns: count(0)
+2021-08-19 07:07:14.038 TRACE c.h.k.mapper.EbookMapper.selectByExample_COUNT    :143  [32m                  [0;39m <==        Row: 6
+2021-08-19 07:07:14.039 DEBUG c.h.k.mapper.EbookMapper.selectByExample_COUNT    :137  [32m                  [0;39m <==      Total: 1
+2021-08-19 07:07:14.039 DEBUG c.h.k.mapper.EbookMapper.selectByExample          :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2021-08-19 07:07:14.039 DEBUG c.h.k.mapper.EbookMapper.selectByExample          :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-08-19 07:07:14.040 TRACE c.h.k.mapper.EbookMapper.selectByExample          :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2021-08-19 07:07:14.041 TRACE c.h.k.mapper.EbookMapper.selectByExample          :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, 200, 201, 零基础入门 Java 开发，企业级应用开发最佳首选框架, /image/cover2.png, 0, 0, 0
+2021-08-19 07:07:14.041 TRACE c.h.k.mapper.EbookMapper.selectByExample          :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, 100, 101, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, /image/cover1.png, 0, 0, 0
+2021-08-19 07:07:14.041 TRACE c.h.k.mapper.EbookMapper.selectByExample          :143  [32m                  [0;39m <==        Row: 3, Python 入门教程, 300, 301, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2021-08-19 07:07:14.041 TRACE c.h.k.mapper.EbookMapper.selectByExample          :143  [32m                  [0;39m <==        Row: 4, Mysql 入门教程, 400, 401, 零基础入门 Mysql 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2021-08-19 07:07:14.042 TRACE c.h.k.mapper.EbookMapper.selectByExample          :143  [32m                  [0;39m <==        Row: 5, Oracle 入门教程, 400, 401, 零基础入门 Oracle 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2021-08-19 07:07:14.042 TRACE c.h.k.mapper.EbookMapper.selectByExample          :143  [32m                  [0;39m <==        Row: 83286321791111168, 1, 200, 202, 1, 1, null, null, null
+2021-08-19 07:07:14.042 DEBUG c.h.k.mapper.EbookMapper.selectByExample          :137  [32m                  [0;39m <==      Total: 6
+2021-08-19 07:07:14.042 INFO  com.haoyu.knowlagebase.service.EbookService       :49   [32m                  [0;39m 总行数:6
+2021-08-19 07:07:14.042 INFO  com.haoyu.knowlagebase.service.EbookService       :50   [32m                  [0;39m 总页数:1
+2021-08-19 07:07:14.046 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :82   [32m                  [0;39m 返回结果: {"content":{"list":[{"category1Id":200,"category2Id":201,"cover":"/image/cover2.png","description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","docCount":0,"id":1,"name":"Spring Boot 入门教程","viewCount":0,"voteCount":0},{"category1Id":100,"category2Id":101,"cover":"/image/cover1.png","description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","docCount":0,"id":2,"name":"Vue 入门教程","viewCount":0,"voteCount":0},{"category1Id":300,"category2Id":301,"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","docCount":0,"id":3,"name":"Python 入门教程","viewCount":0,"voteCount":0},{"category1Id":400,"category2Id":401,"description":"零基础入门 Mysql 开发，企业级应用开发最佳首选框架","docCount":0,"id":4,"name":"Mysql 入门教程","viewCount":0,"voteCount":0},{"category1Id":400,"category2Id":401,"description":"零基础入门 Oracle 开发，企业级应用开发最佳首选框架","docCount":0,"id":5,"name":"Oracle 入门教程","viewCount":0,"voteCount":0},{"category1Id":200,"category2Id":202,"cover":"1","description":"1","id":83286321791111168,"name":"1"}],"total":6},"success":true}
+2021-08-19 07:07:14.046 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :83   [32m                  [0;39m ------------- 结束 耗时：14 ms -------------
+2021-08-19 07:07:15.095 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :46   [32m                  [0;39m ------------- 开始 -------------
+2021-08-19 07:07:15.096 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :47   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/doc/all GET
+2021-08-19 07:07:15.096 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :48   [32m                  [0;39m 类名方法: com.haoyu.knowlagebase.controller.DocController.all
+2021-08-19 07:07:15.096 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :49   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-08-19 07:07:15.096 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :70   [32m                  [0;39m 请求参数: []
+2021-08-19 07:07:15.099 DEBUG c.h.knowlagebase.mapper.DocMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2021-08-19 07:07:15.100 DEBUG c.h.knowlagebase.mapper.DocMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2021-08-19 07:07:15.100 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2021-08-19 07:07:15.101 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2021-08-19 07:07:15.101 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 2, 1, 1, 文档1.1, 2, 0, 0
+2021-08-19 07:07:15.101 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 83287679055302656, 1, 2, test, 3, null, null
+2021-08-19 07:07:15.101 DEBUG c.h.knowlagebase.mapper.DocMapper.selectByExample :137  [32m                  [0;39m <==      Total: 3
+2021-08-19 07:07:15.105 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :82   [32m                  [0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":83287679055302656,"name":"test","parent":2,"sort":3}],"success":true}
+2021-08-19 07:07:15.105 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :83   [32m                  [0;39m ------------- 结束 耗时：10 ms -------------
+2021-08-19 07:07:36.273 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :46   [32m                  [0;39m ------------- 开始 -------------
+2021-08-19 07:07:36.273 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :47   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/doc/save POST
+2021-08-19 07:07:36.274 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :48   [32m                  [0;39m 类名方法: com.haoyu.knowlagebase.controller.DocController.save
+2021-08-19 07:07:36.274 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :49   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-08-19 07:07:36.275 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :70   [32m                  [0;39m 请求参数: [{"content":"<p>11111111222222222</p>","ebookId":1,"id":83287679055302656,"name":"test","parent":2,"sort":3}]
+2021-08-19 07:07:36.277 DEBUG c.h.k.mapper.DocMapper.updateByPrimaryKey         :137  [32m                  [0;39m ==>  Preparing: update doc set ebook_id = ?, parent = ?, `name` = ?, sort = ?, view_count = ?, vote_count = ? where id = ?
+2021-08-19 07:07:36.278 DEBUG c.h.k.mapper.DocMapper.updateByPrimaryKey         :137  [32m                  [0;39m ==> Parameters: 1(Long), 2(Long), test(String), 3(Integer), null, null, 83287679055302656(Long)
+2021-08-19 07:07:36.279 DEBUG c.h.k.mapper.DocMapper.updateByPrimaryKey         :137  [32m                  [0;39m <==    Updates: 1
+2021-08-19 07:07:36.280 DEBUG c.h.k.m.ContentMapper.updateByPrimaryKeySelective :137  [32m                  [0;39m ==>  Preparing: update content SET content = ? where id = ?
+2021-08-19 07:07:36.280 DEBUG c.h.k.m.ContentMapper.updateByPrimaryKeySelective :137  [32m                  [0;39m ==> Parameters: <p>11111111222222222</p>(String), 83287679055302656(Long)
+2021-08-19 07:07:36.295 DEBUG c.h.k.m.ContentMapper.updateByPrimaryKeySelective :137  [32m                  [0;39m <==    Updates: 0
+2021-08-19 07:07:36.296 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :82   [32m                  [0;39m 返回结果: {"success":true}
+2021-08-19 07:07:36.296 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :83   [32m                  [0;39m ------------- 结束 耗时：23 ms -------------
+2021-08-19 07:07:36.307 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :46   [32m                  [0;39m ------------- 开始 -------------
+2021-08-19 07:07:36.307 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :47   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/doc/all GET
+2021-08-19 07:07:36.307 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :48   [32m                  [0;39m 类名方法: com.haoyu.knowlagebase.controller.DocController.all
+2021-08-19 07:07:36.307 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :49   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-08-19 07:07:36.307 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :70   [32m                  [0;39m 请求参数: []
+2021-08-19 07:07:36.308 DEBUG c.h.knowlagebase.mapper.DocMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2021-08-19 07:07:36.308 DEBUG c.h.knowlagebase.mapper.DocMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2021-08-19 07:07:36.308 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2021-08-19 07:07:36.309 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2021-08-19 07:07:36.309 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 2, 1, 1, 文档1.1, 2, 0, 0
+2021-08-19 07:07:36.309 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 83287679055302656, 1, 2, test, 3, null, null
+2021-08-19 07:07:36.309 DEBUG c.h.knowlagebase.mapper.DocMapper.selectByExample :137  [32m                  [0;39m <==      Total: 3
+2021-08-19 07:07:36.309 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :82   [32m                  [0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":83287679055302656,"name":"test","parent":2,"sort":3}],"success":true}
+2021-08-19 07:07:36.309 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :83   [32m                  [0;39m ------------- 结束 耗时：2 ms -------------
+2021-08-19 07:11:44.729 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-19 07:11:44.729 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-6 - Shutdown initiated...
+2021-08-19 07:11:44.732 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-6 - Shutdown completed.
+2021-08-19 07:11:44.831 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :55   [32m                  [0;39m Starting KnowlagebaseApplication using Java 1.8.0_261 on DESKTOP-CTIIJC1 with PID 13764 (E:\code\java\knowlagebase\target\classes started by MECHREVO in E:\code\java\knowlagebase)
+2021-08-19 07:11:44.831 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-08-19 07:11:45.000 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-08-19 07:11:45.001 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-08-19 07:11:45.001 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-08-19 07:11:45.001 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-08-19 07:11:45.011 INFO  o.a.c.c.ContainerBase.[Tomcat-2].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-08-19 07:11:45.011 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 179 ms
+2021-08-19 07:11:45.150 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-19 07:11:45.260 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-08-19 07:11:45.265 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-08-19 07:11:45.267 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-08-19 07:11:45.269 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :61   [32m                  [0;39m Started KnowlagebaseApplication in 0.455 seconds (JVM running for 13160.922)
+2021-08-19 07:11:45.270 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-08-19 07:11:45.270 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :24   [32m                  [0;39m 启动成功！
+2021-08-19 07:11:45.270 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :25   [32m                  [0;39m 地址：	http://127.0.0.1:8880
+2021-08-19 07:11:49.973 INFO  o.a.c.c.ContainerBase.[Tomcat-2].[localhost].[/]  :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-19 07:11:49.974 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-08-19 07:11:49.974 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
+2021-08-19 07:11:49.983 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :46   [32m                  [0;39m ------------- 开始 -------------
+2021-08-19 07:11:49.983 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :47   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/doc/save POST
+2021-08-19 07:11:49.984 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :48   [32m                  [0;39m 类名方法: com.haoyu.knowlagebase.controller.DocController.save
+2021-08-19 07:11:49.984 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :49   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-08-19 07:11:49.985 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :70   [32m                  [0;39m 请求参数: [{"content":"<p>11111111222222222</p>","ebookId":1,"id":83287679055302656,"name":"test","parent":2,"sort":3}]
+2021-08-19 07:11:49.997 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-7 - Starting...
+2021-08-19 07:11:50.014 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-7 - Start completed.
+2021-08-19 07:11:50.015 DEBUG c.h.k.mapper.DocMapper.updateByPrimaryKey         :137  [32m                  [0;39m ==>  Preparing: update doc set ebook_id = ?, parent = ?, `name` = ?, sort = ?, view_count = ?, vote_count = ? where id = ?
+2021-08-19 07:11:50.015 DEBUG c.h.k.mapper.DocMapper.updateByPrimaryKey         :137  [32m                  [0;39m ==> Parameters: 1(Long), 2(Long), test(String), 3(Integer), null, null, 83287679055302656(Long)
+2021-08-19 07:11:50.016 DEBUG c.h.k.mapper.DocMapper.updateByPrimaryKey         :137  [32m                  [0;39m <==    Updates: 1
+2021-08-19 07:11:50.016 DEBUG c.h.k.m.ContentMapper.updateByPrimaryKeyWithBLOBs :137  [32m                  [0;39m ==>  Preparing: update content set content = ? where id = ?
+2021-08-19 07:11:50.017 DEBUG c.h.k.m.ContentMapper.updateByPrimaryKeyWithBLOBs :137  [32m                  [0;39m ==> Parameters: <p>11111111222222222</p>(String), 83287679055302656(Long)
+2021-08-19 07:11:50.018 DEBUG c.h.k.m.ContentMapper.updateByPrimaryKeyWithBLOBs :137  [32m                  [0;39m <==    Updates: 0
+2021-08-19 07:11:50.020 DEBUG com.haoyu.knowlagebase.mapper.ContentMapper.insert:137  [32m                  [0;39m ==>  Preparing: insert into content (id, content) values (?, ?)
+2021-08-19 07:11:50.020 DEBUG com.haoyu.knowlagebase.mapper.ContentMapper.insert:137  [32m                  [0;39m ==> Parameters: 83287679055302656(Long), <p>11111111222222222</p>(String)
+2021-08-19 07:11:50.027 DEBUG com.haoyu.knowlagebase.mapper.ContentMapper.insert:137  [32m                  [0;39m <==    Updates: 1
+2021-08-19 07:11:50.028 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :82   [32m                  [0;39m 返回结果: {"success":true}
+2021-08-19 07:11:50.028 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :83   [32m                  [0;39m ------------- 结束 耗时：45 ms -------------
+2021-08-19 07:11:50.042 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :46   [32m                  [0;39m ------------- 开始 -------------
+2021-08-19 07:11:50.043 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :47   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/doc/all GET
+2021-08-19 07:11:50.043 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :48   [32m                  [0;39m 类名方法: com.haoyu.knowlagebase.controller.DocController.all
+2021-08-19 07:11:50.043 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :49   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-08-19 07:11:50.044 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :70   [32m                  [0;39m 请求参数: []
+2021-08-19 07:11:50.046 DEBUG c.h.knowlagebase.mapper.DocMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2021-08-19 07:11:50.046 DEBUG c.h.knowlagebase.mapper.DocMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2021-08-19 07:11:50.048 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2021-08-19 07:11:50.048 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2021-08-19 07:11:50.048 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 2, 1, 1, 文档1.1, 2, 0, 0
+2021-08-19 07:11:50.049 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 83287679055302656, 1, 2, test, 3, null, null
+2021-08-19 07:11:50.049 DEBUG c.h.knowlagebase.mapper.DocMapper.selectByExample :137  [32m                  [0;39m <==      Total: 3
+2021-08-19 07:11:50.053 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :82   [32m                  [0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":83287679055302656,"name":"test","parent":2,"sort":3}],"success":true}
+2021-08-19 07:11:50.053 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :83   [32m                  [0;39m ------------- 结束 耗时：11 ms -------------
+2021-08-19 07:12:01.085 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :46   [32m                  [0;39m ------------- 开始 -------------
+2021-08-19 07:12:01.085 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :47   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/doc/save POST
+2021-08-19 07:12:01.085 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :48   [32m                  [0;39m 类名方法: com.haoyu.knowlagebase.controller.DocController.save
+2021-08-19 07:12:01.085 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :49   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-08-19 07:12:01.085 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :70   [32m                  [0;39m 请求参数: [{"content":"<p>3333333</p>","ebookId":1,"id":83287679055302656,"name":"test","parent":2,"sort":3}]
+2021-08-19 07:12:01.086 DEBUG c.h.k.mapper.DocMapper.updateByPrimaryKey         :137  [32m                  [0;39m ==>  Preparing: update doc set ebook_id = ?, parent = ?, `name` = ?, sort = ?, view_count = ?, vote_count = ? where id = ?
+2021-08-19 07:12:01.086 DEBUG c.h.k.mapper.DocMapper.updateByPrimaryKey         :137  [32m                  [0;39m ==> Parameters: 1(Long), 2(Long), test(String), 3(Integer), null, null, 83287679055302656(Long)
+2021-08-19 07:12:01.087 DEBUG c.h.k.mapper.DocMapper.updateByPrimaryKey         :137  [32m                  [0;39m <==    Updates: 1
+2021-08-19 07:12:01.088 DEBUG c.h.k.m.ContentMapper.updateByPrimaryKeyWithBLOBs :137  [32m                  [0;39m ==>  Preparing: update content set content = ? where id = ?
+2021-08-19 07:12:01.088 DEBUG c.h.k.m.ContentMapper.updateByPrimaryKeyWithBLOBs :137  [32m                  [0;39m ==> Parameters: <p>3333333</p>(String), 83287679055302656(Long)
+2021-08-19 07:12:01.100 DEBUG c.h.k.m.ContentMapper.updateByPrimaryKeyWithBLOBs :137  [32m                  [0;39m <==    Updates: 1
+2021-08-19 07:12:01.100 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :82   [32m                  [0;39m 返回结果: {"success":true}
+2021-08-19 07:12:01.100 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :83   [32m                  [0;39m ------------- 结束 耗时：15 ms -------------
+2021-08-19 07:12:01.108 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :46   [32m                  [0;39m ------------- 开始 -------------
+2021-08-19 07:12:01.108 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :47   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/doc/all GET
+2021-08-19 07:12:01.108 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :48   [32m                  [0;39m 类名方法: com.haoyu.knowlagebase.controller.DocController.all
+2021-08-19 07:12:01.109 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :49   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-08-19 07:12:01.109 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :70   [32m                  [0;39m 请求参数: []
+2021-08-19 07:12:01.109 DEBUG c.h.knowlagebase.mapper.DocMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc order by sort asc
+2021-08-19 07:12:01.109 DEBUG c.h.knowlagebase.mapper.DocMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2021-08-19 07:12:01.110 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2021-08-19 07:12:01.110 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 1, 1, 0, 文档1, 1, 0, 0
+2021-08-19 07:12:01.110 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 2, 1, 1, 文档1.1, 2, 0, 0
+2021-08-19 07:12:01.110 TRACE c.h.knowlagebase.mapper.DocMapper.selectByExample :143  [32m                  [0;39m <==        Row: 83287679055302656, 1, 2, test, 3, null, null
+2021-08-19 07:12:01.110 DEBUG c.h.knowlagebase.mapper.DocMapper.selectByExample :137  [32m                  [0;39m <==      Total: 3
+2021-08-19 07:12:01.111 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :82   [32m                  [0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":0,"sort":1,"viewCount":0,"voteCount":0},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":2,"viewCount":0,"voteCount":0},{"ebookId":1,"id":83287679055302656,"name":"test","parent":2,"sort":3}],"success":true}
+2021-08-19 07:12:01.111 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :83   [32m                  [0;39m ------------- 结束 耗时：3 ms -------------

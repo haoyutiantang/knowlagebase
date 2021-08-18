@@ -177,13 +177,16 @@
       // 因为树选择组件的属性状态，会随当前编辑的节点而变化，所以单独声明一个响应式变量
       const treeSelectData = ref();
       treeSelectData.value = [];
-      const doc = ref({});
+      const doc = ref();
+      doc.value = {};
       const modalVisible = ref(false);
       const modalLoading = ref(false);
       const editor = new E('#content');
       editor.config.zIndex = 0;//这下拉框就不会被挡住了
+
       const handleSave = () => {
         modalLoading.value = true;
+        doc.value.content = editor.txt.html();
         axios.post("/doc/save",doc.value).then((response)=>{
           modalLoading.value = false;//后端有返回时就把loading效果去掉
           const data = response.data;//data = commonResp

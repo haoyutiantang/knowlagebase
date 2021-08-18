@@ -2,8 +2,10 @@ package com.haoyu.knowlagebase.service;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.haoyu.knowlagebase.domain.Content;
 import com.haoyu.knowlagebase.domain.Doc;
 import com.haoyu.knowlagebase.domain.DocExample;
+import com.haoyu.knowlagebase.mapper.ContentMapper;
 import com.haoyu.knowlagebase.mapper.DocMapper;
 import com.haoyu.knowlagebase.req.DocQueryReq;
 import com.haoyu.knowlagebase.req.DocSaveReq;
@@ -29,6 +31,9 @@ public class DocService {
 
     @Resource
     private DocMapper docMapper;
+
+    @Resource
+    private ContentMapper contentMapper;
 
     @Resource
     private SnowFlake snowFlake;
@@ -77,14 +82,22 @@ public class DocService {
     保存
      */
     public void save(DocSaveReq req){
-        Doc doc = CopyUtil.copy(req, Doc.class);
+        Doc doc = CopyUtil.copy(req, Doc.class);//复制的时候只会去找对应的字段复制 不对应的字段就不复制
+        Content content = CopyUtil.copy(req, Content.class);
         if(ObjectUtils.isEmpty(req.getId())){
             //新增
             doc.setId(snowFlake.nextId());
             docMapper.insert(doc);
+
+            content.setId(doc.getId());
+            contentMapper.insert(content);
         }else{
-            //更新
+            // 更新
             docMapper.updateByPrimaryKey(doc);
+            int count = contentMapper.updateByPrimaryKeyWithBLOBs(content);//blobs代表富文本字段，是大字段
+            if (count == 0) {
+                contentMapper.insert(content);
+            }
         }
     }
 
