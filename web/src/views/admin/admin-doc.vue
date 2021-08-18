@@ -25,13 +25,14 @@
                   :data-source="level1"
                   :loading="loading"
                   :pagination="false"
+                  size="small"
           >
-            <template #cover="{ text: cover }">
-              <img v-if="cover" :src="cover" alt="avatar" />
+            <template #name="{ text, record }">
+              {{record.sort}} {{text}}
             </template>
             <template v-slot:action="{text, record}">
               <a-space size = "small">
-                <a-button type = "primary" @click="edit(record)">
+                <a-button type = "primary" @click="edit(record)" size="small">
                   编辑
                 </a-button>
                 <a-popconfirm
@@ -40,7 +41,7 @@
                         cancel-text="否"
                         @confirm="handleDelete(record.id)"
                 >
-                  <a-button type = "danger">
+                  <a-button type = "danger" size="small">
                     删除
                   </a-button>
                 </a-popconfirm>
@@ -49,14 +50,23 @@
           </a-table>
         </a-col>
         <a-col :span="16">
-          <a-form :modal="doc" :label-col="{span : 6}">
-            <a-form-item label="名称">
-              <a-input v-model:value="doc.name" />
+          <p>
+            <a-form layout="inline" :model="param">
+              <a-form-item>
+                <a-button type="primary" @click="handleSave()">
+                  保存
+                </a-button>
+              </a-form-item>
+            </a-form>
+          </p>
+          <a-form :modal="doc" layout="vertical">
+            <a-form-item >
+              <a-input v-model:value="doc.name" placeholder="名称"/>
             </a-form-item>
-            <a-form-item label="父文档">
+            <a-form-item>
               <a-tree-select
-                      style="width: 100%"
                       v-model:value="doc.parent"
+                      style="width: 100%"
                       :dropdown-style="{ maxHeight: '400px', overflow: 'auto' }"
                       :tree-data="treeSelectData"
                       placeholder="请选择父文档"
@@ -65,10 +75,10 @@
               >
               </a-tree-select>
             </a-form-item>
-            <a-form-item label="顺序">
-              <a-input v-model:value="doc.sort" />
+            <a-form-item>
+              <a-input v-model:value="doc.sort" placeholder="顺序"/>
             </a-form-item>
-            <a-form-item label="内容">
+            <a-form-item>
               <div id="content"></div>
             </a-form-item>
           </a-form>
@@ -113,15 +123,7 @@
         {
           title: '名称',
           dataIndex: 'name',
-        },
-        {
-          title: '父文档',
-          key: 'parent',
-          dataIndex: 'parent',
-        },
-        {
-          title: '顺序',
-          dataIndex: 'sort',
+          slots:{customRender: 'name'}
         },
         {
           title: 'Action',
@@ -176,8 +178,8 @@
       const modalVisible = ref(false);
       const modalLoading = ref(false);
       const editor = new E('#content');
-
-      const handleModalOk = () => {
+      editor.config.zIndex = 0;//这下拉框就不会被挡住了
+      const handleSave = () => {
         modalLoading.value = true;
         axios.post("/doc/save",doc.value).then((response)=>{
           modalLoading.value = false;//后端有返回时就把loading效果去掉
@@ -273,9 +275,6 @@
 
         // 为选择树添加一个"无"
         treeSelectData.value.unshift({id: 0, name: '无'});
-        setTimeout(function () {
-          editor.create();
-        }, 100);
       };
 
       /*
@@ -291,9 +290,6 @@
 
         // 为选择树添加一个"无"
         treeSelectData.value.unshift({id: 0, name: '无'});
-        setTimeout(function () {
-          editor.create();
-        }, 100);
 
       };
 
@@ -338,7 +334,7 @@
         doc,
         modalVisible,
         modalLoading,
-        handleModalOk,
+        handleSave,
 
         handleDelete,
 
