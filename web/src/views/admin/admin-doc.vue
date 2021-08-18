@@ -74,6 +74,9 @@
       <a-form-item label="顺序">
         <a-input v-model:value="doc.sort" />
       </a-form-item>
+      <a-form-item label="内容">
+        <div id="content"></div>
+      </a-form-item>
     </a-form>
   </a-modal>
 </template>
@@ -85,6 +88,7 @@
   import {Tool} from "@/util/tool"
   import {useRoute} from "vue-router";
   import ExclamationCircleOutlined from "@ant-design/icons-vue/ExclamationCircleOutlined";
+  import E from 'wangeditor'
   export default defineComponent({
     name:'AdminDoc',
     setup(){
@@ -167,6 +171,8 @@
       const doc = ref({});
       const modalVisible = ref(false);
       const modalLoading = ref(false);
+      const editor = new E('#content');
+
       const handleModalOk = () => {
         modalLoading.value = true;
         axios.post("/doc/save",doc.value).then((response)=>{
@@ -262,6 +268,9 @@
 
         // 为选择树添加一个"无"
         treeSelectData.value.unshift({id: 0, name: '无'});
+        setTimeout(function () {
+          editor.create();
+        }, 100);
       };
 
       /*
@@ -277,6 +286,10 @@
 
         // 为选择树添加一个"无"
         treeSelectData.value.unshift({id: 0, name: '无'});
+        setTimeout(function () {
+          editor.create();
+        }, 100);
+
       };
 
       const handleDelete = (id: number) =>{
