@@ -41,7 +41,7 @@ public class DocController {
     @PostMapping("/save")
     public CommonResp save(@Valid @RequestBody DocSaveReq req){
         CommonResp resp = new CommonResp<>();
-         docService.save(req);
+        docService.save(req);
         return resp;
     }
 
