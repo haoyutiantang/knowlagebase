@@ -79,3 +79,58 @@
 2021-08-22 18:46:02.335 DEBUG c.h.knowlagebase.mapper.UserMapper.selectByExample:137  [32m                  [0;39m <==      Total: 1
 2021-08-22 18:46:02.336 WARN  c.h.k.controller.ControllerExceptionHandler       :43   [32m                  [0;39m 业务异常：登录名已存在
 2021-08-22 18:46:02.337 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m                  [0;39m Resolved [com.haoyu.knowlagebase.exception.BusinessException: 登录名已存在]
+2021-08-22 18:54:38.561 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :46   [32m                  [0;39m ------------- 开始 -------------
+2021-08-22 18:54:38.562 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :47   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/list GET
+2021-08-22 18:54:38.562 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :48   [32m                  [0;39m 类名方法: com.haoyu.knowlagebase.controller.UserController.list
+2021-08-22 18:54:38.562 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :49   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-08-22 18:54:38.562 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :70   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-08-22 18:54:38.564 DEBUG c.h.k.mapper.UserMapper.selectByExample_COUNT     :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-08-22 18:54:38.564 DEBUG c.h.k.mapper.UserMapper.selectByExample_COUNT     :137  [32m                  [0;39m ==> Parameters: 
+2021-08-22 18:54:38.565 TRACE c.h.k.mapper.UserMapper.selectByExample_COUNT     :143  [32m                  [0;39m <==    Columns: count(0)
+2021-08-22 18:54:38.566 TRACE c.h.k.mapper.UserMapper.selectByExample_COUNT     :143  [32m                  [0;39m <==        Row: 1
+2021-08-22 18:54:38.566 DEBUG c.h.k.mapper.UserMapper.selectByExample_COUNT     :137  [32m                  [0;39m <==      Total: 1
+2021-08-22 18:54:38.567 DEBUG c.h.knowlagebase.mapper.UserMapper.selectByExample:137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-08-22 18:54:38.568 DEBUG c.h.knowlagebase.mapper.UserMapper.selectByExample:137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-08-22 18:54:38.569 TRACE c.h.knowlagebase.mapper.UserMapper.selectByExample:143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-08-22 18:54:38.569 TRACE c.h.knowlagebase.mapper.UserMapper.selectByExample:143  [32m                  [0;39m <==        Row: 1, test, 测试, e70e2222a9d67c4f2eae107533359aa4
+2021-08-22 18:54:38.570 DEBUG c.h.knowlagebase.mapper.UserMapper.selectByExample:137  [32m                  [0;39m <==      Total: 1
+2021-08-22 18:54:38.570 INFO  com.haoyu.knowlagebase.service.UserService        :49   [32m                  [0;39m 总行数:1
+2021-08-22 18:54:38.570 INFO  com.haoyu.knowlagebase.service.UserService        :50   [32m                  [0;39m 总页数:1
+2021-08-22 18:54:38.571 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :82   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"test","name":"测试"}],"total":1},"success":true}
+2021-08-22 18:54:38.571 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :83   [32m                  [0;39m ------------- 结束 耗时：10 ms -------------
+2021-08-22 18:57:16.794 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-22 18:57:16.795 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2021-08-22 18:57:16.804 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2021-08-22 18:57:16.967 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :55   [32m                  [0;39m Starting KnowlagebaseApplication using Java 1.8.0_261 on DESKTOP-CTIIJC1 with PID 7760 (E:\code\java\knowlagebase\target\classes started by MECHREVO in E:\code\java\knowlagebase)
+2021-08-22 18:57:16.967 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-08-22 18:57:17.198 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-08-22 18:57:17.198 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-08-22 18:57:17.198 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-08-22 18:57:17.199 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-08-22 18:57:17.212 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-08-22 18:57:17.212 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 242 ms
+2021-08-22 18:57:17.392 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-22 18:57:17.511 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-08-22 18:57:17.518 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-08-22 18:57:17.520 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-08-22 18:57:17.523 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :61   [32m                  [0;39m Started KnowlagebaseApplication in 0.583 seconds (JVM running for 863.75)
+2021-08-22 18:57:17.524 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-08-22 18:57:17.524 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :24   [32m                  [0;39m 启动成功！
+2021-08-22 18:57:17.524 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :25   [32m                  [0;39m 地址：	http://127.0.0.1:8880
+2021-08-22 18:57:57.970 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-22 18:57:58.084 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :55   [32m                  [0;39m Starting KnowlagebaseApplication using Java 1.8.0_261 on DESKTOP-CTIIJC1 with PID 7760 (E:\code\java\knowlagebase\target\classes started by MECHREVO in E:\code\java\knowlagebase)
+2021-08-22 18:57:58.085 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-08-22 18:57:58.253 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-08-22 18:57:58.254 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-08-22 18:57:58.254 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-08-22 18:57:58.254 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-08-22 18:57:58.265 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-08-22 18:57:58.265 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 179 ms
+2021-08-22 18:57:58.404 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-22 18:57:58.505 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-08-22 18:57:58.510 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-08-22 18:57:58.512 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-08-22 18:57:58.515 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :61   [32m                  [0;39m Started KnowlagebaseApplication in 0.45 seconds (JVM running for 904.743)
+2021-08-22 18:57:58.516 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-08-22 18:57:58.516 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :24   [32m                  [0;39m 启动成功！
+2021-08-22 18:57:58.516 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :25   [32m                  [0;39m 地址：	http://127.0.0.1:8880

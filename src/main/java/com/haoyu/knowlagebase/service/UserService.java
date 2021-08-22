@@ -83,9 +83,9 @@ public class UserService {
             }
         } else {
             // 更新
-            user.setLoginName(null);
+            user.setLoginName(null);//看到LoginName是空就不会更新
             user.setPassword(null);
-            userMapper.updateByPrimaryKeySelective(user);
+            userMapper.updateByPrimaryKeySelective(user);//Selective表示user有值才更新没有值就不更新
         }
     }
 

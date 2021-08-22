@@ -58,7 +58,7 @@
   >
     <a-form :model="user" :label-col="{ span: 6 }" :wrapper-col="{ span: 18 }">
       <a-form-item label="登陆名">
-        <a-input v-model:value="user.loginName" :disabled="!!user.id"/>
+        <a-input v-model:value="user.loginName" :disabled="!!user.id"/><!--使用!!绕过类型检验-->
       </a-form-item>
       <a-form-item label="昵称">
         <a-input v-model:value="user.name" />
