@@ -7,9 +7,11 @@ import com.haoyu.knowlagebase.domain.UserExample;
 import com.haoyu.knowlagebase.exception.BusinessException;
 import com.haoyu.knowlagebase.exception.BusinessExceptionCode;
 import com.haoyu.knowlagebase.mapper.UserMapper;
+import com.haoyu.knowlagebase.req.UserLoginReq;
 import com.haoyu.knowlagebase.req.UserQueryReq;
 import com.haoyu.knowlagebase.req.UserResetPasswordReq;
 import com.haoyu.knowlagebase.req.UserSaveReq;
+import com.haoyu.knowlagebase.resp.UserLoginResp;
 import com.haoyu.knowlagebase.resp.UserQueryResp;
 import com.haoyu.knowlagebase.resp.PageResp;
 import com.haoyu.knowlagebase.util.CopyUtil;
@@ -112,5 +114,27 @@ public class UserService {
     public void resetPassword(UserResetPasswordReq req) {
         User user = CopyUtil.copy(req, User.class);
         userMapper.updateByPrimaryKeySelective(user);//Selective表示user有值才更新没有值就不更新
+    }
+
+    /**
+     * 登录
+     */
+    public UserLoginResp login(UserLoginReq req) {
+        User userDb = selectByLoginName(req.getLoginName());
+        if(ObjectUtils.isEmpty(userDb)){
+            //用户名不存在
+            LOG.info("用户名不存在, {}", req.getLoginName());
+            throw new BusinessException(BusinessExceptionCode.LOGIN_USER_ERROR);
+        }else{
+            if(userDb.getPassword().equals(req.getPassword())){
+                //登录成功
+                UserLoginResp userLoginResp = CopyUtil.copy(userDb, UserLoginResp.class);
+                return userLoginResp;
+            }else{
+                //密码不对
+                LOG.info("密码不对, 输入密码：{}, 数据库密码：{}", req.getPassword(), userDb.getPassword());
+                throw new BusinessException(BusinessExceptionCode.LOGIN_USER_ERROR);
+            }
+        }
     }
 }
