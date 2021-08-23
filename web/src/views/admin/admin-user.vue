@@ -63,7 +63,7 @@
       <a-form-item label="昵称">
         <a-input v-model:value="user.name" />
       </a-form-item>
-      <a-form-item label="密码" v-show="!user.id">
+      <a-form-item label="密码" v-show="!user.id"><!--v-if和v-show都能显示或者隐藏某个元素 v-show是简单的隐藏 v-if会将元素删掉 v-if适合初始化判断是显示还是隐藏  v-show适合动态变化-->
         <a-input v-model:value="user.password" type="password"/>
       </a-form-item>
     </a-form>
