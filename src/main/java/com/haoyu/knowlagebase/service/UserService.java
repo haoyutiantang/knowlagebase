@@ -8,6 +8,7 @@ import com.haoyu.knowlagebase.exception.BusinessException;
 import com.haoyu.knowlagebase.exception.BusinessExceptionCode;
 import com.haoyu.knowlagebase.mapper.UserMapper;
 import com.haoyu.knowlagebase.req.UserQueryReq;
+import com.haoyu.knowlagebase.req.UserResetPasswordReq;
 import com.haoyu.knowlagebase.req.UserSaveReq;
 import com.haoyu.knowlagebase.resp.UserQueryResp;
 import com.haoyu.knowlagebase.resp.PageResp;
@@ -103,5 +104,13 @@ public class UserService {
         } else {
             return userList.get(0);
         }
+    }
+
+    /**
+     * 修改密码
+     */
+    public void resetPassword(UserResetPasswordReq req) {
+        User user = CopyUtil.copy(req, User.class);
+        userMapper.updateByPrimaryKeySelective(user);//Selective表示user有值才更新没有值就不更新
     }
 }

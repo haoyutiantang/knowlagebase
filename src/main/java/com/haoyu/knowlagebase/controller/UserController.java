@@ -1,6 +1,7 @@
 package com.haoyu.knowlagebase.controller;
 
 import com.haoyu.knowlagebase.req.UserQueryReq;
+import com.haoyu.knowlagebase.req.UserResetPasswordReq;
 import com.haoyu.knowlagebase.req.UserSaveReq;
 import com.haoyu.knowlagebase.resp.CommonResp;
 import com.haoyu.knowlagebase.resp.UserQueryResp;
@@ -42,6 +43,14 @@ public class UserController {
     public CommonResp delete(@PathVariable Long id) {
         CommonResp resp = new CommonResp<>();
         userService.delete(id);
+        return resp;
+    }
+
+    @PostMapping("/reset-password")
+    public CommonResp resetPassword(@Valid @RequestBody UserResetPasswordReq req){
+        req.setPassword(DigestUtils.md5DigestAsHex(req.getPassword().getBytes()));
+        CommonResp resp = new CommonResp<>();
+        userService.resetPassword(req);
         return resp;
     }
 
