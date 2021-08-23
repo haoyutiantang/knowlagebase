@@ -1,13 +1,21 @@
 <template>
-    <a-layout-footer style="text-align: center">
-        haoyu知识库11111
-    </a-layout-footer>
+    <a-layout-footer1 style="text-align: center">
+        haoyu知识库 欢迎 ：{{user.name}}
+    </a-layout-footer1>
 </template>
 
 <script lang="ts">
-    import { defineComponent } from 'vue';
+    import { defineComponent, computed } from 'vue';
+    import store from '@/store';
 
     export default defineComponent({
-        name: 'the-footer'
+        name: 'the-footer',
+        setup() {
+             const user = computed(() => store.state.user);
+
+            return {
+                user
+            }
+        }
     });
 </script>
