@@ -3858,3 +3858,126 @@ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 2021-08-24 14:42:05.657 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
 2021-08-24 14:42:05.657 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :24   [32m                  [0;39m 启动成功！
 2021-08-24 14:42:05.657 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :25   [32m                  [0;39m 地址：	http://127.0.0.1:8880
+2021-08-24 15:04:33.800 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-24 15:04:33.919 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :55   [32m                  [0;39m Starting KnowlagebaseApplication using Java 1.8.0_261 on DESKTOP-CTIIJC1 with PID 15944 (E:\code\java\knowlagebase\target\classes started by MECHREVO in E:\code\java\knowlagebase)
+2021-08-24 15:04:33.919 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-08-24 15:04:34.039 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :250  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-08-24 15:04:34.040 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :128  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-08-24 15:04:34.041 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :188  [32m                  [0;39m Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+2021-08-24 15:04:34.140 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-08-24 15:04:34.140 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-08-24 15:04:34.141 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-08-24 15:04:34.141 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-08-24 15:04:34.152 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-08-24 15:04:34.152 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 230 ms
+2021-08-24 15:04:34.329 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-24 15:04:34.486 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2021-08-24 15:04:34.503 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-08-24 15:04:34.510 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-08-24 15:04:34.512 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-08-24 15:04:34.518 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :61   [32m                  [0;39m Started KnowlagebaseApplication in 0.615 seconds (JVM running for 10330.912)
+2021-08-24 15:04:34.520 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :58   [32m                  [0;39m Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   TaskSchedulingAutoConfiguration#taskScheduler matched:
+      - @ConditionalOnBean (names: org.springframework.context.annotation.internalScheduledAnnotationProcessor; SearchStrategy: all) found bean 'org.springframework.context.annotation.internalScheduledAnnotationProcessor'; @ConditionalOnMissingBean (types: org.springframework.scheduling.annotation.SchedulingConfigurer,org.springframework.scheduling.TaskScheduler,java.util.concurrent.ScheduledExecutorService; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2021-08-24 15:04:34.521 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :26   [32m                  [0;39m 启动成功！
+2021-08-24 15:04:34.521 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :27   [32m                  [0;39m 地址：	http://127.0.0.1:8880
+2021-08-24 15:08:27.915 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :218  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
+2021-08-24 15:08:27.916 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-24 15:08:28.068 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :55   [32m                  [0;39m Starting KnowlagebaseApplication using Java 1.8.0_261 on DESKTOP-CTIIJC1 with PID 15944 (E:\code\java\knowlagebase\target\classes started by MECHREVO in E:\code\java\knowlagebase)
+2021-08-24 15:08:28.068 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-08-24 15:08:28.176 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :250  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-08-24 15:08:28.176 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :128  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-08-24 15:08:28.176 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :188  [32m                  [0;39m Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+2021-08-24 15:08:28.263 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-08-24 15:08:28.264 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-08-24 15:08:28.264 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-08-24 15:08:28.264 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-08-24 15:08:28.274 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-08-24 15:08:28.274 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 205 ms
+2021-08-24 15:08:28.450 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-24 15:08:28.576 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2021-08-24 15:08:28.592 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-08-24 15:08:28.598 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-08-24 15:08:28.601 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-08-24 15:08:28.610 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :61   [32m                  [0;39m Started KnowlagebaseApplication in 0.559 seconds (JVM running for 10565.005)
+2021-08-24 15:08:28.610 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-08-24 15:08:28.611 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :26   [32m                  [0;39m 启动成功！
+2021-08-24 15:08:28.611 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :27   [32m                  [0;39m 地址：	http://127.0.0.1:8880
+2021-08-24 15:08:30.626 INFO  com.haoyu.knowlagebase.job.TestJob                :24   [32m                  [0;39m 每隔5秒钟执行一次： 08:28
+2021-08-24 15:08:32.133 INFO  com.haoyu.knowlagebase.job.TestJob                :36   [32m                  [0;39m 每隔1秒钟执行一次： 08:30 626
+2021-08-24 15:08:34.143 INFO  com.haoyu.knowlagebase.job.TestJob                :24   [32m                  [0;39m 每隔5秒钟执行一次： 08:32
+2021-08-24 15:08:36.153 INFO  com.haoyu.knowlagebase.job.TestJob                :24   [32m                  [0;39m 每隔5秒钟执行一次： 08:34
+2021-08-24 15:08:38.159 INFO  com.haoyu.knowlagebase.job.TestJob                :24   [32m                  [0;39m 每隔5秒钟执行一次： 08:36
+2021-08-24 15:08:40.164 INFO  com.haoyu.knowlagebase.job.TestJob                :24   [32m                  [0;39m 每隔5秒钟执行一次： 08:38
+2021-08-24 15:08:41.677 INFO  com.haoyu.knowlagebase.job.TestJob                :36   [32m                  [0;39m 每隔1秒钟执行一次： 08:40 164
+2021-08-24 15:08:43.694 INFO  com.haoyu.knowlagebase.job.TestJob                :24   [32m                  [0;39m 每隔5秒钟执行一次： 08:41
+2021-08-24 15:08:45.708 INFO  com.haoyu.knowlagebase.job.TestJob                :24   [32m                  [0;39m 每隔5秒钟执行一次： 08:43
+2021-08-24 15:08:47.709 INFO  com.haoyu.knowlagebase.job.TestJob                :24   [32m                  [0;39m 每隔5秒钟执行一次： 08:45
+2021-08-24 15:08:49.721 INFO  com.haoyu.knowlagebase.job.TestJob                :24   [32m                  [0;39m 每隔5秒钟执行一次： 08:47
+2021-08-24 15:08:51.730 INFO  com.haoyu.knowlagebase.job.TestJob                :24   [32m                  [0;39m 每隔5秒钟执行一次： 08:49
+2021-08-24 15:08:53.744 INFO  com.haoyu.knowlagebase.job.TestJob                :24   [32m                  [0;39m 每隔5秒钟执行一次： 08:51
+2021-08-24 15:08:55.760 INFO  com.haoyu.knowlagebase.job.TestJob                :24   [32m                  [0;39m 每隔5秒钟执行一次： 08:53
+2021-08-24 15:08:57.762 INFO  com.haoyu.knowlagebase.job.TestJob                :24   [32m                  [0;39m 每隔5秒钟执行一次： 08:55
+2021-08-24 15:08:59.765 INFO  com.haoyu.knowlagebase.job.TestJob                :24   [32m                  [0;39m 每隔5秒钟执行一次： 08:57
+2021-08-24 15:09:01.270 INFO  com.haoyu.knowlagebase.job.TestJob                :36   [32m                  [0;39m 每隔1秒钟执行一次： 08:59 765
+2021-08-24 15:09:03.284 INFO  com.haoyu.knowlagebase.job.TestJob                :24   [32m                  [0;39m 每隔5秒钟执行一次： 09:01
+2021-08-24 15:09:05.296 INFO  com.haoyu.knowlagebase.job.TestJob                :24   [32m                  [0;39m 每隔5秒钟执行一次： 09:03
+2021-08-24 15:09:07.302 INFO  com.haoyu.knowlagebase.job.TestJob                :24   [32m                  [0;39m 每隔5秒钟执行一次： 09:05
+2021-08-24 15:09:09.309 INFO  com.haoyu.knowlagebase.job.TestJob                :24   [32m                  [0;39m 每隔5秒钟执行一次： 09:07
+2021-08-24 15:09:11.315 INFO  com.haoyu.knowlagebase.job.TestJob                :24   [32m                  [0;39m 每隔5秒钟执行一次： 09:09
+2021-08-24 15:09:13.328 INFO  com.haoyu.knowlagebase.job.TestJob                :24   [32m                  [0;39m 每隔5秒钟执行一次： 09:11
+2021-08-24 15:09:15.342 INFO  com.haoyu.knowlagebase.job.TestJob                :24   [32m                  [0;39m 每隔5秒钟执行一次： 09:13
+2021-08-24 15:09:17.353 INFO  com.haoyu.knowlagebase.job.TestJob                :24   [32m                  [0;39m 每隔5秒钟执行一次： 09:15
+2021-08-24 15:09:19.364 INFO  com.haoyu.knowlagebase.job.TestJob                :24   [32m                  [0;39m 每隔5秒钟执行一次： 09:17
+2021-08-24 15:09:21.373 INFO  com.haoyu.knowlagebase.job.TestJob                :24   [32m                  [0;39m 每隔5秒钟执行一次： 09:19
+2021-08-24 15:09:23.373 INFO  com.haoyu.knowlagebase.job.TestJob                :24   [32m                  [0;39m 每隔5秒钟执行一次： 09:21
+2021-08-24 15:09:25.387 INFO  com.haoyu.knowlagebase.job.TestJob                :24   [32m                  [0;39m 每隔5秒钟执行一次： 09:23
+2021-08-24 15:09:27.394 INFO  com.haoyu.knowlagebase.job.TestJob                :24   [32m                  [0;39m 每隔5秒钟执行一次： 09:25
+2021-08-24 15:09:29.399 INFO  com.haoyu.knowlagebase.job.TestJob                :24   [32m                  [0;39m 每隔5秒钟执行一次： 09:27
+2021-08-24 15:09:31.402 INFO  com.haoyu.knowlagebase.job.TestJob                :24   [32m                  [0;39m 每隔5秒钟执行一次： 09:29
+2021-08-24 15:09:33.414 INFO  com.haoyu.knowlagebase.job.TestJob                :24   [32m                  [0;39m 每隔5秒钟执行一次： 09:31
+2021-08-24 15:09:35.416 INFO  com.haoyu.knowlagebase.job.TestJob                :24   [32m                  [0;39m 每隔5秒钟执行一次： 09:33
+2021-08-24 15:09:37.427 INFO  com.haoyu.knowlagebase.job.TestJob                :24   [32m                  [0;39m 每隔5秒钟执行一次： 09:35
+2021-08-24 15:09:39.431 INFO  com.haoyu.knowlagebase.job.TestJob                :24   [32m                  [0;39m 每隔5秒钟执行一次： 09:37
+2021-08-24 15:09:41.442 INFO  com.haoyu.knowlagebase.job.TestJob                :24   [32m                  [0;39m 每隔5秒钟执行一次： 09:39
+2021-08-24 15:09:42.948 INFO  com.haoyu.knowlagebase.job.TestJob                :36   [32m                  [0;39m 每隔1秒钟执行一次： 09:41 442
+2021-08-24 15:09:44.955 INFO  com.haoyu.knowlagebase.job.TestJob                :24   [32m                  [0;39m 每隔5秒钟执行一次： 09:42
+2021-08-24 15:09:46.956 INFO  com.haoyu.knowlagebase.job.TestJob                :24   [32m                  [0;39m 每隔5秒钟执行一次： 09:44
+2021-08-24 15:09:48.965 INFO  com.haoyu.knowlagebase.job.TestJob                :24   [32m                  [0;39m 每隔5秒钟执行一次： 09:46
+2021-08-24 15:09:50.972 INFO  com.haoyu.knowlagebase.job.TestJob                :24   [32m                  [0;39m 每隔5秒钟执行一次： 09:48
+2021-08-24 15:09:52.976 INFO  com.haoyu.knowlagebase.job.TestJob                :24   [32m                  [0;39m 每隔5秒钟执行一次： 09:50
+2021-08-24 15:09:54.987 INFO  com.haoyu.knowlagebase.job.TestJob                :24   [32m                  [0;39m 每隔5秒钟执行一次： 09:52
+2021-08-24 15:09:57.003 INFO  com.haoyu.knowlagebase.job.TestJob                :24   [32m                  [0;39m 每隔5秒钟执行一次： 09:54
+2021-08-24 15:09:59.012 INFO  com.haoyu.knowlagebase.job.TestJob                :24   [32m                  [0;39m 每隔5秒钟执行一次： 09:57
+2021-08-24 15:10:01.012 INFO  com.haoyu.knowlagebase.job.TestJob                :24   [32m                  [0;39m 每隔5秒钟执行一次： 09:59

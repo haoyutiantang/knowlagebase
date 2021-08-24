@@ -11,10 +11,12 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.env.Environment;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 @ComponentScan({"com.haoyu"})
 @SpringBootApplication
 @MapperScan("com.haoyu.knowlagebase.mapper")
+@EnableScheduling
 public class KnowlagebaseApplication {
 
     private static final Logger LOG = LoggerFactory.getLogger(KnowlagebaseApplication.class);
