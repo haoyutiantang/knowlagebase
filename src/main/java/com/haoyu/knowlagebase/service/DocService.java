@@ -7,6 +7,7 @@ import com.haoyu.knowlagebase.domain.Doc;
 import com.haoyu.knowlagebase.domain.DocExample;
 import com.haoyu.knowlagebase.mapper.ContentMapper;
 import com.haoyu.knowlagebase.mapper.DocMapper;
+import com.haoyu.knowlagebase.mapper.DocMapperCust;
 import com.haoyu.knowlagebase.req.DocQueryReq;
 import com.haoyu.knowlagebase.req.DocSaveReq;
 import com.haoyu.knowlagebase.resp.DocQueryResp;
@@ -31,6 +32,9 @@ public class DocService {
 
     @Resource
     private DocMapper docMapper;
+
+    @Resource
+    private DocMapperCust docMapperCust;
 
     @Resource
     private ContentMapper contentMapper;
@@ -88,6 +92,8 @@ public class DocService {
         if(ObjectUtils.isEmpty(req.getId())){
             //新增
             doc.setId(snowFlake.nextId());
+            doc.setViewCount(0);
+            doc.setVoteCount(0);
             docMapper.insert(doc);
 
             content.setId(doc.getId());
@@ -115,6 +121,8 @@ public class DocService {
 
     public String findContent(Long id){
         Content content = contentMapper.selectByPrimaryKey(id);
+        //文档阅读数+1
+        docMapperCust.increaseViewCount(id);
         if(ObjectUtils.isEmpty(content)){
             return "";
         }else{
