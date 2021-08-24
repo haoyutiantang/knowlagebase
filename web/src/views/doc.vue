@@ -197,4 +197,10 @@
         font-size: 16px !important;
         font-weight:600;
     }
+
+    /* 点赞 */
+    .vote-div {
+        padding: 15px;
+        text-align: center;
+    }
 </style>
