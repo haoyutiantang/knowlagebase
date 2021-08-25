@@ -2025,3 +2025,570 @@ Caused by: java.net.ConnectException: Connection refused: no further information
 2021-08-25 15:40:35.024 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85639445893746688 [0;39m ==> Parameters: 
 2021-08-25 15:40:35.024 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85639445893746688 [0;39m <==    Updates: 1
 2021-08-25 15:40:35.025 INFO  com.haoyu.knowlagebase.job.DocJob                 :36   [32m85639445893746688 [0;39m 更新电子书下的文档数据结束，耗时：19毫秒
+2021-08-25 15:41:05.003 INFO  com.haoyu.knowlagebase.job.DocJob                 :33   [32m85639571714478080 [0;39m 更新电子书下的文档数据开始
+2021-08-25 15:41:05.003 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85639571714478080 [0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-08-25 15:41:05.003 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85639571714478080 [0;39m ==> Parameters: 
+2021-08-25 15:41:05.005 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85639571714478080 [0;39m <==    Updates: 1
+2021-08-25 15:41:05.005 INFO  com.haoyu.knowlagebase.job.DocJob                 :36   [32m85639571714478080 [0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2021-08-25 15:41:35.007 INFO  com.haoyu.knowlagebase.job.DocJob                 :33   [32m85639697560375296 [0;39m 更新电子书下的文档数据开始
+2021-08-25 15:41:35.007 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85639697560375296 [0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-08-25 15:41:35.008 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85639697560375296 [0;39m ==> Parameters: 
+2021-08-25 15:41:35.008 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85639697560375296 [0;39m <==    Updates: 1
+2021-08-25 15:41:35.008 INFO  com.haoyu.knowlagebase.job.DocJob                 :36   [32m85639697560375296 [0;39m 更新电子书下的文档数据结束，耗时：1毫秒
+2021-08-25 15:42:05.010 INFO  com.haoyu.knowlagebase.job.DocJob                 :33   [32m85639823402078208 [0;39m 更新电子书下的文档数据开始
+2021-08-25 15:42:05.010 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85639823402078208 [0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-08-25 15:42:05.011 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85639823402078208 [0;39m ==> Parameters: 
+2021-08-25 15:42:05.011 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85639823402078208 [0;39m <==    Updates: 1
+2021-08-25 15:42:05.011 INFO  com.haoyu.knowlagebase.job.DocJob                 :36   [32m85639823402078208 [0;39m 更新电子书下的文档数据结束，耗时：1毫秒
+2021-08-25 15:42:35.014 INFO  com.haoyu.knowlagebase.job.DocJob                 :33   [32m85639949247975424 [0;39m 更新电子书下的文档数据开始
+2021-08-25 15:42:35.015 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85639949247975424 [0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-08-25 15:42:35.015 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85639949247975424 [0;39m ==> Parameters: 
+2021-08-25 15:42:35.016 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85639949247975424 [0;39m <==    Updates: 1
+2021-08-25 15:42:35.016 INFO  com.haoyu.knowlagebase.job.DocJob                 :36   [32m85639949247975424 [0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2021-08-25 15:43:05.006 INFO  com.haoyu.knowlagebase.job.DocJob                 :33   [32m85640075043540992 [0;39m 更新电子书下的文档数据开始
+2021-08-25 15:43:05.007 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85640075043540992 [0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-08-25 15:43:05.007 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85640075043540992 [0;39m ==> Parameters: 
+2021-08-25 15:43:05.007 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85640075043540992 [0;39m <==    Updates: 1
+2021-08-25 15:43:05.008 INFO  com.haoyu.knowlagebase.job.DocJob                 :36   [32m85640075043540992 [0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2021-08-25 15:43:35.016 INFO  com.haoyu.knowlagebase.job.DocJob                 :33   [32m85640200914604032 [0;39m 更新电子书下的文档数据开始
+2021-08-25 15:43:35.016 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85640200914604032 [0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-08-25 15:43:35.017 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85640200914604032 [0;39m ==> Parameters: 
+2021-08-25 15:43:35.017 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85640200914604032 [0;39m <==    Updates: 1
+2021-08-25 15:43:35.018 INFO  com.haoyu.knowlagebase.job.DocJob                 :36   [32m85640200914604032 [0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2021-08-25 15:44:05.003 INFO  com.haoyu.knowlagebase.job.DocJob                 :33   [32m85640326689198080 [0;39m 更新电子书下的文档数据开始
+2021-08-25 15:44:05.004 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85640326689198080 [0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-08-25 15:44:05.004 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85640326689198080 [0;39m ==> Parameters: 
+2021-08-25 15:44:05.005 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85640326689198080 [0;39m <==    Updates: 1
+2021-08-25 15:44:05.005 INFO  com.haoyu.knowlagebase.job.DocJob                 :36   [32m85640326689198080 [0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2021-08-25 15:44:35.010 INFO  com.haoyu.knowlagebase.job.DocJob                 :33   [32m85640452547678208 [0;39m 更新电子书下的文档数据开始
+2021-08-25 15:44:35.010 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85640452547678208 [0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-08-25 15:44:35.011 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85640452547678208 [0;39m ==> Parameters: 
+2021-08-25 15:44:35.011 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85640452547678208 [0;39m <==    Updates: 1
+2021-08-25 15:44:35.011 INFO  com.haoyu.knowlagebase.job.DocJob                 :36   [32m85640452547678208 [0;39m 更新电子书下的文档数据结束，耗时：1毫秒
+2021-08-25 15:45:05.015 INFO  com.haoyu.knowlagebase.job.DocJob                 :33   [32m85640578397769728 [0;39m 更新电子书下的文档数据开始
+2021-08-25 15:45:05.016 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85640578397769728 [0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-08-25 15:45:05.016 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85640578397769728 [0;39m ==> Parameters: 
+2021-08-25 15:45:05.017 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85640578397769728 [0;39m <==    Updates: 1
+2021-08-25 15:45:05.017 INFO  com.haoyu.knowlagebase.job.DocJob                 :36   [32m85640578397769728 [0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2021-08-25 15:45:35.003 INFO  com.haoyu.knowlagebase.job.DocJob                 :33   [32m85640704176558080 [0;39m 更新电子书下的文档数据开始
+2021-08-25 15:45:35.004 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85640704176558080 [0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-08-25 15:45:35.004 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85640704176558080 [0;39m ==> Parameters: 
+2021-08-25 15:45:35.004 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85640704176558080 [0;39m <==    Updates: 1
+2021-08-25 15:45:35.005 INFO  com.haoyu.knowlagebase.job.DocJob                 :36   [32m85640704176558080 [0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2021-08-25 15:46:05.014 INFO  com.haoyu.knowlagebase.job.DocJob                 :33   [32m85640830051815424 [0;39m 更新电子书下的文档数据开始
+2021-08-25 15:46:05.014 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85640830051815424 [0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-08-25 15:46:05.014 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85640830051815424 [0;39m ==> Parameters: 
+2021-08-25 15:46:05.015 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85640830051815424 [0;39m <==    Updates: 1
+2021-08-25 15:46:05.015 INFO  com.haoyu.knowlagebase.job.DocJob                 :36   [32m85640830051815424 [0;39m 更新电子书下的文档数据结束，耗时：1毫秒
+2021-08-25 15:46:35.003 INFO  com.haoyu.knowlagebase.job.DocJob                 :33   [32m85640955834798080 [0;39m 更新电子书下的文档数据开始
+2021-08-25 15:46:35.003 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85640955834798080 [0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-08-25 15:46:35.003 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85640955834798080 [0;39m ==> Parameters: 
+2021-08-25 15:46:35.004 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85640955834798080 [0;39m <==    Updates: 1
+2021-08-25 15:46:35.004 INFO  com.haoyu.knowlagebase.job.DocJob                 :36   [32m85640955834798080 [0;39m 更新电子书下的文档数据结束，耗时：1毫秒
+2021-08-25 15:47:05.003 INFO  com.haoyu.knowlagebase.job.DocJob                 :33   [32m85641081663918080 [0;39m 更新电子书下的文档数据开始
+2021-08-25 15:47:05.003 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85641081663918080 [0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-08-25 15:47:05.003 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85641081663918080 [0;39m ==> Parameters: 
+2021-08-25 15:47:05.004 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85641081663918080 [0;39m <==    Updates: 1
+2021-08-25 15:47:05.004 INFO  com.haoyu.knowlagebase.job.DocJob                 :36   [32m85641081663918080 [0;39m 更新电子书下的文档数据结束，耗时：1毫秒
+2021-08-25 15:47:10.924 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :218  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
+2021-08-25 15:47:10.924 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-25 15:47:10.925 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-9 - Shutdown initiated...
+2021-08-25 15:47:10.930 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-9 - Shutdown completed.
+2021-08-25 15:47:11.079 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :55   [32m                  [0;39m Starting KnowlagebaseApplication using Java 1.8.0_261 on DESKTOP-CTIIJC1 with PID 8824 (E:\code\java\knowlagebase\target\classes started by MECHREVO in E:\code\java\knowlagebase)
+2021-08-25 15:47:11.079 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-08-25 15:47:11.611 ERROR org.springframework.boot.SpringApplication        :856  [32m                  [0;39m Application run failed
+java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:193)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:153)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:129)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:348)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:252)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:285)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:99)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:751)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:569)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at com.haoyu.knowlagebase.config.KnowlagebaseApplication.main(KnowlagebaseApplication.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.haoyu.knowlagebase.config.WebSocketConfig] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@18cf5f37]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:754)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:753)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:692)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:663)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1665)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:570)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:542)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:238)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:231)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:221)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:169)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:144)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 21 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/web/socket/server/standard/ServerEndpointExporter
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 37 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.web.socket.server.standard.ServerEndpointExporter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 41 common frames omitted
+2021-08-25 15:47:11.613 WARN  org.springframework.boot.SpringApplication        :828  [32m                  [0;39m Unable to close ApplicationContext
+java.lang.IllegalStateException: Failed to introspect Class [com.haoyu.knowlagebase.config.WebSocketConfig] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@18cf5f37]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:754)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:753)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:692)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:663)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1665)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:570)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:667)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:659)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1307)
+	at org.springframework.boot.SpringApplication.getExitCodeFromMappedException(SpringApplication.java:899)
+	at org.springframework.boot.SpringApplication.getExitCodeFromException(SpringApplication.java:887)
+	at org.springframework.boot.SpringApplication.handleExitCode(SpringApplication.java:874)
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:815)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:336)
+	at com.haoyu.knowlagebase.config.KnowlagebaseApplication.main(KnowlagebaseApplication.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.NoClassDefFoundError: org/springframework/web/socket/server/standard/ServerEndpointExporter
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 24 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.web.socket.server.standard.ServerEndpointExporter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 28 common frames omitted
+2021-08-25 15:47:13.075 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-25 15:47:13.076 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-25 15:47:13.082 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :55   [32m                  [0;39m Starting KnowlagebaseApplication using Java 1.8.0_261 on DESKTOP-CTIIJC1 with PID 8824 (E:\code\java\knowlagebase\target\classes started by MECHREVO in E:\code\java\knowlagebase)
+2021-08-25 15:47:13.082 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-08-25 15:47:13.208 ERROR org.springframework.boot.SpringApplication        :856  [32m                  [0;39m Application run failed
+java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:193)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:153)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:129)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:348)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:252)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:285)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:99)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:751)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:569)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at com.haoyu.knowlagebase.config.KnowlagebaseApplication.main(KnowlagebaseApplication.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.haoyu.knowlagebase.config.WebSocketConfig] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@5f25a832]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:754)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:753)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:692)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:663)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1665)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:570)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:542)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:238)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:231)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:221)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:169)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:144)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 21 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/web/socket/server/standard/ServerEndpointExporter
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 37 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.web.socket.server.standard.ServerEndpointExporter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 41 common frames omitted
+2021-08-25 15:47:13.209 WARN  org.springframework.boot.SpringApplication        :828  [32m                  [0;39m Unable to close ApplicationContext
+java.lang.IllegalStateException: Failed to introspect Class [com.haoyu.knowlagebase.config.WebSocketConfig] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@5f25a832]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:754)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:753)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:692)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:663)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1665)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:570)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:667)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:659)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1307)
+	at org.springframework.boot.SpringApplication.getExitCodeFromMappedException(SpringApplication.java:899)
+	at org.springframework.boot.SpringApplication.getExitCodeFromException(SpringApplication.java:887)
+	at org.springframework.boot.SpringApplication.handleExitCode(SpringApplication.java:874)
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:815)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:336)
+	at com.haoyu.knowlagebase.config.KnowlagebaseApplication.main(KnowlagebaseApplication.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.NoClassDefFoundError: org/springframework/web/socket/server/standard/ServerEndpointExporter
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 24 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.web.socket.server.standard.ServerEndpointExporter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 28 common frames omitted
+2021-08-25 15:48:28.117 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-25 15:48:28.117 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-25 15:48:28.121 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :55   [32m                  [0;39m Starting KnowlagebaseApplication using Java 1.8.0_261 on DESKTOP-CTIIJC1 with PID 8824 (E:\code\java\knowlagebase\target\classes started by MECHREVO in E:\code\java\knowlagebase)
+2021-08-25 15:48:28.121 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-08-25 15:48:28.223 ERROR org.springframework.boot.SpringApplication        :856  [32m                  [0;39m Application run failed
+java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:193)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:153)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:129)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:348)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:252)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:285)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:99)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:751)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:569)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at com.haoyu.knowlagebase.config.KnowlagebaseApplication.main(KnowlagebaseApplication.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.haoyu.knowlagebase.config.WebSocketConfig] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@442bbc19]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:754)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:753)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:692)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:663)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1665)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:570)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:542)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:238)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:231)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:221)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:169)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:144)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 21 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/web/socket/server/standard/ServerEndpointExporter
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 37 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.web.socket.server.standard.ServerEndpointExporter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 41 common frames omitted
+2021-08-25 15:48:28.223 WARN  org.springframework.boot.SpringApplication        :828  [32m                  [0;39m Unable to close ApplicationContext
+java.lang.IllegalStateException: Failed to introspect Class [com.haoyu.knowlagebase.config.WebSocketConfig] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@442bbc19]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:754)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:753)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:692)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:663)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1665)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:570)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:667)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:659)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1307)
+	at org.springframework.boot.SpringApplication.getExitCodeFromMappedException(SpringApplication.java:899)
+	at org.springframework.boot.SpringApplication.getExitCodeFromException(SpringApplication.java:887)
+	at org.springframework.boot.SpringApplication.handleExitCode(SpringApplication.java:874)
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:815)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:336)
+	at com.haoyu.knowlagebase.config.KnowlagebaseApplication.main(KnowlagebaseApplication.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.NoClassDefFoundError: org/springframework/web/socket/server/standard/ServerEndpointExporter
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 24 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.web.socket.server.standard.ServerEndpointExporter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 28 common frames omitted
+2021-08-25 16:06:29.966 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-25 16:06:29.967 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-25 16:06:29.971 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :55   [32m                  [0;39m Starting KnowlagebaseApplication using Java 1.8.0_261 on DESKTOP-CTIIJC1 with PID 8824 (E:\code\java\knowlagebase\target\classes started by MECHREVO in E:\code\java\knowlagebase)
+2021-08-25 16:06:29.971 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-08-25 16:06:30.096 ERROR org.springframework.boot.SpringApplication        :856  [32m                  [0;39m Application run failed
+java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:193)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:153)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:129)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:348)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:252)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:285)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:99)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:751)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:569)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at com.haoyu.knowlagebase.config.KnowlagebaseApplication.main(KnowlagebaseApplication.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.haoyu.knowlagebase.config.WebSocketConfig] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@43048872]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:754)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:753)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:692)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:663)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1665)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:570)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:542)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:238)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:231)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:221)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:169)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:144)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 21 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/web/socket/server/standard/ServerEndpointExporter
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 37 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.web.socket.server.standard.ServerEndpointExporter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 41 common frames omitted
+2021-08-25 16:06:30.097 WARN  org.springframework.boot.SpringApplication        :828  [32m                  [0;39m Unable to close ApplicationContext
+java.lang.IllegalStateException: Failed to introspect Class [com.haoyu.knowlagebase.config.WebSocketConfig] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@43048872]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:754)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:753)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:692)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:663)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1665)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:570)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:667)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:659)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1307)
+	at org.springframework.boot.SpringApplication.getExitCodeFromMappedException(SpringApplication.java:899)
+	at org.springframework.boot.SpringApplication.getExitCodeFromException(SpringApplication.java:887)
+	at org.springframework.boot.SpringApplication.handleExitCode(SpringApplication.java:874)
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:815)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:336)
+	at com.haoyu.knowlagebase.config.KnowlagebaseApplication.main(KnowlagebaseApplication.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.NoClassDefFoundError: org/springframework/web/socket/server/standard/ServerEndpointExporter
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 24 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.web.socket.server.standard.ServerEndpointExporter
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:348)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 28 common frames omitted
+2021-08-25 16:06:45.934 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.1.6.Final
+2021-08-25 16:06:45.937 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :55   [32m                  [0;39m Starting KnowlagebaseApplication using Java 1.8.0_261 on DESKTOP-CTIIJC1 with PID 10368 (E:\code\java\knowlagebase\target\classes started by MECHREVO in E:\code\java\knowlagebase)
+2021-08-25 16:06:45.938 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-08-25 16:06:45.974 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-25 16:06:45.974 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-25 16:06:46.370 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :250  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-08-25 16:06:46.372 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :128  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-08-25 16:06:46.383 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :188  [32m                  [0;39m Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2021-08-25 16:06:46.857 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-08-25 16:06:46.862 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-08-25 16:06:46.863 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-08-25 16:06:46.863 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-08-25 16:06:46.913 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-08-25 16:06:46.913 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 939 ms
+2021-08-25 16:06:47.489 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-25 16:06:47.760 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2021-08-25 16:06:47.791 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-08-25 16:06:47.808 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-08-25 16:06:47.820 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-08-25 16:06:47.829 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :61   [32m                  [0;39m Started KnowlagebaseApplication in 2.222 seconds (JVM running for 3.442)
+2021-08-25 16:06:47.831 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :26   [32m                  [0;39m 启动成功！
+2021-08-25 16:06:47.831 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :27   [32m                  [0;39m 地址：	http://127.0.0.1:8880
+2021-08-25 16:07:05.009 INFO  com.haoyu.knowlagebase.job.DocJob                 :33   [32m85646114853883904 [0;39m 更新电子书下的文档数据开始
+2021-08-25 16:07:05.021 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m85646114853883904 [0;39m HikariPool-1 - Starting...
+2021-08-25 16:07:05.737 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m85646114853883904 [0;39m HikariPool-1 - Start completed.
+2021-08-25 16:07:05.741 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85646114853883904 [0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-08-25 16:07:05.755 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85646114853883904 [0;39m ==> Parameters: 
+2021-08-25 16:07:05.757 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85646114853883904 [0;39m <==    Updates: 1
+2021-08-25 16:07:05.758 INFO  com.haoyu.knowlagebase.job.DocJob                 :36   [32m85646114853883904 [0;39m 更新电子书下的文档数据结束，耗时：749毫秒
+2021-08-25 16:07:13.389 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-25 16:07:13.390 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-08-25 16:07:13.391 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2021-08-25 16:07:13.426 INFO  com.haoyu.knowlagebase.websocket.WebSocketServer  :32   [32m                  [0;39m 有新连接：token：qRMiU4rGW0，session id：0，当前连接数：1
+2021-08-25 16:07:13.521 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :54   [32m85646150551605248 [0;39m ------------- 开始 -------------
+2021-08-25 16:07:13.522 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :55   [32m85646150551605248 [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2021-08-25 16:07:13.522 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :56   [32m85646150551605248 [0;39m 类名方法: com.haoyu.knowlagebase.controller.CategoryController.all
+2021-08-25 16:07:13.522 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :57   [32m85646150551605248 [0;39m 远程地址: 127.0.0.1
+2021-08-25 16:07:13.554 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :79   [32m85646150551605248 [0;39m 请求参数: []
+2021-08-25 16:07:13.571 DEBUG c.h.k.mapper.CategoryMapper.selectByExample       :137  [32m85646150551605248 [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-08-25 16:07:13.571 DEBUG c.h.k.mapper.CategoryMapper.selectByExample       :137  [32m85646150551605248 [0;39m ==> Parameters: 
+2021-08-25 16:07:13.586 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m85646150551605248 [0;39m <==    Columns: id, parent, name, sort
+2021-08-25 16:07:13.586 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m85646150551605248 [0;39m <==        Row: 82110017238601728, 100, test2, 1
+2021-08-25 16:07:13.587 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m85646150551605248 [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-08-25 16:07:13.588 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m85646150551605248 [0;39m <==        Row: 101, 100, Vue, 101
+2021-08-25 16:07:13.588 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m85646150551605248 [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-08-25 16:07:13.588 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m85646150551605248 [0;39m <==        Row: 200, 0, Java, 200
+2021-08-25 16:07:13.589 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m85646150551605248 [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-08-25 16:07:13.589 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m85646150551605248 [0;39m <==        Row: 202, 200, 框架应用, 202
+2021-08-25 16:07:13.590 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m85646150551605248 [0;39m <==        Row: 300, 0, Python, 300
+2021-08-25 16:07:13.590 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m85646150551605248 [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-08-25 16:07:13.590 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m85646150551605248 [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-08-25 16:07:13.590 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m85646150551605248 [0;39m <==        Row: 400, 0, 数据库, 400
+2021-08-25 16:07:13.590 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m85646150551605248 [0;39m <==        Row: 401, 400, MySQL, 401
+2021-08-25 16:07:13.590 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m85646150551605248 [0;39m <==        Row: 500, 0, 其它, 500
+2021-08-25 16:07:13.591 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m85646150551605248 [0;39m <==        Row: 501, 500, 服务器, 501
+2021-08-25 16:07:13.591 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m85646150551605248 [0;39m <==        Row: 502, 500, 开发工具, 502
+2021-08-25 16:07:13.592 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m85646150551605248 [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2021-08-25 16:07:13.593 DEBUG c.h.k.mapper.CategoryMapper.selectByExample       :137  [32m85646150551605248 [0;39m <==      Total: 16
+2021-08-25 16:07:13.617 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :91   [32m85646150551605248 [0;39m 返回结果: {"content":[{"id":82110017238601728,"name":"test2","parent":100,"sort":1},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2021-08-25 16:07:13.617 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :92   [32m85646150551605248 [0;39m ------------- 结束 耗时：97 ms -------------
+2021-08-25 16:07:35.015 INFO  com.haoyu.knowlagebase.job.DocJob                 :33   [32m85646240708169728 [0;39m 更新电子书下的文档数据开始
+2021-08-25 16:07:35.016 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85646240708169728 [0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-08-25 16:07:35.017 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85646240708169728 [0;39m ==> Parameters: 
+2021-08-25 16:07:35.018 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85646240708169728 [0;39m <==    Updates: 1
+2021-08-25 16:07:35.018 INFO  com.haoyu.knowlagebase.job.DocJob                 :36   [32m85646240708169728 [0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2021-08-25 16:08:05.012 INFO  com.haoyu.knowlagebase.job.DocJob                 :33   [32m85646366524706816 [0;39m 更新电子书下的文档数据开始
+2021-08-25 16:08:05.013 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85646366524706816 [0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-08-25 16:08:05.013 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85646366524706816 [0;39m ==> Parameters: 
+2021-08-25 16:08:05.014 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85646366524706816 [0;39m <==    Updates: 1
+2021-08-25 16:08:05.014 INFO  com.haoyu.knowlagebase.job.DocJob                 :36   [32m85646366524706816 [0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2021-08-25 16:08:14.310 INFO  com.haoyu.knowlagebase.websocket.WebSocketServer  :41   [32m                  [0;39m 连接关闭，token：qRMiU4rGW0，session id：0！当前连接数：0
+2021-08-25 16:08:35.010 INFO  com.haoyu.knowlagebase.job.DocJob                 :33   [32m85646492345438208 [0;39m 更新电子书下的文档数据开始
+2021-08-25 16:08:35.011 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85646492345438208 [0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-08-25 16:08:35.011 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85646492345438208 [0;39m ==> Parameters: 
+2021-08-25 16:08:35.012 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85646492345438208 [0;39m <==    Updates: 1
+2021-08-25 16:08:35.012 INFO  com.haoyu.knowlagebase.job.DocJob                 :36   [32m85646492345438208 [0;39m 更新电子书下的文档数据结束，耗时：2毫秒
