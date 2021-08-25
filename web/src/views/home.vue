@@ -24,7 +24,7 @@
             :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '280px' }"
     >
       <div class="welcome" v-show="isShowWelcome">
-        <h1>欢迎使用haoyu知识库</h1>
+        <the-welcome></the-welcome>
       </div>
       <a-list v-show="!isShowWelcome" item-layout="vertical" size="large" :grid="{gutter : 20, column: 3}" :data-source="ebooks">  <!--grid="{gutter : 20, column: 3}" 作用是一行有三个图标 间隔20px-->
         <template #renderItem="{ item }"><!--用item访问电子书列表-->
@@ -64,6 +64,7 @@ import { defineComponent, onMounted, ref, reactive, toRef } from 'vue';
 import axios from 'axios';
 import { message } from 'ant-design-vue';
 import {Tool} from "@/util/tool";
+import TheWelcome from "@/components/the-welcome.vue"
 // const listData: any  = [];//listData是任意类型
 // for (let i = 0; i < 23; i++) {
 //   listData.push({
@@ -78,6 +79,9 @@ import {Tool} from "@/util/tool";
 // }
 export default defineComponent({
   name: 'Home',
+  components:{
+    TheWelcome
+  },
   setup(){
       const ebooks = ref();//vue3中新增响应式数据类型 发生该表就会在页面响应变化
       //const ebooks1 = reactive({books : []}) //reactive也是vue3新加的 里面属性是对象类型 返回的是里面的books属性
