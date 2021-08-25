@@ -21,6 +21,7 @@ import com.haoyu.knowlagebase.util.SnowFlake;
 import com.haoyu.knowlagebase.websocket.WebSocketServer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ObjectUtils;
 
@@ -51,7 +52,7 @@ public class DocService {
     public RedisUtil redisUtil;
 
     @Resource
-    public WebSocketServer webSocketServer;
+    public WsService wsService;
 
     public List<DocQueryResp> all(Long ebookId){
         DocExample docExample = new DocExample();
@@ -147,19 +148,15 @@ public class DocService {
     public void vote(Long id) {
         // docMapperCust.increaseVoteCount(id);
         // 远程IP+doc.id作为key，24小时内不能重复
-        LOG.info("进入后端vote方法！！！！！！！");
-        System.out.println("进入后端vote方法！！！！！！！");
         String ip = RequestContext.getRemoteAddr();
         if (redisUtil.validateRepeat("DOC_VOTE_" + id + "_" + ip, 3600 * 24)) {
             docMapperCust.increaseVoteCount(id);
         } else {
             throw new BusinessException(BusinessExceptionCode.VOTE_REPEAT);
         }
-        LOG.info("websocket成功！！！！！！！");
         // 推送消息
         Doc docDb = docMapper.selectByPrimaryKey(id);
-        webSocketServer.sendInfo("【" + docDb.getName() + "】被点赞！");
-
+        wsService.sendInfo("【" + docDb.getName() + "】被点赞！");
     }
 
     public void updateEbookInfo(){
