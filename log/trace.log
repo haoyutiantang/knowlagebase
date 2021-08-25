@@ -1631,3 +1631,397 @@ Caused by: java.net.ConnectException: Connection refused: no further information
 2021-08-25 15:26:05.014 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==> Parameters: 
 2021-08-25 15:26:05.014 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m <==    Updates: 1
 2021-08-25 15:26:05.014 INFO  com.haoyu.knowlagebase.job.DocJob                 :29   [32m                  [0;39m 更新电子书下的文档数据结束，耗时：1毫秒
+2021-08-25 15:26:35.004 INFO  com.haoyu.knowlagebase.job.DocJob                 :26   [32m                  [0;39m 更新电子书下的文档数据开始
+2021-08-25 15:26:35.004 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-08-25 15:26:35.005 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==> Parameters: 
+2021-08-25 15:26:35.005 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m <==    Updates: 1
+2021-08-25 15:26:35.006 INFO  com.haoyu.knowlagebase.job.DocJob                 :29   [32m                  [0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2021-08-25 15:27:05.004 INFO  com.haoyu.knowlagebase.job.DocJob                 :26   [32m                  [0;39m 更新电子书下的文档数据开始
+2021-08-25 15:27:05.004 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-08-25 15:27:05.005 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==> Parameters: 
+2021-08-25 15:27:05.005 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m <==    Updates: 1
+2021-08-25 15:27:05.005 INFO  com.haoyu.knowlagebase.job.DocJob                 :29   [32m                  [0;39m 更新电子书下的文档数据结束，耗时：1毫秒
+2021-08-25 15:27:35.009 INFO  com.haoyu.knowlagebase.job.DocJob                 :26   [32m                  [0;39m 更新电子书下的文档数据开始
+2021-08-25 15:27:35.009 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-08-25 15:27:35.010 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==> Parameters: 
+2021-08-25 15:27:35.011 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m <==    Updates: 1
+2021-08-25 15:27:35.011 INFO  com.haoyu.knowlagebase.job.DocJob                 :29   [32m                  [0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2021-08-25 15:28:05.006 INFO  com.haoyu.knowlagebase.job.DocJob                 :26   [32m                  [0;39m 更新电子书下的文档数据开始
+2021-08-25 15:28:05.006 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-08-25 15:28:05.007 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==> Parameters: 
+2021-08-25 15:28:05.008 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m <==    Updates: 1
+2021-08-25 15:28:05.008 INFO  com.haoyu.knowlagebase.job.DocJob                 :29   [32m                  [0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2021-08-25 15:28:35.014 INFO  com.haoyu.knowlagebase.job.DocJob                 :26   [32m                  [0;39m 更新电子书下的文档数据开始
+2021-08-25 15:28:35.015 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-08-25 15:28:35.015 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==> Parameters: 
+2021-08-25 15:28:35.016 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m <==    Updates: 1
+2021-08-25 15:28:35.016 INFO  com.haoyu.knowlagebase.job.DocJob                 :29   [32m                  [0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2021-08-25 15:29:05.000 INFO  com.haoyu.knowlagebase.job.DocJob                 :26   [32m                  [0;39m 更新电子书下的文档数据开始
+2021-08-25 15:29:05.001 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-08-25 15:29:05.001 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==> Parameters: 
+2021-08-25 15:29:05.001 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m <==    Updates: 1
+2021-08-25 15:29:05.002 INFO  com.haoyu.knowlagebase.job.DocJob                 :29   [32m                  [0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2021-08-25 15:29:35.005 INFO  com.haoyu.knowlagebase.job.DocJob                 :26   [32m                  [0;39m 更新电子书下的文档数据开始
+2021-08-25 15:29:35.005 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-08-25 15:29:35.006 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==> Parameters: 
+2021-08-25 15:29:35.006 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m <==    Updates: 1
+2021-08-25 15:29:35.006 INFO  com.haoyu.knowlagebase.job.DocJob                 :29   [32m                  [0;39m 更新电子书下的文档数据结束，耗时：1毫秒
+2021-08-25 15:30:05.016 INFO  com.haoyu.knowlagebase.job.DocJob                 :26   [32m                  [0;39m 更新电子书下的文档数据开始
+2021-08-25 15:30:05.016 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-08-25 15:30:05.017 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==> Parameters: 
+2021-08-25 15:30:05.017 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m <==    Updates: 1
+2021-08-25 15:30:05.018 INFO  com.haoyu.knowlagebase.job.DocJob                 :29   [32m                  [0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2021-08-25 15:30:35.003 INFO  com.haoyu.knowlagebase.job.DocJob                 :26   [32m                  [0;39m 更新电子书下的文档数据开始
+2021-08-25 15:30:35.003 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-08-25 15:30:35.003 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==> Parameters: 
+2021-08-25 15:30:35.004 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m <==    Updates: 1
+2021-08-25 15:30:35.004 INFO  com.haoyu.knowlagebase.job.DocJob                 :29   [32m                  [0;39m 更新电子书下的文档数据结束，耗时：1毫秒
+2021-08-25 15:31:05.006 INFO  com.haoyu.knowlagebase.job.DocJob                 :26   [32m                  [0;39m 更新电子书下的文档数据开始
+2021-08-25 15:31:05.006 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-08-25 15:31:05.007 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==> Parameters: 
+2021-08-25 15:31:05.007 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m <==    Updates: 1
+2021-08-25 15:31:05.007 INFO  com.haoyu.knowlagebase.job.DocJob                 :29   [32m                  [0;39m 更新电子书下的文档数据结束，耗时：1毫秒
+2021-08-25 15:31:35.014 INFO  com.haoyu.knowlagebase.job.DocJob                 :26   [32m                  [0;39m 更新电子书下的文档数据开始
+2021-08-25 15:31:35.015 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-08-25 15:31:35.015 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==> Parameters: 
+2021-08-25 15:31:35.016 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m <==    Updates: 1
+2021-08-25 15:31:35.016 INFO  com.haoyu.knowlagebase.job.DocJob                 :29   [32m                  [0;39m 更新电子书下的文档数据结束，耗时：1毫秒
+2021-08-25 15:32:05.009 INFO  com.haoyu.knowlagebase.job.DocJob                 :26   [32m                  [0;39m 更新电子书下的文档数据开始
+2021-08-25 15:32:05.010 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-08-25 15:32:05.010 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==> Parameters: 
+2021-08-25 15:32:05.011 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m <==    Updates: 1
+2021-08-25 15:32:05.011 INFO  com.haoyu.knowlagebase.job.DocJob                 :29   [32m                  [0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2021-08-25 15:32:35.004 INFO  com.haoyu.knowlagebase.job.DocJob                 :26   [32m                  [0;39m 更新电子书下的文档数据开始
+2021-08-25 15:32:35.004 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-08-25 15:32:35.005 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==> Parameters: 
+2021-08-25 15:32:35.005 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m <==    Updates: 1
+2021-08-25 15:32:35.006 INFO  com.haoyu.knowlagebase.job.DocJob                 :29   [32m                  [0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2021-08-25 15:33:05.000 INFO  com.haoyu.knowlagebase.job.DocJob                 :26   [32m                  [0;39m 更新电子书下的文档数据开始
+2021-08-25 15:33:05.001 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-08-25 15:33:05.001 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==> Parameters: 
+2021-08-25 15:33:05.002 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m <==    Updates: 1
+2021-08-25 15:33:05.002 INFO  com.haoyu.knowlagebase.job.DocJob                 :29   [32m                  [0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2021-08-25 15:33:35.005 INFO  com.haoyu.knowlagebase.job.DocJob                 :26   [32m                  [0;39m 更新电子书下的文档数据开始
+2021-08-25 15:33:35.005 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-08-25 15:33:35.006 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==> Parameters: 
+2021-08-25 15:33:35.007 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m <==    Updates: 1
+2021-08-25 15:33:35.007 INFO  com.haoyu.knowlagebase.job.DocJob                 :29   [32m                  [0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2021-08-25 15:33:39.127 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :218  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
+2021-08-25 15:33:39.127 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-25 15:33:39.128 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-5 - Shutdown initiated...
+2021-08-25 15:33:39.132 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-5 - Shutdown completed.
+2021-08-25 15:33:39.453 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :55   [32m                  [0;39m Starting KnowlagebaseApplication using Java 1.8.0_261 on DESKTOP-CTIIJC1 with PID 8824 (E:\code\java\knowlagebase\target\classes started by MECHREVO in E:\code\java\knowlagebase)
+2021-08-25 15:33:39.453 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-08-25 15:33:39.576 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :250  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-08-25 15:33:39.576 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :128  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-08-25 15:33:39.577 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :188  [32m                  [0;39m Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+2021-08-25 15:33:39.654 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-08-25 15:33:39.655 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-08-25 15:33:39.655 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-08-25 15:33:39.655 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-08-25 15:33:39.670 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-08-25 15:33:39.670 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 214 ms
+2021-08-25 15:33:39.757 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-25 15:33:39.792 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2021-08-25 15:33:39.796 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-08-25 15:33:39.801 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-08-25 15:33:39.803 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-08-25 15:33:39.806 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :61   [32m                  [0;39m Started KnowlagebaseApplication in 0.382 seconds (JVM running for 3925.751)
+2021-08-25 15:33:39.806 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-08-25 15:33:39.807 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :26   [32m                  [0;39m 启动成功！
+2021-08-25 15:33:39.807 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :27   [32m                  [0;39m 地址：	http://127.0.0.1:8880
+2021-08-25 15:34:05.012 INFO  com.haoyu.knowlagebase.job.DocJob                 :26   [32m                  [0;39m 更新电子书下的文档数据开始
+2021-08-25 15:34:05.014 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-6 - Starting...
+2021-08-25 15:34:05.028 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-6 - Start completed.
+2021-08-25 15:34:05.028 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-08-25 15:34:05.028 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==> Parameters: 
+2021-08-25 15:34:05.029 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m <==    Updates: 1
+2021-08-25 15:34:05.029 INFO  com.haoyu.knowlagebase.job.DocJob                 :29   [32m                  [0;39m 更新电子书下的文档数据结束，耗时：16毫秒
+2021-08-25 15:34:35.014 INFO  com.haoyu.knowlagebase.job.DocJob                 :26   [32m                  [0;39m 更新电子书下的文档数据开始
+2021-08-25 15:34:35.014 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-08-25 15:34:35.015 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==> Parameters: 
+2021-08-25 15:34:35.015 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m <==    Updates: 1
+2021-08-25 15:34:35.015 INFO  com.haoyu.knowlagebase.job.DocJob                 :29   [32m                  [0;39m 更新电子书下的文档数据结束，耗时：1毫秒
+2021-08-25 15:35:00.383 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :218  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
+2021-08-25 15:35:00.384 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-25 15:35:00.384 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-6 - Shutdown initiated...
+2021-08-25 15:35:00.388 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-6 - Shutdown completed.
+2021-08-25 15:35:00.519 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :55   [32m                  [0;39m Starting KnowlagebaseApplication using Java 1.8.0_261 on DESKTOP-CTIIJC1 with PID 8824 (E:\code\java\knowlagebase\target\classes started by MECHREVO in E:\code\java\knowlagebase)
+2021-08-25 15:35:00.519 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-08-25 15:35:00.630 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :250  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-08-25 15:35:00.631 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :128  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-08-25 15:35:00.632 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :188  [32m                  [0;39m Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+2021-08-25 15:35:00.722 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-08-25 15:35:00.723 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-08-25 15:35:00.723 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-08-25 15:35:00.723 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-08-25 15:35:00.734 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-08-25 15:35:00.734 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 214 ms
+2021-08-25 15:35:00.911 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-25 15:35:01.047 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2021-08-25 15:35:01.062 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-08-25 15:35:01.069 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-08-25 15:35:01.071 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-08-25 15:35:01.074 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :61   [32m                  [0;39m Started KnowlagebaseApplication in 0.575 seconds (JVM running for 4007.019)
+2021-08-25 15:35:01.075 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-08-25 15:35:01.075 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :26   [32m                  [0;39m 启动成功！
+2021-08-25 15:35:01.075 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :27   [32m                  [0;39m 地址：	http://127.0.0.1:8880
+2021-08-25 15:35:05.002 INFO  com.haoyu.knowlagebase.job.DocJob                 :26   [32m                  [0;39m 更新电子书下的文档数据开始
+2021-08-25 15:35:05.003 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-7 - Starting...
+2021-08-25 15:35:05.017 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-7 - Start completed.
+2021-08-25 15:35:05.017 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-08-25 15:35:05.017 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==> Parameters: 
+2021-08-25 15:35:05.018 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m <==    Updates: 1
+2021-08-25 15:35:05.019 INFO  com.haoyu.knowlagebase.job.DocJob                 :29   [32m                  [0;39m 更新电子书下的文档数据结束，耗时：15毫秒
+2021-08-25 15:35:15.241 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :218  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
+2021-08-25 15:35:15.241 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-25 15:35:15.242 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-7 - Shutdown initiated...
+2021-08-25 15:35:15.248 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-7 - Shutdown completed.
+2021-08-25 15:35:15.381 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :55   [32m                  [0;39m Starting KnowlagebaseApplication using Java 1.8.0_261 on DESKTOP-CTIIJC1 with PID 8824 (E:\code\java\knowlagebase\target\classes started by MECHREVO in E:\code\java\knowlagebase)
+2021-08-25 15:35:15.382 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-08-25 15:35:15.488 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :250  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-08-25 15:35:15.488 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :128  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-08-25 15:35:15.490 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :188  [32m                  [0;39m Finished Spring Data repository scanning in 1 ms. Found 0 Redis repository interfaces.
+2021-08-25 15:35:15.561 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-08-25 15:35:15.562 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-08-25 15:35:15.562 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-08-25 15:35:15.562 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-08-25 15:35:15.577 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-08-25 15:35:15.577 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 194 ms
+2021-08-25 15:35:15.763 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-25 15:35:15.894 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2021-08-25 15:35:15.908 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-08-25 15:35:15.915 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-08-25 15:35:15.916 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-08-25 15:35:15.920 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :61   [32m                  [0;39m Started KnowlagebaseApplication in 0.557 seconds (JVM running for 4021.864)
+2021-08-25 15:35:15.920 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-08-25 15:35:15.921 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :26   [32m                  [0;39m 启动成功！
+2021-08-25 15:35:15.921 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :27   [32m                  [0;39m 地址：	http://127.0.0.1:8880
+2021-08-25 15:35:35.008 INFO  com.haoyu.knowlagebase.job.DocJob                 :26   [32m                  [0;39m 更新电子书下的文档数据开始
+2021-08-25 15:35:35.009 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-8 - Starting...
+2021-08-25 15:35:35.023 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-8 - Start completed.
+2021-08-25 15:35:35.023 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-08-25 15:35:35.023 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==> Parameters: 
+2021-08-25 15:35:35.024 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m <==    Updates: 1
+2021-08-25 15:35:35.024 INFO  com.haoyu.knowlagebase.job.DocJob                 :29   [32m                  [0;39m 更新电子书下的文档数据结束，耗时：15毫秒
+2021-08-25 15:35:43.880 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-25 15:35:43.880 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-08-25 15:35:43.880 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
+2021-08-25 15:35:43.882 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :54   [32m85638224835383296 [0;39m ------------- 开始 -------------
+2021-08-25 15:35:43.883 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :55   [32m85638224835383296 [0;39m 请求地址: http://127.0.0.1:8880/doc/find-content/4 GET
+2021-08-25 15:35:43.883 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :56   [32m85638224835383296 [0;39m 类名方法: com.haoyu.knowlagebase.controller.DocController.findContent
+2021-08-25 15:35:43.883 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :57   [32m85638224835383296 [0;39m 远程地址: 127.0.0.1
+2021-08-25 15:35:43.884 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :79   [32m85638224835383296 [0;39m 请求参数: [4]
+2021-08-25 15:35:43.886 DEBUG c.h.k.mapper.ContentMapper.selectByPrimaryKey     :137  [32m85638224835383296 [0;39m ==>  Preparing: select id , content from content where id = ?
+2021-08-25 15:35:43.886 DEBUG c.h.k.mapper.ContentMapper.selectByPrimaryKey     :137  [32m85638224835383296 [0;39m ==> Parameters: 4(Long)
+2021-08-25 15:35:43.887 DEBUG c.h.k.mapper.ContentMapper.selectByPrimaryKey     :137  [32m85638224835383296 [0;39m <==      Total: 0
+2021-08-25 15:35:43.887 DEBUG c.h.k.mapper.DocMapperCust.increaseViewCount      :137  [32m85638224835383296 [0;39m ==>  Preparing: update doc set view_count = view_count + 1 where id = ?
+2021-08-25 15:35:43.888 DEBUG c.h.k.mapper.DocMapperCust.increaseViewCount      :137  [32m85638224835383296 [0;39m ==> Parameters: 4(Long)
+2021-08-25 15:35:43.895 DEBUG c.h.k.mapper.DocMapperCust.increaseViewCount      :137  [32m85638224835383296 [0;39m <==    Updates: 1
+2021-08-25 15:35:43.896 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :91   [32m85638224835383296 [0;39m 返回结果: {"content":"","success":true}
+2021-08-25 15:35:43.896 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :92   [32m85638224835383296 [0;39m ------------- 结束 耗时：14 ms -------------
+2021-08-25 15:35:44.621 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :54   [32m85638227934973952 [0;39m ------------- 开始 -------------
+2021-08-25 15:35:44.622 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :55   [32m85638227934973952 [0;39m 请求地址: http://127.0.0.1:8880/doc/find-content/6 GET
+2021-08-25 15:35:44.622 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :56   [32m85638227934973952 [0;39m 类名方法: com.haoyu.knowlagebase.controller.DocController.findContent
+2021-08-25 15:35:44.622 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :57   [32m85638227934973952 [0;39m 远程地址: 127.0.0.1
+2021-08-25 15:35:44.622 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :79   [32m85638227934973952 [0;39m 请求参数: [6]
+2021-08-25 15:35:44.622 DEBUG c.h.k.mapper.ContentMapper.selectByPrimaryKey     :137  [32m85638227934973952 [0;39m ==>  Preparing: select id , content from content where id = ?
+2021-08-25 15:35:44.623 DEBUG c.h.k.mapper.ContentMapper.selectByPrimaryKey     :137  [32m85638227934973952 [0;39m ==> Parameters: 6(Long)
+2021-08-25 15:35:44.623 DEBUG c.h.k.mapper.ContentMapper.selectByPrimaryKey     :137  [32m85638227934973952 [0;39m <==      Total: 0
+2021-08-25 15:35:44.623 DEBUG c.h.k.mapper.DocMapperCust.increaseViewCount      :137  [32m85638227934973952 [0;39m ==>  Preparing: update doc set view_count = view_count + 1 where id = ?
+2021-08-25 15:35:44.624 DEBUG c.h.k.mapper.DocMapperCust.increaseViewCount      :137  [32m85638227934973952 [0;39m ==> Parameters: 6(Long)
+2021-08-25 15:35:44.631 DEBUG c.h.k.mapper.DocMapperCust.increaseViewCount      :137  [32m85638227934973952 [0;39m <==    Updates: 1
+2021-08-25 15:35:44.631 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :91   [32m85638227934973952 [0;39m 返回结果: {"content":"","success":true}
+2021-08-25 15:35:44.631 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :92   [32m85638227934973952 [0;39m ------------- 结束 耗时：10 ms -------------
+2021-08-25 15:35:45.173 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :54   [32m85638230250229760 [0;39m ------------- 开始 -------------
+2021-08-25 15:35:45.173 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :55   [32m85638230250229760 [0;39m 请求地址: http://127.0.0.1:8880/doc/find-content/3 GET
+2021-08-25 15:35:45.173 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :56   [32m85638230250229760 [0;39m 类名方法: com.haoyu.knowlagebase.controller.DocController.findContent
+2021-08-25 15:35:45.173 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :57   [32m85638230250229760 [0;39m 远程地址: 127.0.0.1
+2021-08-25 15:35:45.173 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :79   [32m85638230250229760 [0;39m 请求参数: [3]
+2021-08-25 15:35:45.174 DEBUG c.h.k.mapper.ContentMapper.selectByPrimaryKey     :137  [32m85638230250229760 [0;39m ==>  Preparing: select id , content from content where id = ?
+2021-08-25 15:35:45.174 DEBUG c.h.k.mapper.ContentMapper.selectByPrimaryKey     :137  [32m85638230250229760 [0;39m ==> Parameters: 3(Long)
+2021-08-25 15:35:45.175 DEBUG c.h.k.mapper.ContentMapper.selectByPrimaryKey     :137  [32m85638230250229760 [0;39m <==      Total: 0
+2021-08-25 15:35:45.175 DEBUG c.h.k.mapper.DocMapperCust.increaseViewCount      :137  [32m85638230250229760 [0;39m ==>  Preparing: update doc set view_count = view_count + 1 where id = ?
+2021-08-25 15:35:45.176 DEBUG c.h.k.mapper.DocMapperCust.increaseViewCount      :137  [32m85638230250229760 [0;39m ==> Parameters: 3(Long)
+2021-08-25 15:35:45.185 DEBUG c.h.k.mapper.DocMapperCust.increaseViewCount      :137  [32m85638230250229760 [0;39m <==    Updates: 1
+2021-08-25 15:35:45.185 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :91   [32m85638230250229760 [0;39m 返回结果: {"content":"","success":true}
+2021-08-25 15:35:45.186 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :92   [32m85638230250229760 [0;39m ------------- 结束 耗时：13 ms -------------
+2021-08-25 15:35:47.960 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :54   [32m85638241939755008 [0;39m ------------- 开始 -------------
+2021-08-25 15:35:47.960 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :55   [32m85638241939755008 [0;39m 请求地址: http://127.0.0.1:8880/user/login POST
+2021-08-25 15:35:47.960 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :56   [32m85638241939755008 [0;39m 类名方法: com.haoyu.knowlagebase.controller.UserController.login
+2021-08-25 15:35:47.961 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :57   [32m85638241939755008 [0;39m 远程地址: 127.0.0.1
+2021-08-25 15:35:47.961 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :79   [32m85638241939755008 [0;39m 请求参数: [{"loginName":"test"}]
+2021-08-25 15:35:47.965 DEBUG c.h.knowlagebase.mapper.UserMapper.selectByExample:137  [32m85638241939755008 [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? )
+2021-08-25 15:35:47.965 DEBUG c.h.knowlagebase.mapper.UserMapper.selectByExample:137  [32m85638241939755008 [0;39m ==> Parameters: test(String)
+2021-08-25 15:35:47.973 TRACE c.h.knowlagebase.mapper.UserMapper.selectByExample:143  [32m85638241939755008 [0;39m <==    Columns: id, login_name, name, password
+2021-08-25 15:35:47.974 TRACE c.h.knowlagebase.mapper.UserMapper.selectByExample:143  [32m85638241939755008 [0;39m <==        Row: 1, test, 测试, e70e2222a9d67c4f2eae107533359aa4
+2021-08-25 15:35:47.974 DEBUG c.h.knowlagebase.mapper.UserMapper.selectByExample:137  [32m85638241939755008 [0;39m <==      Total: 1
+2021-08-25 15:35:47.977 INFO  com.haoyu.knowlagebase.controller.UserController  :81   [32m85638241939755008 [0;39m 生成单点登录token：85638242011058176，并放入redis中
+2021-08-25 15:35:47.986 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :91   [32m85638241939755008 [0;39m 返回结果: {"content":{"id":1,"loginName":"test","name":"测试","token":"85638242011058176"},"success":true}
+2021-08-25 15:35:47.986 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :92   [32m85638241939755008 [0;39m ------------- 结束 耗时：26 ms -------------
+2021-08-25 15:35:49.848 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :54   [32m85638249858600960 [0;39m ------------- 开始 -------------
+2021-08-25 15:35:49.848 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :55   [32m85638249858600960 [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2021-08-25 15:35:49.848 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :56   [32m85638249858600960 [0;39m 类名方法: com.haoyu.knowlagebase.controller.CategoryController.all
+2021-08-25 15:35:49.848 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :57   [32m85638249858600960 [0;39m 远程地址: 127.0.0.1
+2021-08-25 15:35:49.849 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :79   [32m85638249858600960 [0;39m 请求参数: []
+2021-08-25 15:35:49.853 DEBUG c.h.k.mapper.CategoryMapper.selectByExample       :137  [32m85638249858600960 [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-08-25 15:35:49.853 DEBUG c.h.k.mapper.CategoryMapper.selectByExample       :137  [32m85638249858600960 [0;39m ==> Parameters: 
+2021-08-25 15:35:49.853 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m85638249858600960 [0;39m <==    Columns: id, parent, name, sort
+2021-08-25 15:35:49.853 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m85638249858600960 [0;39m <==        Row: 82110017238601728, 100, test2, 1
+2021-08-25 15:35:49.853 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m85638249858600960 [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-08-25 15:35:49.854 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m85638249858600960 [0;39m <==        Row: 101, 100, Vue, 101
+2021-08-25 15:35:49.854 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m85638249858600960 [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-08-25 15:35:49.854 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m85638249858600960 [0;39m <==        Row: 200, 0, Java, 200
+2021-08-25 15:35:49.854 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m85638249858600960 [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-08-25 15:35:49.855 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m85638249858600960 [0;39m <==        Row: 202, 200, 框架应用, 202
+2021-08-25 15:35:49.855 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m85638249858600960 [0;39m <==        Row: 300, 0, Python, 300
+2021-08-25 15:35:49.855 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m85638249858600960 [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-08-25 15:35:49.856 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m85638249858600960 [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-08-25 15:35:49.856 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m85638249858600960 [0;39m <==        Row: 400, 0, 数据库, 400
+2021-08-25 15:35:49.856 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m85638249858600960 [0;39m <==        Row: 401, 400, MySQL, 401
+2021-08-25 15:35:49.857 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m85638249858600960 [0;39m <==        Row: 500, 0, 其它, 500
+2021-08-25 15:35:49.857 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m85638249858600960 [0;39m <==        Row: 501, 500, 服务器, 501
+2021-08-25 15:35:49.857 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m85638249858600960 [0;39m <==        Row: 502, 500, 开发工具, 502
+2021-08-25 15:35:49.858 TRACE c.h.k.mapper.CategoryMapper.selectByExample       :143  [32m85638249858600960 [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2021-08-25 15:35:49.859 DEBUG c.h.k.mapper.CategoryMapper.selectByExample       :137  [32m85638249858600960 [0;39m <==      Total: 16
+2021-08-25 15:35:49.867 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :91   [32m85638249858600960 [0;39m 返回结果: {"content":[{"id":82110017238601728,"name":"test2","parent":100,"sort":1},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2021-08-25 15:35:49.867 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :92   [32m85638249858600960 [0;39m ------------- 结束 耗时：19 ms -------------
+2021-08-25 15:35:49.890 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :54   [32m85638250034761728 [0;39m ------------- 开始 -------------
+2021-08-25 15:35:49.891 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :55   [32m85638250034761728 [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2021-08-25 15:35:49.891 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :56   [32m85638250034761728 [0;39m 类名方法: com.haoyu.knowlagebase.controller.EbookController.list
+2021-08-25 15:35:49.891 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :57   [32m85638250034761728 [0;39m 远程地址: 127.0.0.1
+2021-08-25 15:35:49.891 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :79   [32m85638250034761728 [0;39m 请求参数: [{"page":1,"size":10}]
+2021-08-25 15:35:49.895 DEBUG c.h.k.mapper.EbookMapper.selectByExample_COUNT    :137  [32m85638250034761728 [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2021-08-25 15:35:49.895 DEBUG c.h.k.mapper.EbookMapper.selectByExample_COUNT    :137  [32m85638250034761728 [0;39m ==> Parameters: 
+2021-08-25 15:35:49.900 TRACE c.h.k.mapper.EbookMapper.selectByExample_COUNT    :143  [32m85638250034761728 [0;39m <==    Columns: count(0)
+2021-08-25 15:35:49.900 TRACE c.h.k.mapper.EbookMapper.selectByExample_COUNT    :143  [32m85638250034761728 [0;39m <==        Row: 6
+2021-08-25 15:35:49.900 DEBUG c.h.k.mapper.EbookMapper.selectByExample_COUNT    :137  [32m85638250034761728 [0;39m <==      Total: 1
+2021-08-25 15:35:49.901 DEBUG c.h.k.mapper.EbookMapper.selectByExample          :137  [32m85638250034761728 [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2021-08-25 15:35:49.901 DEBUG c.h.k.mapper.EbookMapper.selectByExample          :137  [32m85638250034761728 [0;39m ==> Parameters: 10(Integer)
+2021-08-25 15:35:49.902 TRACE c.h.k.mapper.EbookMapper.selectByExample          :143  [32m85638250034761728 [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2021-08-25 15:35:49.902 TRACE c.h.k.mapper.EbookMapper.selectByExample          :143  [32m85638250034761728 [0;39m <==        Row: 1, Spring Boot 入门教程, 200, 201, 零基础入门 Java 开发，企业级应用开发最佳首选框架, /image/cover2.png, 6, 12, 2
+2021-08-25 15:35:49.902 TRACE c.h.k.mapper.EbookMapper.selectByExample          :143  [32m85638250034761728 [0;39m <==        Row: 2, Vue 入门教程, 100, 101, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, /image/cover1.png, 0, 0, 0
+2021-08-25 15:35:49.902 TRACE c.h.k.mapper.EbookMapper.selectByExample          :143  [32m85638250034761728 [0;39m <==        Row: 3, Python 入门教程, 300, 301, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2021-08-25 15:35:49.902 TRACE c.h.k.mapper.EbookMapper.selectByExample          :143  [32m85638250034761728 [0;39m <==        Row: 4, Mysql 入门教程, 400, 401, 零基础入门 Mysql 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2021-08-25 15:35:49.903 TRACE c.h.k.mapper.EbookMapper.selectByExample          :143  [32m85638250034761728 [0;39m <==        Row: 5, Oracle 入门教程, 400, 401, 零基础入门 Oracle 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2021-08-25 15:35:49.903 TRACE c.h.k.mapper.EbookMapper.selectByExample          :143  [32m85638250034761728 [0;39m <==        Row: 83286321791111168, 1, 200, 202, 1, 1, null, null, null
+2021-08-25 15:35:49.903 DEBUG c.h.k.mapper.EbookMapper.selectByExample          :137  [32m85638250034761728 [0;39m <==      Total: 6
+2021-08-25 15:35:49.903 INFO  com.haoyu.knowlagebase.service.EbookService       :49   [32m85638250034761728 [0;39m 总行数:6
+2021-08-25 15:35:49.903 INFO  com.haoyu.knowlagebase.service.EbookService       :50   [32m85638250034761728 [0;39m 总页数:1
+2021-08-25 15:35:49.908 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :91   [32m85638250034761728 [0;39m 返回结果: {"content":{"list":[{"category1Id":200,"category2Id":201,"cover":"/image/cover2.png","description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","docCount":6,"id":1,"name":"Spring Boot 入门教程","viewCount":12,"voteCount":2},{"category1Id":100,"category2Id":101,"cover":"/image/cover1.png","description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","docCount":0,"id":2,"name":"Vue 入门教程","viewCount":0,"voteCount":0},{"category1Id":300,"category2Id":301,"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","docCount":0,"id":3,"name":"Python 入门教程","viewCount":0,"voteCount":0},{"category1Id":400,"category2Id":401,"description":"零基础入门 Mysql 开发，企业级应用开发最佳首选框架","docCount":0,"id":4,"name":"Mysql 入门教程","viewCount":0,"voteCount":0},{"category1Id":400,"category2Id":401,"description":"零基础入门 Oracle 开发，企业级应用开发最佳首选框架","docCount":0,"id":5,"name":"Oracle 入门教程","viewCount":0,"voteCount":0},{"category1Id":200,"category2Id":202,"cover":"1","description":"1","id":83286321791111168,"name":"1"}],"total":6},"success":true}
+2021-08-25 15:35:49.908 INFO  com.haoyu.knowlagebase.aspect.LogAspect           :92   [32m85638250034761728 [0;39m ------------- 结束 耗时：18 ms -------------
+2021-08-25 15:36:05.006 INFO  com.haoyu.knowlagebase.job.DocJob                 :26   [32m                  [0;39m 更新电子书下的文档数据开始
+2021-08-25 15:36:05.006 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-08-25 15:36:05.007 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==> Parameters: 
+2021-08-25 15:36:05.016 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m <==    Updates: 1
+2021-08-25 15:36:05.016 INFO  com.haoyu.knowlagebase.job.DocJob                 :29   [32m                  [0;39m 更新电子书下的文档数据结束，耗时：10毫秒
+2021-08-25 15:36:35.010 INFO  com.haoyu.knowlagebase.job.DocJob                 :26   [32m                  [0;39m 更新电子书下的文档数据开始
+2021-08-25 15:36:35.010 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-08-25 15:36:35.011 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==> Parameters: 
+2021-08-25 15:36:35.011 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m <==    Updates: 1
+2021-08-25 15:36:35.011 INFO  com.haoyu.knowlagebase.job.DocJob                 :29   [32m                  [0;39m 更新电子书下的文档数据结束，耗时：1毫秒
+2021-08-25 15:37:05.012 INFO  com.haoyu.knowlagebase.job.DocJob                 :26   [32m                  [0;39m 更新电子书下的文档数据开始
+2021-08-25 15:37:05.013 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-08-25 15:37:05.013 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==> Parameters: 
+2021-08-25 15:37:05.014 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m <==    Updates: 1
+2021-08-25 15:37:05.014 INFO  com.haoyu.knowlagebase.job.DocJob                 :29   [32m                  [0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2021-08-25 15:37:35.009 INFO  com.haoyu.knowlagebase.job.DocJob                 :26   [32m                  [0;39m 更新电子书下的文档数据开始
+2021-08-25 15:37:35.009 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-08-25 15:37:35.010 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==> Parameters: 
+2021-08-25 15:37:35.010 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m <==    Updates: 1
+2021-08-25 15:37:35.011 INFO  com.haoyu.knowlagebase.job.DocJob                 :29   [32m                  [0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2021-08-25 15:38:05.009 INFO  com.haoyu.knowlagebase.job.DocJob                 :26   [32m                  [0;39m 更新电子书下的文档数据开始
+2021-08-25 15:38:05.010 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-08-25 15:38:05.010 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==> Parameters: 
+2021-08-25 15:38:05.011 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m <==    Updates: 1
+2021-08-25 15:38:05.011 INFO  com.haoyu.knowlagebase.job.DocJob                 :29   [32m                  [0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2021-08-25 15:38:35.012 INFO  com.haoyu.knowlagebase.job.DocJob                 :26   [32m                  [0;39m 更新电子书下的文档数据开始
+2021-08-25 15:38:35.012 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-08-25 15:38:35.013 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==> Parameters: 
+2021-08-25 15:38:35.013 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m <==    Updates: 1
+2021-08-25 15:38:35.013 INFO  com.haoyu.knowlagebase.job.DocJob                 :29   [32m                  [0;39m 更新电子书下的文档数据结束，耗时：1毫秒
+2021-08-25 15:39:05.011 INFO  com.haoyu.knowlagebase.job.DocJob                 :26   [32m                  [0;39m 更新电子书下的文档数据开始
+2021-08-25 15:39:05.011 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-08-25 15:39:05.011 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==> Parameters: 
+2021-08-25 15:39:05.012 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m <==    Updates: 1
+2021-08-25 15:39:05.012 INFO  com.haoyu.knowlagebase.job.DocJob                 :29   [32m                  [0;39m 更新电子书下的文档数据结束，耗时：1毫秒
+2021-08-25 15:39:35.015 INFO  com.haoyu.knowlagebase.job.DocJob                 :26   [32m                  [0;39m 更新电子书下的文档数据开始
+2021-08-25 15:39:35.015 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-08-25 15:39:35.016 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m ==> Parameters: 
+2021-08-25 15:39:35.016 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m                  [0;39m <==    Updates: 1
+2021-08-25 15:39:35.016 INFO  com.haoyu.knowlagebase.job.DocJob                 :29   [32m                  [0;39m 更新电子书下的文档数据结束，耗时：1毫秒
+2021-08-25 15:39:41.952 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :218  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
+2021-08-25 15:39:41.953 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-25 15:39:41.953 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-8 - Shutdown initiated...
+2021-08-25 15:39:41.957 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-8 - Shutdown completed.
+2021-08-25 15:39:42.225 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :55   [32m                  [0;39m Starting KnowlagebaseApplication using Java 1.8.0_261 on DESKTOP-CTIIJC1 with PID 8824 (E:\code\java\knowlagebase\target\classes started by MECHREVO in E:\code\java\knowlagebase)
+2021-08-25 15:39:42.225 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-08-25 15:39:42.331 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :250  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-08-25 15:39:42.331 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :128  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-08-25 15:39:42.332 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :188  [32m                  [0;39m Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+2021-08-25 15:39:42.422 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-08-25 15:39:42.423 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-08-25 15:39:42.423 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-08-25 15:39:42.423 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-08-25 15:39:42.437 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-08-25 15:39:42.437 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 210 ms
+2021-08-25 15:39:42.607 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-25 15:39:42.742 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2021-08-25 15:39:42.756 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-08-25 15:39:42.762 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-08-25 15:39:42.764 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-08-25 15:39:42.766 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :61   [32m                  [0;39m Started KnowlagebaseApplication in 0.561 seconds (JVM running for 4288.712)
+2021-08-25 15:39:42.767 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-08-25 15:39:42.767 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :26   [32m                  [0;39m 启动成功！
+2021-08-25 15:39:42.768 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :27   [32m                  [0;39m 地址：	http://127.0.0.1:8880
+2021-08-25 15:39:51.794 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :218  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
+2021-08-25 15:39:51.794 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-25 15:39:51.910 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :55   [32m                  [0;39m Starting KnowlagebaseApplication using Java 1.8.0_261 on DESKTOP-CTIIJC1 with PID 8824 (E:\code\java\knowlagebase\target\classes started by MECHREVO in E:\code\java\knowlagebase)
+2021-08-25 15:39:51.910 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-08-25 15:39:52.001 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :250  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-08-25 15:39:52.001 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :128  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-08-25 15:39:52.002 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :188  [32m                  [0;39m Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+2021-08-25 15:39:52.067 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-08-25 15:39:52.068 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-08-25 15:39:52.068 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-08-25 15:39:52.068 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-08-25 15:39:52.081 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-08-25 15:39:52.081 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 169 ms
+2021-08-25 15:39:52.250 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-25 15:39:52.383 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2021-08-25 15:39:52.398 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-08-25 15:39:52.403 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-08-25 15:39:52.405 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-08-25 15:39:52.409 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :61   [32m                  [0;39m Started KnowlagebaseApplication in 0.518 seconds (JVM running for 4298.354)
+2021-08-25 15:39:52.410 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-08-25 15:39:52.410 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :26   [32m                  [0;39m 启动成功！
+2021-08-25 15:39:52.411 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :27   [32m                  [0;39m 地址：	http://127.0.0.1:8880
+2021-08-25 15:40:19.829 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :218  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
+2021-08-25 15:40:19.830 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-25 15:40:19.939 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :55   [32m                  [0;39m Starting KnowlagebaseApplication using Java 1.8.0_261 on DESKTOP-CTIIJC1 with PID 8824 (E:\code\java\knowlagebase\target\classes started by MECHREVO in E:\code\java\knowlagebase)
+2021-08-25 15:40:19.939 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-08-25 15:40:20.074 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :250  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-08-25 15:40:20.074 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :128  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-08-25 15:40:20.075 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :188  [32m                  [0;39m Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+2021-08-25 15:40:20.185 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-08-25 15:40:20.185 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-08-25 15:40:20.185 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-08-25 15:40:20.186 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-08-25 15:40:20.201 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-08-25 15:40:20.202 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 261 ms
+2021-08-25 15:40:20.408 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-25 15:40:20.552 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2021-08-25 15:40:20.569 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-08-25 15:40:20.575 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-08-25 15:40:20.576 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-08-25 15:40:20.579 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :61   [32m                  [0;39m Started KnowlagebaseApplication in 0.66 seconds (JVM running for 4326.525)
+2021-08-25 15:40:20.580 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-08-25 15:40:20.580 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :26   [32m                  [0;39m 启动成功！
+2021-08-25 15:40:20.580 INFO  c.h.knowlagebase.config.KnowlagebaseApplication   :27   [32m                  [0;39m 地址：	http://127.0.0.1:8880
+2021-08-25 15:40:35.005 INFO  com.haoyu.knowlagebase.job.DocJob                 :33   [32m85639445893746688 [0;39m 更新电子书下的文档数据开始
+2021-08-25 15:40:35.006 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m85639445893746688 [0;39m HikariPool-9 - Starting...
+2021-08-25 15:40:35.023 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m85639445893746688 [0;39m HikariPool-9 - Start completed.
+2021-08-25 15:40:35.023 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85639445893746688 [0;39m ==>  Preparing: update ebook t1, (select ebook_id, count(1) doc_count, sum(view_count) view_count, sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count, t1.view_count = t2.view_count, t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-08-25 15:40:35.024 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85639445893746688 [0;39m ==> Parameters: 
+2021-08-25 15:40:35.024 DEBUG c.h.k.mapper.DocMapperCust.updateEbookInfo        :137  [32m85639445893746688 [0;39m <==    Updates: 1
+2021-08-25 15:40:35.025 INFO  com.haoyu.knowlagebase.job.DocJob                 :36   [32m85639445893746688 [0;39m 更新电子书下的文档数据结束，耗时：19毫秒
