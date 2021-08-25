@@ -24,6 +24,7 @@ import org.slf4j.LoggerFactory;
 import org.slf4j.MDC;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.ObjectUtils;
 
 import javax.annotation.Resource;
@@ -99,6 +100,7 @@ public class DocService {
     /*
     保存
      */
+    @Transactional //对两张表操作的一般加上事务, Transactional这个注解也必须在其他类调用才生效
     public void save(DocSaveReq req){
         Doc doc = CopyUtil.copy(req, Doc.class);//复制的时候只会去找对应的字段复制 不对应的字段就不复制
         Content content = CopyUtil.copy(req, Content.class);
