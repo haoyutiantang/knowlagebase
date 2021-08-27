@@ -1,4 +1,4 @@
-# haoyu 知识库
+# 好雨知识库系统
 ### 1.首页未登录
 刚进入页面时左边会出现各种电子书，由于没有登录一些功能会被隐藏。登录之后header一些按钮展现。
 ![binaryTree](./web/public/image/首页未登录.png "binaryTree")
