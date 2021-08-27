@@ -8,6 +8,7 @@ import AdminCategory from '../views/admin/admin-category.vue'
 import AdminDoc from '../views/admin/admin-doc.vue'
 import store from "@/store";
 import {Tool} from "@/util/tool";
+
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
@@ -26,7 +27,7 @@ const routes: Array<RouteRecordRaw> = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    //component: () => import(/* webpackChunkName: "about" */ '../views/about.vue')
+    // component: () => import(/* webpackChunkName: "about" */ '../views/about.vue')
   },
   {
     path: '/admin/user',
@@ -60,12 +61,12 @@ const routes: Array<RouteRecordRaw> = [
       loginRequire: true
     }
   },
-];
+]
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes
-});
+})
 
 // 路由登录拦截
 router.beforeEach((to, from, next) => {

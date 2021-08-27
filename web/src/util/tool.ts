@@ -54,7 +54,6 @@ export class Tool {
   }
 
   /**
-   * 生成任意进制的随机数
    * 随机生成[len]长度的[radix]进制数
    * @param len
    * @param radix 默认62
