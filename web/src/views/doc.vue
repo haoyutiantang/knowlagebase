@@ -203,4 +203,16 @@
         padding: 15px;
         text-align: center;
     }
+
+    /* 图片自适应 */
+    .wangeditor img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* 视频自适应 */
+    .wangeditor iframe {
+        width: 100%;
+        height: 400px;
+    }
 </style>
